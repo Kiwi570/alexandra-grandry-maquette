@@ -1,0 +1,199 @@
+{
+  "site": "https://www.alexandragrandry.com/",
+  "date": "2026-11-05T13:42:19.542Z",
+  "pages": [
+    "https://www.alexandragrandry.com/",
+    "https://www.alexandragrandry.com/copie-de-enfant",
+    "https://www.alexandragrandry.com/copie-de-enfant-1",
+    "https://www.alexandragrandry.com/familles",
+    "https://www.alexandragrandry.com/th%C3%A9rapie-pour-adolescent",
+    "https://www.alexandragrandry.com/th%C3%A9rapie-pour-enfant",
+    "https://www.alexandragrandry.com/th%C3%A9rapie-de-couple",
+    "https://www.alexandragrandry.com/copie-de-informations-pratiques-2",
+    "https://www.alexandragrandry.com/copie-de-informations-pratiques-1"
+  ],
+  "images": [
+    {
+      "fichier": "alexandra-grandry-gestalt-therapeute.jpg",
+      "nom": "alexandra-grandry-gestalt-therapeute",
+      "origine": "https://static.wixstatic.com/media/0d152d_d710672ab66b45a697a0a05541c51fce~mv2.jpg",
+      "page": "https://www.alexandragrandry.com/",
+      "pages": 1,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "",
+        "section": "",
+        "page": "Alexandra Grandry Gestalt thérapeute et Sophrologue Titulaire du CEP",
+        "fichier_origine": ""
+      },
+      "largeur": 2250,
+      "hauteur": 3000,
+      "poids": 7991665,
+      "format": "jpeg",
+      "transparence": false,
+      "drapeau": "portrait"
+    },
+    {
+      "fichier": "groupe-my-site.jpg",
+      "nom": "groupe-my-site",
+      "origine": "https://static.wixstatic.com/media/0d152d_d659aee495a34e69bfc0c493d59c8fe6~mv2.jpg",
+      "page": "https://www.alexandragrandry.com/copie-de-enfant-1",
+      "pages": 1,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "",
+        "section": "",
+        "page": "Groupe | My Site",
+        "fichier_origine": ""
+      },
+      "largeur": 3000,
+      "hauteur": 1500,
+      "poids": 5065822,
+      "format": "jpeg",
+      "transparence": false,
+      "drapeau": "autre"
+    },
+    {
+      "fichier": "therapie-familles.jpg",
+      "nom": "therapie-familles",
+      "origine": "https://static.wixstatic.com/media/0d152d_4e3a7921539041e286ebcc56889d5858~mv2.jpg",
+      "page": "https://www.alexandragrandry.com/familles",
+      "pages": 1,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "",
+        "section": "Thérapie pour les familles",
+        "page": "Thérapie pour les familles",
+        "fichier_origine": ""
+      },
+      "largeur": 500,
+      "hauteur": 350,
+      "poids": 26643,
+      "format": "jpeg",
+      "transparence": false,
+      "drapeau": "autre"
+    },
+    {
+      "fichier": "adolescent-my-site.jpg",
+      "nom": "adolescent-my-site",
+      "origine": "https://static.wixstatic.com/media/0d152d_7be793f26b5648fdb7f497376304bf01~mv2.jpg",
+      "page": "https://www.alexandragrandry.com/th%C3%A9rapie-pour-adolescent",
+      "pages": 1,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "",
+        "section": "",
+        "page": "Adolescent | My Site",
+        "fichier_origine": ""
+      },
+      "largeur": 1024,
+      "hauteur": 683,
+      "poids": 303493,
+      "format": "jpeg",
+      "transparence": false,
+      "drapeau": "autre"
+    },
+    {
+      "fichier": "enfant-my-site.jpg",
+      "nom": "enfant-my-site",
+      "origine": "https://static.wixstatic.com/media/11062b_037c23b20e4347f5880ed97adccfe485~mv2.jpg",
+      "page": "https://www.alexandragrandry.com/th%C3%A9rapie-pour-enfant",
+      "pages": 1,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "",
+        "section": "",
+        "page": "Enfant | My Site",
+        "fichier_origine": ""
+      },
+      "largeur": 6000,
+      "hauteur": 4000,
+      "poids": 2648910,
+      "format": "jpeg",
+      "transparence": false,
+      "drapeau": "autre"
+    },
+    {
+      "fichier": "warm-blurry-lights-edited.png",
+      "nom": "warm-blurry-lights-edited",
+      "origine": "https://static.wixstatic.com/media/0d152d_a7d126b7ba3a471e973dc8f904fc6358~mv2.png",
+      "page": "https://www.alexandragrandry.com/th%C3%A9rapie-de-couple",
+      "pages": 1,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "Warm Blurry Lights_edited_edited_edited.",
+        "legende": "",
+        "titre": "",
+        "section": "Thérapie de couple En fonction des périodes de vie, de l'évolution des besoins, des désirs, des contraintes exogènes, le couple peut travers",
+        "page": "Couples | My Site",
+        "fichier_origine": ""
+      },
+      "largeur": 1323,
+      "hauteur": 662,
+      "poids": 899066,
+      "format": "png",
+      "transparence": true,
+      "drapeau": "autre"
+    },
+    {
+      "fichier": "sophrologie-my-site.jpg",
+      "nom": "sophrologie-my-site",
+      "origine": "https://static.wixstatic.com/media/0d152d_1aaf7db9f95b45248c769d1829b3d59d~mv2.jpg",
+      "page": "https://www.alexandragrandry.com/copie-de-informations-pratiques-2",
+      "pages": 1,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "",
+        "section": "",
+        "page": "La sophrologie | My Site",
+        "fichier_origine": ""
+      },
+      "largeur": 3000,
+      "hauteur": 1479,
+      "poids": 5561277,
+      "format": "jpeg",
+      "transparence": false,
+      "drapeau": "autre"
+    },
+    {
+      "fichier": "gestalt-therapie-my-site.jpg",
+      "nom": "gestalt-therapie-my-site",
+      "origine": "https://static.wixstatic.com/media/0d152d_b9f48df42c7147ca9857e74851692d92~mv2.jpg",
+      "page": "https://www.alexandragrandry.com/copie-de-informations-pratiques-1",
+      "pages": 1,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "",
+        "section": "",
+        "page": "La Gestalt thérapie | My Site",
+        "fichier_origine": ""
+      },
+      "largeur": 3000,
+      "hauteur": 1688,
+      "poids": 7662394,
+      "format": "jpeg",
+      "transparence": false,
+      "drapeau": "autre"
+    }
+  ],
+  "ecartees": [
+    {
+      "url": "https://static.wixstatic.com/media/56a0809e4c97404291a848762fdd6e58.jpg",
+      "raison": "repetee sur 8/9 pages"
+    }
+  ]
+}

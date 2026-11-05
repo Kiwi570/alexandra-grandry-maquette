@@ -1,0 +1,535 @@
+{
+  "dossier": "/Users/paul/Downloads/alexandra-grandry-recu",
+  "date": "2026-11-05T13:42:22.234Z",
+  "detection": "Vision (macOS) + mesures sharp",
+  "planches": [
+    "planche.jpg"
+  ],
+  "legende_planche": "cadre jaune : sujet ; croix rouge : cadrage ; fond rose : à vérifier",
+  "doublons": [],
+  "images": [
+    {
+      "fichier": "alexandra-grandry-gestalt-therapeute.jpg",
+      "nom": "alexandra-grandry-gestalt-therapeute",
+      "drapeau": "portrait",
+      "largeur": 2250,
+      "hauteur": 3000,
+      "ratio": "3:4",
+      "ratio_valeur": 0.75,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 7991665,
+      "transparence": false,
+      "sujet": {
+        "x": 3.7,
+        "y": 0,
+        "l": 93.1,
+        "h": 74.5,
+        "source": "visage"
+      },
+      "visages": 1,
+      "cadrage": [
+        50,
+        38
+      ],
+      "cadrage_css": "50% 38%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0.25,
+          "ton": "clair",
+          "recouvre_sujet": 0.68
+        },
+        {
+          "cote": "haut",
+          "score": 0.22,
+          "ton": "clair",
+          "recouvre_sujet": 0.93
+        },
+        {
+          "cote": "bas",
+          "score": 0.19,
+          "ton": "clair",
+          "recouvre_sujet": 0.25
+        },
+        {
+          "cote": "droite",
+          "score": 0.04,
+          "ton": "clair",
+          "recouvre_sujet": 0.69
+        }
+      ],
+      "qualite": {
+        "nettete": 26.4,
+        "bruit": 1.43,
+        "compression": 0.98,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "4e92929e56101479",
+      "drapeaux": [
+        "portrait",
+        "visage"
+      ]
+    },
+    {
+      "fichier": "groupe-my-site.jpg",
+      "nom": "groupe-my-site",
+      "drapeau": "autre",
+      "largeur": 3000,
+      "hauteur": 1500,
+      "ratio": "2:1",
+      "ratio_valeur": 2,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 5065822,
+      "transparence": false,
+      "sujet": {
+        "x": 29.4,
+        "y": 30.9,
+        "l": 30.9,
+        "h": 25,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        45,
+        43
+      ],
+      "cadrage_css": "45% 43%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.25,
+          "ton": "moyen",
+          "recouvre_sujet": 0.04
+        },
+        {
+          "cote": "droite",
+          "score": 0.23,
+          "ton": "moyen",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "bas",
+          "score": 0.22,
+          "ton": "clair",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "gauche",
+          "score": 0.19,
+          "ton": "moyen",
+          "recouvre_sujet": 0.07
+        }
+      ],
+      "qualite": {
+        "nettete": 73.2,
+        "bruit": 1.2,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "f5b1adece0f1f8fc",
+      "drapeaux": [
+        "autre"
+      ]
+    },
+    {
+      "fichier": "therapie-familles.jpg",
+      "nom": "therapie-familles",
+      "drapeau": "autre",
+      "largeur": 500,
+      "hauteur": 350,
+      "ratio": "1.43",
+      "ratio_valeur": 1.429,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 26643,
+      "transparence": false,
+      "sujet": {
+        "x": 6.4,
+        "y": 20,
+        "l": 88.7,
+        "h": 58.7,
+        "source": "corps"
+      },
+      "visages": 4,
+      "cadrage": [
+        43,
+        41
+      ],
+      "cadrage_css": "43% 41%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.64,
+          "ton": "moyen",
+          "recouvre_sujet": 0.38
+        },
+        {
+          "cote": "bas",
+          "score": 0.52,
+          "ton": "moyen",
+          "recouvre_sujet": 0.35
+        },
+        {
+          "cote": "droite",
+          "score": 0.42,
+          "ton": "moyen",
+          "recouvre_sujet": 0.52
+        },
+        {
+          "cote": "gauche",
+          "score": 0.32,
+          "ton": "moyen",
+          "recouvre_sujet": 0.49
+        }
+      ],
+      "qualite": {
+        "nettete": 54.3,
+        "bruit": 0.72,
+        "compression": 0.99,
+        "faible": true,
+        "raisons": [
+          "500 px de large"
+        ]
+      },
+      "lisible": false,
+      "empreinte": "a44b43b214784b8c",
+      "drapeaux": [
+        "autre",
+        "4 visages",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "adolescent-my-site.jpg",
+      "nom": "adolescent-my-site",
+      "drapeau": "autre",
+      "largeur": 1024,
+      "hauteur": 683,
+      "ratio": "3:2",
+      "ratio_valeur": 1.499,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 303493,
+      "transparence": false,
+      "sujet": {
+        "x": 29,
+        "y": 2.9,
+        "l": 34.4,
+        "h": 69.4,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        48,
+        44
+      ],
+      "cadrage_css": "48% 44%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0.68,
+          "ton": "sombre",
+          "recouvre_sujet": 0.19
+        },
+        {
+          "cote": "haut",
+          "score": 0.62,
+          "ton": "sombre",
+          "recouvre_sujet": 0.32
+        },
+        {
+          "cote": "droite",
+          "score": 0.43,
+          "ton": "moyen",
+          "recouvre_sujet": 0.06
+        },
+        {
+          "cote": "bas",
+          "score": 0.4,
+          "ton": "sombre",
+          "recouvre_sujet": 0.07
+        }
+      ],
+      "qualite": {
+        "nettete": 12.5,
+        "bruit": 0.43,
+        "compression": 1.56,
+        "faible": true,
+        "raisons": [
+          "1024 px de large",
+          "compression visible"
+        ]
+      },
+      "lisible": false,
+      "empreinte": "6c3ca4e96c589cec",
+      "drapeaux": [
+        "autre",
+        "petite",
+        "compression visible",
+        "calme gauche"
+      ]
+    },
+    {
+      "fichier": "enfant-my-site.jpg",
+      "nom": "enfant-my-site",
+      "drapeau": "autre",
+      "largeur": 6000,
+      "hauteur": 4000,
+      "ratio": "3:2",
+      "ratio_valeur": 1.5,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 2648910,
+      "transparence": false,
+      "sujet": {
+        "x": 46.6,
+        "y": 0.1,
+        "l": 16.1,
+        "h": 50.2,
+        "source": "corps"
+      },
+      "visages": 0,
+      "cadrage": [
+        55,
+        15
+      ],
+      "cadrage_css": "55% 15%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.48,
+          "ton": "clair",
+          "recouvre_sujet": 0.16
+        },
+        {
+          "cote": "droite",
+          "score": 0.46,
+          "ton": "clair",
+          "recouvre_sujet": 0.03
+        },
+        {
+          "cote": "gauche",
+          "score": 0.36,
+          "ton": "clair",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "bas",
+          "score": 0.29,
+          "ton": "moyen",
+          "recouvre_sujet": 0
+        }
+      ],
+      "qualite": {
+        "nettete": 17,
+        "bruit": 1.09,
+        "compression": 1.36,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "4c5eaca40ece0616",
+      "drapeaux": [
+        "autre"
+      ]
+    },
+    {
+      "fichier": "warm-blurry-lights-edited.png",
+      "nom": "warm-blurry-lights-edited",
+      "drapeau": "autre",
+      "largeur": 1323,
+      "hauteur": 662,
+      "ratio": "2:1",
+      "ratio_valeur": 1.998,
+      "orientation": "paysage",
+      "format": "png",
+      "poids": 899066,
+      "transparence": true,
+      "sujet": {
+        "x": 13.8,
+        "y": 0.5,
+        "l": 78.8,
+        "h": 99.3,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        49,
+        32
+      ],
+      "cadrage_css": "49% 32%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0.48,
+          "ton": "clair",
+          "recouvre_sujet": 0.65
+        },
+        {
+          "cote": "haut",
+          "score": 0.37,
+          "ton": "clair",
+          "recouvre_sujet": 0.78
+        },
+        {
+          "cote": "bas",
+          "score": 0.31,
+          "ton": "clair",
+          "recouvre_sujet": 0.78
+        },
+        {
+          "cote": "droite",
+          "score": 0.23,
+          "ton": "clair",
+          "recouvre_sujet": 0.81
+        }
+      ],
+      "qualite": {
+        "nettete": 16.7,
+        "bruit": 0.88,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "92939b1b19111b99",
+      "drapeaux": [
+        "autre"
+      ]
+    },
+    {
+      "fichier": "sophrologie-my-site.jpg",
+      "nom": "sophrologie-my-site",
+      "drapeau": "autre",
+      "largeur": 3000,
+      "hauteur": 1479,
+      "ratio": "2:1",
+      "ratio_valeur": 2.028,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 5561277,
+      "transparence": false,
+      "sujet": {
+        "x": 32.4,
+        "y": 38.2,
+        "l": 35.3,
+        "h": 33.8,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        50,
+        55
+      ],
+      "cadrage_css": "50% 55%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.54,
+          "ton": "moyen",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "droite",
+          "score": 0.46,
+          "ton": "moyen",
+          "recouvre_sujet": 0.07
+        },
+        {
+          "cote": "bas",
+          "score": 0.42,
+          "ton": "moyen",
+          "recouvre_sujet": 0.07
+        },
+        {
+          "cote": "gauche",
+          "score": 0.41,
+          "ton": "moyen",
+          "recouvre_sujet": 0.06
+        }
+      ],
+      "qualite": {
+        "nettete": 41.4,
+        "bruit": 1.47,
+        "compression": 1.01,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "8cc0c09b59dbcfe4",
+      "drapeaux": [
+        "autre"
+      ]
+    },
+    {
+      "fichier": "gestalt-therapie-my-site.jpg",
+      "nom": "gestalt-therapie-my-site",
+      "drapeau": "autre",
+      "largeur": 3000,
+      "hauteur": 1688,
+      "ratio": "16:9",
+      "ratio_valeur": 1.777,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 7662394,
+      "transparence": false,
+      "sujet": {
+        "x": 36.8,
+        "y": 11.8,
+        "l": 29.4,
+        "h": 66.2,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        51,
+        44
+      ],
+      "cadrage_css": "51% 44%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0.22,
+          "ton": "sombre",
+          "recouvre_sujet": 0.05
+        },
+        {
+          "cote": "droite",
+          "score": 0.22,
+          "ton": "sombre",
+          "recouvre_sujet": 0.1
+        },
+        {
+          "cote": "bas",
+          "score": 0.2,
+          "ton": "moyen",
+          "recouvre_sujet": 0.11
+        },
+        {
+          "cote": "haut",
+          "score": 0.16,
+          "ton": "sombre",
+          "recouvre_sujet": 0.19
+        }
+      ],
+      "qualite": {
+        "nettete": 99.6,
+        "bruit": 1.75,
+        "compression": 1.02,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "b4347131f4f4f486",
+      "drapeaux": [
+        "autre"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Alexandra Grandry, Gestalt-thérapeute et sophrologue",
+  "url": "https://alexandra-grandry-maquette.vercel.app/",
+  "telephone": "+33617874513",
+  "email": "ah.grandry@gmail.com",
+  "address": { "@type": "PostalAddress", "streetAddress": "3 bis rue des Écoles", "postalCode": "78400", "addressLocality": "Chatou", "addressCountry": "FR" },
+  "description": { "fr": "Gestalt-thérapie et sophrologie à Chatou : enfants, adolescents, adultes, couples, familles et groupe. Cabinet à 2 minutes à pied du RER A Chatou-Croissy." }
+}

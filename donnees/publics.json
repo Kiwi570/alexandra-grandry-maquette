@@ -1,0 +1,202 @@
+[
+  {
+    "cle": "adultes",
+    "image": "grok/adultes",
+    "nom": {
+      "fr": "Adultes"
+    },
+    "phrase": {
+      "fr": "Une période difficile, une question de sens, un choix à faire."
+    },
+    "cadre": {
+      "fr": [
+        "Séance de 45 min",
+        "Au cabinet, ou en visio si le contexte le nécessite"
+      ]
+    },
+    "tarif": {
+      "fr": "80 €"
+    },
+    "tarifDetail": {
+      "fr": "la séance de 45 min"
+    },
+    "texte": {
+      "fr": [
+        "Une période difficile (deuil, licenciement, séparation, burn-out…), des difficultés qui reviennent dans le travail, la famille ou la vie amoureuse, une souffrance liée à un trauma, une addiction, une dépression ou une anxiété excessive, des troubles du comportement alimentaire.",
+        "Ce peut être aussi (re)trouver un sens à sa vie, à son travail, ou questionner son parcours avant un choix important. Vous pouvez aussi venir pour quelques séances de soutien ponctuel ou d’information."
+      ]
+    },
+    "alt": {
+      "fr": "Fauteuil en lin vide près d’une grande fenêtre"
+    }
+  },
+  {
+    "cle": "couples",
+    "image": "grok/couples",
+    "nom": {
+      "fr": "Couples"
+    },
+    "phrase": {
+      "fr": "Comprendre ce qui se passe entre vous."
+    },
+    "cadre": {
+      "fr": [
+        "Séance de 1 h 30",
+        "2 séances par mois au début, puis 1 par mois",
+        "Au cabinet"
+      ]
+    },
+    "tarif": {
+      "fr": "140 €"
+    },
+    "tarifDetail": {
+      "fr": "la séance de 1 h 30"
+    },
+    "texte": {
+      "fr": [
+        "Le couple peut traverser des difficultés à différentes étapes de la vie : les besoins, les désirs et les contraintes extérieures évoluent. La thérapie aide à comprendre ce qui se passe et à réfléchir aux décisions à prendre.",
+        "Elle peut être ponctuelle, sur une question précise, ou plus longue pour des questions plus profondes. Elle peut aussi aider à se séparer au mieux."
+      ]
+    },
+    "alt": {
+      "fr": "Deux manteaux suspendus côte à côte"
+    }
+  },
+  {
+    "cle": "enfants",
+    "image": "grok/enfants",
+    "nom": {
+      "fr": "Enfants"
+    },
+    "phrase": {
+      "fr": "L’enfant s’exprime surtout par le jeu."
+    },
+    "cadre": {
+      "fr": [
+        "1 séance par semaine, rythme aménageable",
+        "Premier rendez-vous avec les parents seuls",
+        "Points réguliers avec les parents pendant les vacances scolaires"
+      ]
+    },
+    "tarif": {
+      "fr": "à compléter"
+    },
+    "tarifDetail": {
+      "fr": "tarif de la séance"
+    },
+    "texte": {
+      "fr": [
+        "La thérapie pour enfant se conçoit comme un processus de collaboration avec les parents. Un enfant est entièrement dépendant de son environnement : le travail porte aussi sur ce cadre.",
+        "L’enfant met moins facilement des mots sur ce qu’il vit qu’un adulte. Il s’exprime surtout par le jeu : dessin, figurines, jeux de construction ou de balle, poupée, histoire."
+      ]
+    },
+    "alt": {
+      "fr": "Table basse avec des cubes en bois et des crayons de couleur"
+    }
+  },
+  {
+    "cle": "adolescents",
+    "image": "grok/adolescents",
+    "nom": {
+      "fr": "Adolescents"
+    },
+    "phrase": {
+      "fr": "Un espace pour réfléchir, se questionner, être écouté."
+    },
+    "cadre": {
+      "fr": [
+        "Rythme et durée : à compléter",
+        "Au cabinet"
+      ]
+    },
+    "tarif": {
+      "fr": "à compléter"
+    },
+    "tarifDetail": {
+      "fr": "tarif de la séance"
+    },
+    "texte": {
+      "fr": [
+        "L’adolescence est une étape complexe : l’adolescent se sépare de l’enfance pour devenir adulte. Deuil de l’enfance, peur de l’avenir, transformations du corps, questions sur la sexualité et sur l’identité.",
+        "La séance est un espace privilégié pour réfléchir, se questionner et retrouver confiance en soi, pour continuer à grandir."
+      ]
+    },
+    "signes": {
+      "fr": [
+        "Un changement fort et durable du comportement : repli sur soi, perte d’intérêt pour l’école",
+        "Des symptômes physiques inquiétants : perte ou prise de poids soudaine, sommeil perturbé, plaintes somatiques répétées",
+        "Des comportements obsessionnels : TOC, phobies",
+        "Des addictions : cannabis, alcool, réseaux sociaux"
+      ]
+    },
+    "alt": {
+      "fr": "Casque audio et sweat posés sur un rebord de fenêtre"
+    }
+  },
+  {
+    "cle": "familles",
+    "image": "grok/familles",
+    "nom": {
+      "fr": "Familles"
+    },
+    "phrase": {
+      "fr": "Un lieu sûr pour faire circuler la parole."
+    },
+    "cadre": {
+      "fr": [
+        "Séance de 1 h 30",
+        "Court entretien téléphonique avant",
+        "Au cabinet"
+      ]
+    },
+    "tarif": {
+      "fr": "150 €"
+    },
+    "tarifDetail": {
+      "fr": "la séance de 1 h 30"
+    },
+    "texte": {
+      "fr": [
+        "La famille est un système complexe qui traverse des cycles et des crises, plus ou moins faciles à dépasser. Quand le fonctionnement familial se bloque, un tiers peut aider à remobiliser les ressources et à retrouver la capacité de trouver des solutions.",
+        "La thérapie familiale offre un lieu sûr pour faire circuler la parole, réfléchir ensemble aux ajustements possibles et expérimenter une manière d’être en relation qui respecte chacun."
+      ]
+    },
+    "alt": {
+      "fr": "Chaussures de tailles différentes alignées à l’entrée"
+    },
+    "entretien": true
+  },
+  {
+    "cle": "groupe",
+    "image": "grok/groupe",
+    "nom": {
+      "fr": "Groupe"
+    },
+    "phrase": {
+      "fr": "D’autres points de vue, chacun à son rythme."
+    },
+    "cadre": {
+      "fr": [
+        "Un lundi par mois, de 14 h à 17 h",
+        "Centre Corroze, rue Laubeuf, Chatou",
+        "Entretien téléphonique préalable"
+      ]
+    },
+    "tarif": {
+      "fr": "90 €"
+    },
+    "tarifDetail": {
+      "fr": "la séance de 3 h"
+    },
+    "texte": {
+      "fr": [
+        "La thérapie de groupe permet de travailler ses problématiques personnelles dans un cadre collectif, bienveillant et soutenant. Le groupe amplifie la thérapie : plus de points de vue, des expériences partagées, des occasions de mieux se connaître et de connaître les autres, de la place pour expérimenter.",
+        "Chacun avance à son rythme. Au programme : mouvement, conscience du corps, échanges, partage et soutien mutuel."
+      ]
+    },
+    "alt": {
+      "fr": "Cercle de chaises en bois dans une salle lumineuse"
+    },
+    "entretien": true
+  }
+]

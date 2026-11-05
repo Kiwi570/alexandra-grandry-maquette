@@ -1,0 +1,2128 @@
+{
+  "dossier": "/home/claude/alexandra-grandry-maquette/recu/grok",
+  "date": "2026-11-05T13:46:36.589Z",
+  "detection": "mesures sharp seulement",
+  "planches": [
+    "planche.jpg",
+    "planche-2.jpg"
+  ],
+  "legende_planche": "cadre jaune : sujet ; croix rouge : cadrage ; fond rose : à vérifier",
+  "doublons": [],
+  "images": [
+    {
+      "fichier": "accompagnements-ouverture-mobile.jpg",
+      "nom": "accompagnements-ouverture-mobile",
+      "drapeau": null,
+      "largeur": 784,
+      "hauteur": 1168,
+      "ratio": "2:3",
+      "ratio_valeur": 0.671,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 304545,
+      "transparence": false,
+      "sujet": {
+        "x": 18.2,
+        "y": 50,
+        "l": 63.6,
+        "h": 25,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        56,
+        62
+      ],
+      "cadrage_css": "56% 62%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.7,
+          "ton": "clair",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "gauche",
+          "score": 0.64,
+          "ton": "clair",
+          "recouvre_sujet": 0.14
+        },
+        {
+          "cote": "bas",
+          "score": 0.58,
+          "ton": "clair",
+          "recouvre_sujet": 0.18
+        },
+        {
+          "cote": "droite",
+          "score": 0.57,
+          "ton": "clair",
+          "recouvre_sujet": 0.14
+        }
+      ],
+      "qualite": {
+        "nettete": 32,
+        "bruit": 1.5,
+        "compression": 1.04,
+        "faible": true,
+        "raisons": [
+          "784 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "010000122b074601",
+      "drapeaux": [
+        "petite",
+        "calme haut"
+      ]
+    },
+    {
+      "fichier": "accompagnements-ouverture.jpg",
+      "nom": "accompagnements-ouverture",
+      "drapeau": null,
+      "largeur": 1168,
+      "hauteur": 784,
+      "ratio": "3:2",
+      "ratio_valeur": 1.49,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 312963,
+      "transparence": false,
+      "sujet": {
+        "x": 21.9,
+        "y": 9.1,
+        "l": 50,
+        "h": 68.2,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        51,
+        55
+      ],
+      "cadrage_css": "51% 55%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.6,
+          "ton": "clair",
+          "recouvre_sujet": 0.2
+        },
+        {
+          "cote": "haut",
+          "score": 0.58,
+          "ton": "clair",
+          "recouvre_sujet": 0.37
+        },
+        {
+          "cote": "bas",
+          "score": 0.56,
+          "ton": "clair",
+          "recouvre_sujet": 0.18
+        },
+        {
+          "cote": "gauche",
+          "score": 0.49,
+          "ton": "clair",
+          "recouvre_sujet": 0.31
+        }
+      ],
+      "qualite": {
+        "nettete": 28.9,
+        "bruit": 1.61,
+        "compression": 1.04,
+        "faible": true,
+        "raisons": [
+          "1168 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "302c4094162c2410",
+      "drapeaux": [
+        "petite"
+      ]
+    },
+    {
+      "fichier": "accompagnements-pratique.jpg",
+      "nom": "accompagnements-pratique",
+      "drapeau": null,
+      "largeur": 1168,
+      "hauteur": 784,
+      "ratio": "3:2",
+      "ratio_valeur": 1.49,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 240482,
+      "transparence": false,
+      "sujet": {
+        "x": 3.1,
+        "y": 4.5,
+        "l": 87.5,
+        "h": 90.9,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        54,
+        56
+      ],
+      "cadrage_css": "54% 56%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.42,
+          "ton": "clair",
+          "recouvre_sujet": 0.76
+        },
+        {
+          "cote": "gauche",
+          "score": 0.29,
+          "ton": "clair",
+          "recouvre_sujet": 0.84
+        },
+        {
+          "cote": "droite",
+          "score": 0.27,
+          "ton": "clair",
+          "recouvre_sujet": 0.7
+        },
+        {
+          "cote": "bas",
+          "score": 0.16,
+          "ton": "moyen",
+          "recouvre_sujet": 0.76
+        }
+      ],
+      "qualite": {
+        "nettete": 20.1,
+        "bruit": 0.77,
+        "compression": 1.02,
+        "faible": true,
+        "raisons": [
+          "1168 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "242626232921e18e",
+      "drapeaux": [
+        "petite"
+      ]
+    },
+    {
+      "fichier": "accueil-appel.jpg",
+      "nom": "accueil-appel",
+      "drapeau": null,
+      "largeur": 1168,
+      "hauteur": 784,
+      "ratio": "3:2",
+      "ratio_valeur": 1.49,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 311454,
+      "transparence": false,
+      "sujet": {
+        "x": 6.3,
+        "y": 0,
+        "l": 93.8,
+        "h": 95.5,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        63,
+        45
+      ],
+      "cadrage_css": "63% 45%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0.22,
+          "ton": "clair",
+          "recouvre_sujet": 0.8
+        },
+        {
+          "cote": "haut",
+          "score": 0.08,
+          "ton": "clair",
+          "recouvre_sujet": 0.94
+        },
+        {
+          "cote": "bas",
+          "score": 0.04,
+          "ton": "moyen",
+          "recouvre_sujet": 0.82
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.96
+        }
+      ],
+      "qualite": {
+        "nettete": 44.9,
+        "bruit": 1.22,
+        "compression": 1.04,
+        "faible": true,
+        "raisons": [
+          "1168 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "f1e9f1b1a030f060",
+      "drapeaux": [
+        "petite"
+      ]
+    },
+    {
+      "fichier": "accueil-cadre.jpg",
+      "nom": "accueil-cadre",
+      "drapeau": null,
+      "largeur": 1168,
+      "hauteur": 784,
+      "ratio": "3:2",
+      "ratio_valeur": 1.49,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 297085,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 95.5,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        39,
+        54
+      ],
+      "cadrage_css": "39% 54%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.23,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "droite",
+          "score": 0.15,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "bas",
+          "score": 0.07,
+          "ton": "moyen",
+          "recouvre_sujet": 0.87
+        },
+        {
+          "cote": "gauche",
+          "score": 0.03,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        }
+      ],
+      "qualite": {
+        "nettete": 27.8,
+        "bruit": 1.24,
+        "compression": 1.09,
+        "faible": true,
+        "raisons": [
+          "1168 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "707171782ecc9990",
+      "drapeaux": [
+        "petite"
+      ]
+    },
+    {
+      "fichier": "accueil-deroule.jpg",
+      "nom": "accueil-deroule",
+      "drapeau": null,
+      "largeur": 1168,
+      "hauteur": 784,
+      "ratio": "3:2",
+      "ratio_valeur": 1.49,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 275797,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 93.8,
+        "h": 95.5,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        38,
+        51
+      ],
+      "cadrage_css": "38% 51%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.14,
+          "ton": "moyen",
+          "recouvre_sujet": 0.81
+        },
+        {
+          "cote": "haut",
+          "score": 0.11,
+          "ton": "moyen",
+          "recouvre_sujet": 0.94
+        },
+        {
+          "cote": "bas",
+          "score": 0.03,
+          "ton": "moyen",
+          "recouvre_sujet": 0.82
+        },
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        }
+      ],
+      "qualite": {
+        "nettete": 31.4,
+        "bruit": 0.87,
+        "compression": 1.14,
+        "faible": true,
+        "raisons": [
+          "1168 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "2b2b3939a9b93b7b",
+      "drapeaux": [
+        "petite"
+      ]
+    },
+    {
+      "fichier": "accueil-gestalt.jpg",
+      "nom": "accueil-gestalt",
+      "drapeau": null,
+      "largeur": 784,
+      "hauteur": 1168,
+      "ratio": "2:3",
+      "ratio_valeur": 0.671,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 245001,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 95.5,
+        "h": 100,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        45,
+        45
+      ],
+      "cadrage_css": "45% 45%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.25,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "droite",
+          "score": 0.17,
+          "ton": "moyen",
+          "recouvre_sujet": 0.89
+        },
+        {
+          "cote": "gauche",
+          "score": 0.12,
+          "ton": "clair",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "bas",
+          "score": 0.12,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        }
+      ],
+      "qualite": {
+        "nettete": 21.6,
+        "bruit": 0.86,
+        "compression": 1.09,
+        "faible": true,
+        "raisons": [
+          "784 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "1c1c989c9c92c1df",
+      "drapeaux": [
+        "petite"
+      ]
+    },
+    {
+      "fichier": "accueil-ouverture.jpg",
+      "nom": "accueil-ouverture",
+      "drapeau": null,
+      "largeur": 784,
+      "hauteur": 1168,
+      "ratio": "2:3",
+      "ratio_valeur": 0.671,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 240997,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 95.5,
+        "h": 100,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        32,
+        63
+      ],
+      "cadrage_css": "32% 63%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.42,
+          "ton": "clair",
+          "recouvre_sujet": 0.89
+        },
+        {
+          "cote": "haut",
+          "score": 0.37,
+          "ton": "clair",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "bas",
+          "score": 0.11,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "gauche",
+          "score": 0.08,
+          "ton": "clair",
+          "recouvre_sujet": 1
+        }
+      ],
+      "qualite": {
+        "nettete": 19.9,
+        "bruit": 0.93,
+        "compression": 1.12,
+        "faible": true,
+        "raisons": [
+          "784 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "303030303030733c",
+      "drapeaux": [
+        "petite"
+      ]
+    },
+    {
+      "fichier": "accueil-raisons.jpg",
+      "nom": "accueil-raisons",
+      "drapeau": null,
+      "largeur": 1168,
+      "hauteur": 784,
+      "ratio": "3:2",
+      "ratio_valeur": 1.49,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 217957,
+      "transparence": false,
+      "sujet": {
+        "x": 21.9,
+        "y": 13.6,
+        "l": 68.8,
+        "h": 68.2,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        67,
+        58
+      ],
+      "cadrage_css": "67% 58%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0.53,
+          "ton": "clair",
+          "recouvre_sujet": 0.31
+        },
+        {
+          "cote": "haut",
+          "score": 0.49,
+          "ton": "clair",
+          "recouvre_sujet": 0.42
+        },
+        {
+          "cote": "bas",
+          "score": 0.3,
+          "ton": "moyen",
+          "recouvre_sujet": 0.33
+        },
+        {
+          "cote": "droite",
+          "score": 0.1,
+          "ton": "moyen",
+          "recouvre_sujet": 0.52
+        }
+      ],
+      "qualite": {
+        "nettete": 26.2,
+        "bruit": 0.67,
+        "compression": 1.13,
+        "faible": true,
+        "raisons": [
+          "1168 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "404848536253d340",
+      "drapeaux": [
+        "petite"
+      ]
+    },
+    {
+      "fichier": "accueil-sophrologie.jpg",
+      "nom": "accueil-sophrologie",
+      "drapeau": null,
+      "largeur": 784,
+      "hauteur": 1168,
+      "ratio": "2:3",
+      "ratio_valeur": 0.671,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 303676,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 95.5,
+        "h": 100,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        40,
+        55
+      ],
+      "cadrage_css": "40% 55%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.29,
+          "ton": "clair",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "droite",
+          "score": 0.17,
+          "ton": "moyen",
+          "recouvre_sujet": 0.89
+        },
+        {
+          "cote": "gauche",
+          "score": 0.01,
+          "ton": "clair",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "bas",
+          "score": 0.01,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        }
+      ],
+      "qualite": {
+        "nettete": 44.4,
+        "bruit": 1.07,
+        "compression": 1.07,
+        "faible": true,
+        "raisons": [
+          "784 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "989898989a8ac6e4",
+      "drapeaux": [
+        "petite"
+      ]
+    },
+    {
+      "fichier": "adolescents.jpg",
+      "nom": "adolescents",
+      "drapeau": null,
+      "largeur": 784,
+      "hauteur": 1168,
+      "ratio": "2:3",
+      "ratio_valeur": 0.671,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 269224,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 95.5,
+        "h": 87.5,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        48,
+        51
+      ],
+      "cadrage_css": "48% 51%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.2,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "droite",
+          "score": 0.17,
+          "ton": "moyen",
+          "recouvre_sujet": 0.78
+        },
+        {
+          "cote": "bas",
+          "score": 0.16,
+          "ton": "moyen",
+          "recouvre_sujet": 0.61
+        },
+        {
+          "cote": "gauche",
+          "score": 0.03,
+          "ton": "moyen",
+          "recouvre_sujet": 0.88
+        }
+      ],
+      "qualite": {
+        "nettete": 23.1,
+        "bruit": 0.99,
+        "compression": 1.08,
+        "faible": true,
+        "raisons": [
+          "784 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "87a7a7a1a0987c1f",
+      "drapeaux": [
+        "petite"
+      ]
+    },
+    {
+      "fichier": "adultes.jpg",
+      "nom": "adultes",
+      "drapeau": null,
+      "largeur": 784,
+      "hauteur": 1168,
+      "ratio": "2:3",
+      "ratio_valeur": 0.671,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 313068,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 95.5,
+        "h": 93.8,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        43,
+        54
+      ],
+      "cadrage_css": "43% 54%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.28,
+          "ton": "clair",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "droite",
+          "score": 0.21,
+          "ton": "moyen",
+          "recouvre_sujet": 0.83
+        },
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 0.94
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.79
+        }
+      ],
+      "qualite": {
+        "nettete": 38,
+        "bruit": 1.1,
+        "compression": 1.12,
+        "faible": true,
+        "raisons": [
+          "784 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "9c9c9cdcd99182a0",
+      "drapeaux": [
+        "petite"
+      ]
+    },
+    {
+      "fichier": "contact-formulaire.jpg",
+      "nom": "contact-formulaire",
+      "drapeau": null,
+      "largeur": 784,
+      "hauteur": 1168,
+      "ratio": "2:3",
+      "ratio_valeur": 0.671,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 314749,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 95.5,
+        "h": 100,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        46,
+        51
+      ],
+      "cadrage_css": "46% 51%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.14,
+          "ton": "moyen",
+          "recouvre_sujet": 0.89
+        },
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        }
+      ],
+      "qualite": {
+        "nettete": 24.9,
+        "bruit": 1.11,
+        "compression": 0.99,
+        "faible": true,
+        "raisons": [
+          "784 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "8e8cacac6c6032f8",
+      "drapeaux": [
+        "petite"
+      ]
+    },
+    {
+      "fichier": "contact-ouverture-mobile.jpg",
+      "nom": "contact-ouverture-mobile",
+      "drapeau": null,
+      "largeur": 784,
+      "hauteur": 1168,
+      "ratio": "2:3",
+      "ratio_valeur": 0.671,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 288776,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 95.5,
+        "h": 93.8,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        48,
+        55
+      ],
+      "cadrage_css": "48% 55%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.32,
+          "ton": "clair",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "droite",
+          "score": 0.12,
+          "ton": "moyen",
+          "recouvre_sujet": 0.83
+        },
+        {
+          "cote": "bas",
+          "score": 0.11,
+          "ton": "moyen",
+          "recouvre_sujet": 0.79
+        },
+        {
+          "cote": "gauche",
+          "score": 0.09,
+          "ton": "clair",
+          "recouvre_sujet": 0.94
+        }
+      ],
+      "qualite": {
+        "nettete": 29.7,
+        "bruit": 1.18,
+        "compression": 1.04,
+        "faible": true,
+        "raisons": [
+          "784 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "6440445040480280",
+      "drapeaux": [
+        "petite"
+      ]
+    },
+    {
+      "fichier": "contact-ouverture.jpg",
+      "nom": "contact-ouverture",
+      "drapeau": null,
+      "largeur": 1168,
+      "hauteur": 784,
+      "ratio": "3:2",
+      "ratio_valeur": 1.49,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 275338,
+      "transparence": false,
+      "sujet": {
+        "x": 3.1,
+        "y": 9.1,
+        "l": 90.6,
+        "h": 86.4,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        49,
+        54
+      ],
+      "cadrage_css": "49% 54%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.3,
+          "ton": "moyen",
+          "recouvre_sujet": 0.67
+        },
+        {
+          "cote": "droite",
+          "score": 0.13,
+          "ton": "moyen",
+          "recouvre_sujet": 0.73
+        },
+        {
+          "cote": "gauche",
+          "score": 0.09,
+          "ton": "clair",
+          "recouvre_sujet": 0.8
+        },
+        {
+          "cote": "bas",
+          "score": 0.04,
+          "ton": "moyen",
+          "recouvre_sujet": 0.79
+        }
+      ],
+      "qualite": {
+        "nettete": 41.1,
+        "bruit": 1.03,
+        "compression": 1.1,
+        "faible": true,
+        "raisons": [
+          "1168 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "606171616165a5c9",
+      "drapeaux": [
+        "petite"
+      ]
+    },
+    {
+      "fichier": "couples.jpg",
+      "nom": "couples",
+      "drapeau": null,
+      "largeur": 784,
+      "hauteur": 1168,
+      "ratio": "2:3",
+      "ratio_valeur": 0.671,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 307772,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 95.5,
+        "h": 100,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        53,
+        54
+      ],
+      "cadrage_css": "53% 54%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.16,
+          "ton": "clair",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "droite",
+          "score": 0.13,
+          "ton": "sombre",
+          "recouvre_sujet": 0.89
+        },
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        }
+      ],
+      "qualite": {
+        "nettete": 27.6,
+        "bruit": 1.1,
+        "compression": 0.99,
+        "faible": true,
+        "raisons": [
+          "784 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "60606161616161e7",
+      "drapeaux": [
+        "petite"
+      ]
+    },
+    {
+      "fichier": "enfants.jpg",
+      "nom": "enfants",
+      "drapeau": null,
+      "largeur": 784,
+      "hauteur": 1168,
+      "ratio": "2:3",
+      "ratio_valeur": 0.671,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 285107,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 95.5,
+        "h": 100,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        39,
+        58
+      ],
+      "cadrage_css": "39% 58%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.18,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "droite",
+          "score": 0.13,
+          "ton": "moyen",
+          "recouvre_sujet": 0.89
+        },
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        }
+      ],
+      "qualite": {
+        "nettete": 26.9,
+        "bruit": 0.86,
+        "compression": 1.07,
+        "faible": true,
+        "raisons": [
+          "784 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "4ccccccd4ec67e06",
+      "drapeaux": [
+        "petite"
+      ]
+    },
+    {
+      "fichier": "familles.jpg",
+      "nom": "familles",
+      "drapeau": null,
+      "largeur": 784,
+      "hauteur": 1168,
+      "ratio": "2:3",
+      "ratio_valeur": 0.671,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 290767,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 95.5,
+        "h": 90.6,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        44,
+        50
+      ],
+      "cadrage_css": "44% 50%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.09,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "droite",
+          "score": 0.06,
+          "ton": "moyen",
+          "recouvre_sujet": 0.8
+        },
+        {
+          "cote": "gauche",
+          "score": 0.01,
+          "ton": "moyen",
+          "recouvre_sujet": 0.91
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.7
+        }
+      ],
+      "qualite": {
+        "nettete": 33.2,
+        "bruit": 1.02,
+        "compression": 1.1,
+        "faible": true,
+        "raisons": [
+          "784 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "999999999c3601a0",
+      "drapeaux": [
+        "petite"
+      ]
+    },
+    {
+      "fichier": "gestalt-corps.jpg",
+      "nom": "gestalt-corps",
+      "drapeau": null,
+      "largeur": 784,
+      "hauteur": 1168,
+      "ratio": "2:3",
+      "ratio_valeur": 0.671,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 271606,
+      "transparence": false,
+      "sujet": {
+        "x": 4.5,
+        "y": 0,
+        "l": 90.9,
+        "h": 93.8,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        43,
+        54
+      ],
+      "cadrage_css": "43% 54%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.31,
+          "ton": "moyen",
+          "recouvre_sujet": 0.83
+        },
+        {
+          "cote": "haut",
+          "score": 0.22,
+          "ton": "clair",
+          "recouvre_sujet": 0.91
+        },
+        {
+          "cote": "bas",
+          "score": 0.07,
+          "ton": "moyen",
+          "recouvre_sujet": 0.75
+        },
+        {
+          "cote": "gauche",
+          "score": 0.01,
+          "ton": "clair",
+          "recouvre_sujet": 0.83
+        }
+      ],
+      "qualite": {
+        "nettete": 22.1,
+        "bruit": 0.91,
+        "compression": 1.06,
+        "faible": true,
+        "raisons": [
+          "784 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "2018181818185a88",
+      "drapeaux": [
+        "petite"
+      ]
+    },
+    {
+      "fichier": "gestalt-existentielle.jpg",
+      "nom": "gestalt-existentielle",
+      "drapeau": null,
+      "largeur": 784,
+      "hauteur": 1168,
+      "ratio": "2:3",
+      "ratio_valeur": 0.671,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 319834,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 95.5,
+        "h": 100,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        44,
+        48
+      ],
+      "cadrage_css": "44% 48%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.18,
+          "ton": "clair",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "droite",
+          "score": 0.07,
+          "ton": "moyen",
+          "recouvre_sujet": 0.89
+        },
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        }
+      ],
+      "qualite": {
+        "nettete": 46.1,
+        "bruit": 1.2,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "784 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "393830184c59f868",
+      "drapeaux": [
+        "petite"
+      ]
+    },
+    {
+      "fichier": "gestalt-humaniste.jpg",
+      "nom": "gestalt-humaniste",
+      "drapeau": null,
+      "largeur": 784,
+      "hauteur": 1168,
+      "ratio": "2:3",
+      "ratio_valeur": 0.671,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 261309,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 3.1,
+        "l": 95.5,
+        "h": 96.9,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        44,
+        61
+      ],
+      "cadrage_css": "44% 61%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.32,
+          "ton": "clair",
+          "recouvre_sujet": 0.87
+        },
+        {
+          "cote": "droite",
+          "score": 0.28,
+          "ton": "clair",
+          "recouvre_sujet": 0.86
+        },
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 0.97
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        }
+      ],
+      "qualite": {
+        "nettete": 24.8,
+        "bruit": 0.94,
+        "compression": 1.07,
+        "faible": true,
+        "raisons": [
+          "784 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "181c1e1d4ec7c0b3",
+      "drapeaux": [
+        "petite"
+      ]
+    },
+    {
+      "fichier": "gestalt-ici.jpg",
+      "nom": "gestalt-ici",
+      "drapeau": null,
+      "largeur": 784,
+      "hauteur": 1168,
+      "ratio": "2:3",
+      "ratio_valeur": 0.671,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 247820,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 95.5,
+        "h": 100,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        44,
+        58
+      ],
+      "cadrage_css": "44% 58%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.38,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "droite",
+          "score": 0.32,
+          "ton": "moyen",
+          "recouvre_sujet": 0.89
+        },
+        {
+          "cote": "gauche",
+          "score": 0.11,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "bas",
+          "score": 0.11,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        }
+      ],
+      "qualite": {
+        "nettete": 14.7,
+        "bruit": 0.93,
+        "compression": 1.08,
+        "faible": true,
+        "raisons": [
+          "784 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "7860707070701c27",
+      "drapeaux": [
+        "petite"
+      ]
+    },
+    {
+      "fichier": "gestalt-ouverture-mobile.jpg",
+      "nom": "gestalt-ouverture-mobile",
+      "drapeau": null,
+      "largeur": 784,
+      "hauteur": 1168,
+      "ratio": "2:3",
+      "ratio_valeur": 0.671,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 267950,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 95.5,
+        "h": 100,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        48,
+        65
+      ],
+      "cadrage_css": "48% 65%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.34,
+          "ton": "clair",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "droite",
+          "score": 0.14,
+          "ton": "moyen",
+          "recouvre_sujet": 0.89
+        },
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        }
+      ],
+      "qualite": {
+        "nettete": 20.4,
+        "bruit": 0.9,
+        "compression": 1.1,
+        "faible": true,
+        "raisons": [
+          "784 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "2020383838870764",
+      "drapeaux": [
+        "petite"
+      ]
+    },
+    {
+      "fichier": "gestalt-ouverture.jpg",
+      "nom": "gestalt-ouverture",
+      "drapeau": null,
+      "largeur": 1168,
+      "hauteur": 784,
+      "ratio": "3:2",
+      "ratio_valeur": 1.49,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 235948,
+      "transparence": false,
+      "sujet": {
+        "x": 40.6,
+        "y": 0,
+        "l": 59.4,
+        "h": 86.4,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        88,
+        15
+      ],
+      "cadrage_css": "88% 15%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0.82,
+          "ton": "sombre",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "bas",
+          "score": 0.68,
+          "ton": "sombre",
+          "recouvre_sujet": 0.36
+        },
+        {
+          "cote": "haut",
+          "score": 0.58,
+          "ton": "sombre",
+          "recouvre_sujet": 0.59
+        },
+        {
+          "cote": "droite",
+          "score": 0.51,
+          "ton": "sombre",
+          "recouvre_sujet": 0.86
+        }
+      ],
+      "qualite": {
+        "nettete": 18.5,
+        "bruit": 0.82,
+        "compression": 1.18,
+        "faible": true,
+        "raisons": [
+          "1168 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "e74f5b3d3dafa5e8",
+      "drapeaux": [
+        "petite",
+        "calme gauche/bas"
+      ]
+    },
+    {
+      "fichier": "gestalt-relationnelle.jpg",
+      "nom": "gestalt-relationnelle",
+      "drapeau": null,
+      "largeur": 784,
+      "hauteur": 1168,
+      "ratio": "2:3",
+      "ratio_valeur": 0.671,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 284689,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 3.1,
+        "l": 95.5,
+        "h": 96.9,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        45,
+        58
+      ],
+      "cadrage_css": "45% 58%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.32,
+          "ton": "clair",
+          "recouvre_sujet": 0.87
+        },
+        {
+          "cote": "droite",
+          "score": 0.12,
+          "ton": "clair",
+          "recouvre_sujet": 0.86
+        },
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 0.97
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        }
+      ],
+      "qualite": {
+        "nettete": 58.3,
+        "bruit": 0.99,
+        "compression": 1.09,
+        "faible": true,
+        "raisons": [
+          "784 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "1818121a92386908",
+      "drapeaux": [
+        "petite"
+      ]
+    },
+    {
+      "fichier": "groupe.jpg",
+      "nom": "groupe",
+      "drapeau": null,
+      "largeur": 784,
+      "hauteur": 1168,
+      "ratio": "2:3",
+      "ratio_valeur": 0.671,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 330353,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 3.1,
+        "l": 95.5,
+        "h": 90.6,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        50,
+        55
+      ],
+      "cadrage_css": "50% 55%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.13,
+          "ton": "clair",
+          "recouvre_sujet": 0.87
+        },
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 0.91
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.8
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.78
+        }
+      ],
+      "qualite": {
+        "nettete": 37.5,
+        "bruit": 1.25,
+        "compression": 1.06,
+        "faible": true,
+        "raisons": [
+          "784 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "1998981cc4713108",
+      "drapeaux": [
+        "petite"
+      ]
+    },
+    {
+      "fichier": "page-404.jpg",
+      "nom": "page-404",
+      "drapeau": null,
+      "largeur": 1168,
+      "hauteur": 784,
+      "ratio": "3:2",
+      "ratio_valeur": 1.49,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 285350,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 95.5,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        52,
+        51
+      ],
+      "cadrage_css": "52% 51%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.13,
+          "ton": "clair",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "bas",
+          "score": 0.06,
+          "ton": "moyen",
+          "recouvre_sujet": 0.87
+        },
+        {
+          "cote": "gauche",
+          "score": 0.05,
+          "ton": "clair",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "droite",
+          "score": 0.03,
+          "ton": "clair",
+          "recouvre_sujet": 0.96
+        }
+      ],
+      "qualite": {
+        "nettete": 33.8,
+        "bruit": 0.96,
+        "compression": 1.08,
+        "faible": true,
+        "raisons": [
+          "1168 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "e0e0e0e07060f0e8",
+      "drapeaux": [
+        "petite"
+      ]
+    },
+    {
+      "fichier": "sophro-quotidien.jpg",
+      "nom": "sophro-quotidien",
+      "drapeau": null,
+      "largeur": 1168,
+      "hauteur": 784,
+      "ratio": "3:2",
+      "ratio_valeur": 1.49,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 254101,
+      "transparence": false,
+      "sujet": {
+        "x": 31.3,
+        "y": 4.5,
+        "l": 62.5,
+        "h": 90.9,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        59,
+        75
+      ],
+      "cadrage_css": "59% 75%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0.73,
+          "ton": "clair",
+          "recouvre_sujet": 0.2
+        },
+        {
+          "cote": "haut",
+          "score": 0.51,
+          "ton": "clair",
+          "recouvre_sujet": 0.54
+        },
+        {
+          "cote": "bas",
+          "score": 0.29,
+          "ton": "moyen",
+          "recouvre_sujet": 0.54
+        },
+        {
+          "cote": "droite",
+          "score": 0.13,
+          "ton": "clair",
+          "recouvre_sujet": 0.77
+        }
+      ],
+      "qualite": {
+        "nettete": 24,
+        "bruit": 0.98,
+        "compression": 1.14,
+        "faible": true,
+        "raisons": [
+          "1168 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "e6e6e6e6cecccde7",
+      "drapeaux": [
+        "petite",
+        "calme gauche"
+      ]
+    },
+    {
+      "fichier": "sophro-relachement.jpg",
+      "nom": "sophro-relachement",
+      "drapeau": null,
+      "largeur": 1168,
+      "hauteur": 784,
+      "ratio": "3:2",
+      "ratio_valeur": 1.49,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 258197,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 4.5,
+        "l": 93.8,
+        "h": 90.9,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        41,
+        56
+      ],
+      "cadrage_css": "41% 56%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.38,
+          "ton": "moyen",
+          "recouvre_sujet": 0.82
+        },
+        {
+          "cote": "droite",
+          "score": 0.26,
+          "ton": "moyen",
+          "recouvre_sujet": 0.77
+        },
+        {
+          "cote": "gauche",
+          "score": 0.14,
+          "ton": "clair",
+          "recouvre_sujet": 0.91
+        },
+        {
+          "cote": "bas",
+          "score": 0.09,
+          "ton": "moyen",
+          "recouvre_sujet": 0.81
+        }
+      ],
+      "qualite": {
+        "nettete": 31.4,
+        "bruit": 1.07,
+        "compression": 1.08,
+        "faible": true,
+        "raisons": [
+          "1168 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "070705d44c1e3ae1",
+      "drapeaux": [
+        "petite"
+      ]
+    },
+    {
+      "fichier": "sophro-respiration.jpg",
+      "nom": "sophro-respiration",
+      "drapeau": null,
+      "largeur": 1168,
+      "hauteur": 784,
+      "ratio": "3:2",
+      "ratio_valeur": 1.49,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 269766,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 95.5,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        45,
+        55
+      ],
+      "cadrage_css": "45% 55%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.25,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "gauche",
+          "score": 0.08,
+          "ton": "clair",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.87
+        }
+      ],
+      "qualite": {
+        "nettete": 33.3,
+        "bruit": 0.9,
+        "compression": 1.06,
+        "faible": true,
+        "raisons": [
+          "1168 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "181a989c9d15e6f2",
+      "drapeaux": [
+        "petite"
+      ]
+    },
+    {
+      "fichier": "sophro-visualisation.jpg",
+      "nom": "sophro-visualisation",
+      "drapeau": null,
+      "largeur": 1168,
+      "hauteur": 784,
+      "ratio": "3:2",
+      "ratio_valeur": 1.49,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 268030,
+      "transparence": false,
+      "sujet": {
+        "x": 3.1,
+        "y": 0,
+        "l": 96.9,
+        "h": 95.5,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        50,
+        45
+      ],
+      "cadrage_css": "50% 45%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0.2,
+          "ton": "clair",
+          "recouvre_sujet": 0.88
+        },
+        {
+          "cote": "haut",
+          "score": 0.07,
+          "ton": "clair",
+          "recouvre_sujet": 0.97
+        },
+        {
+          "cote": "droite",
+          "score": 0.05,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.84
+        }
+      ],
+      "qualite": {
+        "nettete": 40.4,
+        "bruit": 0.89,
+        "compression": 1.15,
+        "faible": true,
+        "raisons": [
+          "1168 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "c4c4c6c404442160",
+      "drapeaux": [
+        "petite"
+      ]
+    },
+    {
+      "fichier": "sophrologie-ouverture.jpg",
+      "nom": "sophrologie-ouverture",
+      "drapeau": null,
+      "largeur": 784,
+      "hauteur": 1168,
+      "ratio": "2:3",
+      "ratio_valeur": 0.671,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 298337,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 95.5,
+        "h": 100,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        37,
+        49
+      ],
+      "cadrage_css": "37% 49%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.12,
+          "ton": "moyen",
+          "recouvre_sujet": 0.89
+        },
+        {
+          "cote": "haut",
+          "score": 0.1,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "bas",
+          "score": 0.08,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        }
+      ],
+      "qualite": {
+        "nettete": 18.9,
+        "bruit": 0.96,
+        "compression": 1.13,
+        "faible": true,
+        "raisons": [
+          "784 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "0989898a8b893030",
+      "drapeaux": [
+        "petite"
+      ]
+    }
+  ]
+}

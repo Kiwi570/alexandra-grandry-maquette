@@ -1,0 +1,318 @@
+[
+ {
+  "source": "recu/alexandra-grandry-gestalt-therapeute.jpg",
+  "nom": "portrait",
+  "role": "portrait",
+  "alt": "Alexandra Grandry, Gestalt-thérapeute et sophrologue",
+  "ratio": "4:5",
+  "cadrage": [
+   50,
+   34
+  ]
+ },
+ {
+  "source": "recu/grok/accueil-ouverture.jpg",
+  "nom": "grok/accueil-ouverture",
+  "role": "ouverture",
+  "alt": "Lumière du matin sur un mur enduit et un fauteuil en lin",
+  "page": "Accueil",
+  "emplacement": "Ouverture : image vue dans la coupe entre les deux profils",
+  "priorite": "Indispensable",
+  "ratio": "4:5",
+  "mobile": "4:5",
+  "consigne_scene": "Soft morning daylight entering a calm room through a tall window with sheer linen curtains, a wide patch of light on a warm lime plaster wall, the edge of an empty linen armchair and one green plant leaf in the lower part of the frame, the light area centered and tall"
+ },
+ {
+  "source": "recu/grok/accueil-raisons.jpg",
+  "nom": "grok/accueil-raisons",
+  "role": "section-fond",
+  "alt": "Goutte d'encre verte qui s'épanouit dans l'eau claire",
+  "page": "Accueil",
+  "emplacement": "Section « Ce qui amène à consulter », fond",
+  "priorite": "Indispensable",
+  "zone_texte": "gauche",
+  "consigne_scene": "Macro photograph of a single drop of deep forest-green ink blooming in perfectly clear water, delicate swirling tendrils and soft cloud shapes on the right side, very light warm background, plenty of empty space on the left",
+  "gabarit": "texture"
+ },
+ {
+  "source": "recu/grok/accueil-gestalt.jpg",
+  "nom": "grok/accueil-gestalt",
+  "role": "carte-service",
+  "alt": "Deux tasses en céramique qui se font face sur du lin",
+  "page": "Accueil",
+  "emplacement": "Carte « La Gestalt-thérapie »",
+  "priorite": "Indispensable",
+  "consigne_scene": "Two simple handmade ceramic cups facing each other on raw linen, soft side light, the empty space between them forming a gentle vase-like shape, minimal still life"
+ },
+ {
+  "source": "recu/grok/accueil-sophrologie.jpg",
+  "nom": "grok/accueil-sophrologie",
+  "role": "carte-service",
+  "alt": "Voilage de lin soulevé par un souffle d'air dans une fenêtre",
+  "page": "Accueil",
+  "emplacement": "Carte « La sophrologie »",
+  "priorite": "Indispensable",
+  "consigne_scene": "A sheer linen curtain softly lifted by a breath of air in a tall sunlit window, warm plaster wall, quiet and airy"
+ },
+ {
+  "source": "recu/grok/accueil-cadre.jpg",
+  "nom": "grok/accueil-cadre",
+  "role": "vignette",
+  "alt": "Deux fauteuils vides qui se font face dans une pièce claire",
+  "page": "Accueil",
+  "emplacement": "Section « Une pratique encadrée »",
+  "priorite": "Conseillée",
+  "consigne_scene": "Two empty upholstered linen armchairs facing each other at a slight angle in a bright calm room, a low green plant between them, pale oak floor"
+ },
+ {
+  "source": "recu/grok/accueil-deroule.jpg",
+  "nom": "grok/accueil-deroule",
+  "role": "vignette",
+  "alt": "Porte entrouverte sur un couloir lumineux",
+  "page": "Accueil",
+  "emplacement": "Section « Comment ça se passe »",
+  "priorite": "Conseillée",
+  "gabarit": "lieu"
+ },
+ {
+  "source": "recu/grok/accueil-appel.jpg",
+  "nom": "grok/accueil-appel",
+  "role": "section-fond",
+  "alt": "Chemin au bord de l'eau bordé de saules à l'aube",
+  "page": "Accueil",
+  "emplacement": "Appel final, fond sombre",
+  "priorite": "Conseillée",
+  "zone_texte": "gauche",
+  "consigne_scene": "A calm riverside path lined with weeping willows at dawn, perfectly still water, light mist, deep green tones, quiet and wide"
+ },
+ {
+  "source": "recu/grok/accompagnements-ouverture.jpg",
+  "nom": "grok/accompagnements-ouverture",
+  "role": "ouverture",
+  "alt": "Galets de tailles différentes posés sur du lin : seul, à deux, en cercle",
+  "page": "Accompagnements",
+  "emplacement": "Ouverture : bandeau sous le grand titre",
+  "priorite": "Indispensable",
+  "ratio": "21:9",
+  "mobile": "4:5",
+  "source_mobile": "recu/grok/accompagnements-ouverture-mobile.jpg",
+  "consigne_scene": "Smooth pebbles of different sizes arranged on pale raw linen, seen from above: one pebble alone, two side by side, a large one beside a small one, and a few gathered in a loose circle, soft daylight, lots of calm space"
+ },
+ {
+  "source": "recu/grok/adultes.jpg",
+  "nom": "grok/adultes",
+  "role": "carte-service",
+  "alt": "Fauteuil en lin vide près d'une grande fenêtre",
+  "page": "Accompagnements",
+  "emplacement": "Fiche Adultes",
+  "priorite": "Indispensable",
+  "consigne_scene": "A single empty linen armchair beside a tall window with sheer curtains, a small oak side table, soft morning light"
+ },
+ {
+  "source": "recu/grok/enfants.jpg",
+  "nom": "grok/enfants",
+  "role": "carte-service",
+  "alt": "Table basse avec des cubes en bois et des crayons de couleur",
+  "page": "Accompagnements",
+  "emplacement": "Fiche Enfants",
+  "priorite": "Indispensable",
+  "consigne_scene": "A low wooden table with simple unbranded natural wooden building blocks, a few colored pencils and a sheet of blank drawing paper, soft daylight, nobody in the room"
+ },
+ {
+  "source": "recu/grok/adolescents.jpg",
+  "nom": "grok/adolescents",
+  "role": "carte-service",
+  "alt": "Casque audio et sweat posés sur un rebord de fenêtre",
+  "page": "Accompagnements",
+  "emplacement": "Fiche Adolescents",
+  "priorite": "Indispensable",
+  "consigne_scene": "A pair of unbranded over-ear headphones and a folded hoodie resting on a wide windowsill at golden hour, softly blurred trees outside"
+ },
+ {
+  "source": "recu/grok/couples.jpg",
+  "nom": "grok/couples",
+  "role": "carte-service",
+  "alt": "Deux manteaux suspendus côte à côte",
+  "page": "Accompagnements",
+  "emplacement": "Fiche Couples",
+  "priorite": "Indispensable",
+  "consigne_scene": "Two coats hanging side by side on a simple wooden wall rack against a warm plaster wall, soft light"
+ },
+ {
+  "source": "recu/grok/familles.jpg",
+  "nom": "grok/familles",
+  "role": "carte-service",
+  "alt": "Chaussures de tailles différentes alignées à l'entrée",
+  "page": "Accompagnements",
+  "emplacement": "Fiche Familles",
+  "priorite": "Indispensable",
+  "consigne_scene": "Several pairs of shoes of different sizes, from adult to small child, lined up neatly on a pale wooden floor by a doorway, warm morning light"
+ },
+ {
+  "source": "recu/grok/groupe.jpg",
+  "nom": "grok/groupe",
+  "role": "carte-service",
+  "alt": "Cercle de chaises en bois dans une salle lumineuse",
+  "page": "Accompagnements",
+  "emplacement": "Fiche Groupe",
+  "priorite": "Indispensable",
+  "consigne_scene": "A circle of simple wooden chairs in a bright airy room with large windows and a pale wooden floor, seen from slightly above, nobody in the room"
+ },
+ {
+  "source": "recu/grok/accompagnements-pratique.jpg",
+  "nom": "grok/accompagnements-pratique",
+  "role": "vignette",
+  "alt": "Verre d'eau et petite plante sur une table d'appoint",
+  "page": "Accompagnements",
+  "emplacement": "Section « Bon à savoir »",
+  "priorite": "Facultative",
+  "consigne_scene": "A glass of water and a small green plant on a pale oak side table, soft daylight, minimal"
+ },
+ {
+  "source": "recu/grok/gestalt-ouverture.jpg",
+  "nom": "grok/gestalt-ouverture",
+  "role": "ouverture",
+  "alt": "Encre vert profond qui se déploie dans l'eau",
+  "page": "La Gestalt-thérapie",
+  "emplacement": "Ouverture sombre derrière le mot Gestalt",
+  "priorite": "Indispensable",
+  "mobile": "9:16",
+  "zone_texte": "centre",
+  "consigne_scene": "Macro photograph of deep forest-green and dark teal ink slowly blooming in clear water against a very dark green background, soft swirling tendrils at the edges of the frame, a calm dark empty area in the middle"
+ },
+ {
+  "source": "recu/grok/gestalt-ici.jpg",
+  "nom": "grok/gestalt-ici",
+  "role": "galerie",
+  "alt": "Tache de soleil et ombre d'une fenêtre sur un mur",
+  "page": "La Gestalt-thérapie",
+  "emplacement": "Section « Ici et maintenant »",
+  "priorite": "Conseillée",
+  "consigne_scene": "A patch of late afternoon sunlight with the soft shadow of a window frame on a warm lime plaster wall, a small plant leaf at the edge"
+ },
+ {
+  "source": "recu/grok/gestalt-corps.jpg",
+  "nom": "grok/gestalt-corps",
+  "role": "portrait",
+  "alt": "Silhouette de dos près d'une fenêtre, à contre-jour",
+  "page": "La Gestalt-thérapie",
+  "emplacement": "Section « Pas seulement les mots »",
+  "priorite": "Conseillée"
+ },
+ {
+  "source": "recu/grok/gestalt-existentielle.jpg",
+  "nom": "grok/gestalt-existentielle",
+  "role": "galerie",
+  "alt": "Sentier dans les hautes herbes vers la lumière",
+  "page": "La Gestalt-thérapie",
+  "emplacement": "Planche « Existentielle »",
+  "priorite": "Conseillée",
+  "consigne_scene": "A narrow path through tall golden autumn grass leading toward soft light, nobody on the path"
+ },
+ {
+  "source": "recu/grok/gestalt-humaniste.jpg",
+  "nom": "grok/gestalt-humaniste",
+  "role": "galerie",
+  "alt": "Bol en céramique tourné à la main dans une lumière chaude",
+  "page": "La Gestalt-thérapie",
+  "emplacement": "Planche « Humaniste »",
+  "priorite": "Conseillée",
+  "consigne_scene": "A hand-thrown ceramic bowl with a soft uneven glaze on raw linen, warm side light"
+ },
+ {
+  "source": "recu/grok/gestalt-relationnelle.jpg",
+  "nom": "grok/gestalt-relationnelle",
+  "role": "galerie",
+  "alt": "Deux jeunes arbres dont les branches se touchent",
+  "page": "La Gestalt-thérapie",
+  "emplacement": "Planche « Relationnelle »",
+  "priorite": "Conseillée",
+  "consigne_scene": "Two young trees whose upper branches gently touch, standing in a misty meadow at dawn"
+ },
+ {
+  "source": "recu/grok/sophrologie-ouverture.jpg",
+  "nom": "grok/sophrologie-ouverture",
+  "role": "ouverture",
+  "alt": "Galets plats affleurant une eau parfaitement calme",
+  "page": "La sophrologie",
+  "emplacement": "Ouverture : image sous le cercle de respiration",
+  "priorite": "Indispensable",
+  "ratio": "4:5",
+  "mobile": "4:5",
+  "consigne_scene": "Smooth flat river stones half-submerged in perfectly still clear water, soft morning light, a calm empty area in the center of the frame"
+ },
+ {
+  "source": "recu/grok/sophro-respiration.jpg",
+  "nom": "grok/sophro-respiration",
+  "role": "vignette",
+  "alt": "Vapeur qui s'élève d'une tasse sur un rebord de fenêtre",
+  "page": "La sophrologie",
+  "emplacement": "Outil « Respiration »",
+  "priorite": "Conseillée",
+  "consigne_scene": "Soft steam rising from a cup of herbal tea on a windowsill, backlit by morning light"
+ },
+ {
+  "source": "recu/grok/sophro-relachement.jpg",
+  "nom": "grok/sophro-relachement",
+  "role": "vignette",
+  "alt": "Couverture en lin pliée sur un banc en chêne",
+  "page": "La sophrologie",
+  "emplacement": "Outil « Relâchement musculaire »",
+  "priorite": "Conseillée",
+  "scene": "a soft folded raw linen blanket on a pale oak bench",
+  "gabarit": "scene-metier"
+ },
+ {
+  "source": "recu/grok/sophro-visualisation.jpg",
+  "nom": "grok/sophro-visualisation",
+  "role": "vignette",
+  "alt": "Collines douces dans la brume de l'aube",
+  "page": "La sophrologie",
+  "emplacement": "Outil « Visualisation positive »",
+  "priorite": "Conseillée",
+  "consigne_scene": "Soft misty landscape of gentle layered hills at dawn, pale light, wide calm horizon"
+ },
+ {
+  "source": "recu/grok/sophro-quotidien.jpg",
+  "nom": "grok/sophro-quotidien",
+  "role": "section-fond",
+  "alt": "Coussin en lin et écouteurs posés près d'une fenêtre",
+  "page": "La sophrologie",
+  "emplacement": "Section « Des outils pour le quotidien », fond",
+  "priorite": "Conseillée",
+  "zone_texte": "gauche",
+  "consigne_scene": "A linen floor cushion on a wooden floor beside a window, a pair of simple unbranded wired earphones resting on it, soft light, calm empty space on the left"
+ },
+ {
+  "source": "recu/grok/contact-ouverture.jpg",
+  "nom": "grok/contact-ouverture",
+  "role": "ouverture",
+  "alt": "Entrée calme avec un banc en bois et une plante",
+  "page": "Contact",
+  "emplacement": "Ouverture : bandeau panoramique sous le numéro",
+  "priorite": "Indispensable",
+  "ratio": "21:9",
+  "mobile": "4:5",
+  "source_mobile": "recu/grok/contact-ouverture-mobile.jpg",
+  "consigne_scene": "A calm entrance hall with a simple wooden bench, a coat hook and a tall green plant, soft daylight through a frosted glass door, warm plaster walls"
+ },
+ {
+  "source": "recu/grok/contact-formulaire.jpg",
+  "nom": "grok/contact-formulaire",
+  "role": "carte-service",
+  "alt": "Fenêtre ouverte sur un feuillage vert au matin",
+  "page": "Contact",
+  "emplacement": "À côté du formulaire de demande",
+  "priorite": "Conseillée",
+  "consigne_scene": "An open window with a view on soft green foliage and morning light, thin linen curtain, quiet"
+ },
+ {
+  "source": "recu/grok/page-404.jpg",
+  "nom": "grok/page-404",
+  "role": "404",
+  "alt": "Horizon calme au-dessus d'une eau immobile, légèrement penché",
+  "page": "404",
+  "emplacement": "En tête de la page 404",
+  "priorite": "Conseillée"
+ }
+]

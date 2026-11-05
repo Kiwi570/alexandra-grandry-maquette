@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="fr" data-v="1">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>La sophrologie : respirer, relâcher, visualiser</title>
+<meta name="description" content="Une technique de gestion du stress, avec des outils simples à utiliser au quotidien. Sophrologue certifiée RNCP à Chatou.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://alexandra-grandry-maquette.vercel.app/sophrologie">
+<style>:root{--fond:#f3ece0;--texte:#1c3029;--voile-fond:#1e3a32;--ouverture-fond:#f3ece0;--menu-fond:#1e3a32}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.calme):not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.calme):not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) [data-voile] { transform: none; visibility: visible; } html.calme [data-voile], html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var calme = false;
+try { calme = !!ls && ls.getItem('socle:calme') === 'oui'; } catch (e) {}
+if (!calme && window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) calme = true;
+if (calme) d.classList.add('calme');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var retourSection = false;
+try { retourSection = !!ss.getItem('socle:calme-retour'); } catch (e) {}
+var mode = type === 'back_forward' || retourSection ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+if (!retourSection) history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<link rel="preload" href="/assets/fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/figtree.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#f3ece0">
+<link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Alexandra Grandry">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="La sophrologie : respirer, relâcher, visualiser">
+<meta property="og:description" content="Une technique de gestion du stress, avec des outils simples à utiliser au quotidien. Sophrologue certifiée RNCP à Chatou.">
+<meta property="og:url" content="https://alexandra-grandry-maquette.vercel.app/sophrologie">
+<meta property="og:image" content="https://alexandra-grandry-maquette.vercel.app/assets/partage/sophrologie-fr.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="La sophrologie avec Alexandra Grandry">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Alexandra Grandry, Gestalt-thérapeute et sophrologue","url":"https://alexandra-grandry-maquette.vercel.app/","telephone":"+33617874513","email":"ah.grandry@gmail.com","address":{"@type":"PostalAddress","streetAddress":"3 bis rue des Écoles","postalCode":"78400","addressLocality":"Chatou","addressCountry":"FR"},"description":"Gestalt-thérapie et sophrologie à Chatou : enfants, adolescents, adultes, couples, familles et groupe. Cabinet à 2 minutes à pied du RER A Chatou-Croissy."}</script>
+</head>
+<body id="haut">
+<div data-voile aria-hidden="true"><div class="voile-contenu"><img src="/assets/images/logo-clair.svg" alt="" width="56" height="56"><span data-voile-libelle>La sophrologie</span></div></div>
+<div class="ouverture-panneau" data-ouverture aria-hidden="true">
+  <svg class="intro-figure" viewBox="0 0 1000 1000" focusable="false">
+    <defs>
+      <clipPath id="intro-clip-g"><path d="M0 0 L318 0 C320 15 324.3 56.7 330 90 C335.7 123.3 345 167.5 352 200 C359 232.5 370.7 265.3 372 285 C373.3 304.7 359 307.2 360 318 C361 328.8 364.7 333.3 378 350 C391.3 366.7 437.7 401 440 418 C442.3 435 398.3 442 392 452 C385.7 462 403 470 402 478 C401 486 386.3 492.3 386 500 C385.7 507.7 402.3 514.7 400 524 C397.7 533.3 372.3 541.7 372 556 C371.7 570.3 401.3 591.3 398 610 C394.7 628.7 363.3 643 352 668 C340.7 693 335 724.7 330 760 C325 795.3 327 840 322 880 C317 920 303.7 980 300 1000 L0 1000 Z"/></clipPath>
+      <clipPath id="intro-clip-d"><path d="M1000 0 L682 0 C680 15 675.7 56.7 670 90 C664.3 123.3 655 167.5 648 200 C641 232.5 629.3 265.3 628 285 C626.7 304.7 641 307.2 640 318 C639 328.8 635.3 333.3 622 350 C608.7 366.7 562.3 401 560 418 C557.7 435 601.7 442 608 452 C614.3 462 597 470 598 478 C599 486 613.7 492.3 614 500 C614.3 507.7 597.7 514.7 600 524 C602.3 533.3 627.7 541.7 628 556 C628.3 570.3 598.7 591.3 602 610 C605.3 628.7 636.7 643 648 668 C659.3 693 665 724.7 670 760 C675 795.3 673 840 678 880 C683 920 696.3 980 700 1000 L1000 1000 Z"/></clipPath>
+    </defs>
+    <path class="intro-coupe" d="M318 0 C320 15 324.3 56.7 330 90 C335.7 123.3 345 167.5 352 200 C359 232.5 370.7 265.3 372 285 C373.3 304.7 359 307.2 360 318 C361 328.8 364.7 333.3 378 350 C391.3 366.7 437.7 401 440 418 C442.3 435 398.3 442 392 452 C385.7 462 403 470 402 478 C401 486 386.3 492.3 386 500 C385.7 507.7 402.3 514.7 400 524 C397.7 533.3 372.3 541.7 372 556 C371.7 570.3 401.3 591.3 398 610 C394.7 628.7 363.3 643 352 668 C340.7 693 335 724.7 330 760 C325 795.3 327 840 322 880 C317 920 303.7 980 300 1000 L700 1000 C696.3 980 683 920 678 880 C673 840 675 795.3 670 760 C665 724.7 659.3 693 648 668 C636.7 643 605.3 628.7 602 610 C598.7 591.3 628.3 570.3 628 556 C627.7 541.7 602.3 533.3 600 524 C597.7 514.7 614.3 507.7 614 500 C613.7 492.3 599 486 598 478 C597 470 614.3 462 608 452 C601.7 442 557.7 435 560 418 C562.3 401 608.7 366.7 622 350 C635.3 333.3 639 328.8 640 318 C641 307.2 626.7 304.7 628 285 C629.3 265.3 641 232.5 648 200 C655 167.5 664.3 123.3 670 90 C675.7 56.7 680 15 682 0 Z"/>
+    <g class="intro-face intro-face--g" clip-path="url(#intro-clip-g)"><circle class="intro-tache" cx="150" cy="160" r="0"></circle><circle class="intro-tache" cx="260" cy="360" r="0"></circle><circle class="intro-tache" cx="120" cy="560" r="0"></circle><circle class="intro-tache" cx="280" cy="760" r="0"></circle><circle class="intro-tache" cx="150" cy="930" r="0"></circle><circle class="intro-tache" cx="40" cy="420" r="0"></circle><circle class="intro-tache" cx="50" cy="60" r="0"></circle></g>
+    <g class="intro-face intro-face--d" clip-path="url(#intro-clip-d)"><circle class="intro-tache" cx="850" cy="160" r="0"></circle><circle class="intro-tache" cx="740" cy="360" r="0"></circle><circle class="intro-tache" cx="880" cy="560" r="0"></circle><circle class="intro-tache" cx="720" cy="760" r="0"></circle><circle class="intro-tache" cx="850" cy="930" r="0"></circle><circle class="intro-tache" cx="960" cy="420" r="0"></circle><circle class="intro-tache" cx="950" cy="60" r="0"></circle></g>
+    <g class="intro-gouttes"><circle cx="90" cy="120" r="16"></circle><circle cx="230" cy="60" r="10"></circle><circle cx="120" cy="470" r="12"></circle><circle cx="40" cy="760" r="18"></circle><circle cx="250" cy="900" r="11"></circle><circle cx="470" cy="150" r="9"></circle><circle cx="560" cy="860" r="13"></circle><circle cx="770" cy="90" r="14"></circle><circle cx="930" cy="300" r="10"></circle><circle cx="880" cy="620" r="17"></circle><circle cx="700" cy="960" r="9"></circle><circle cx="960" cy="840" r="12"></circle></g>
+  </svg>
+  <p class="ouverture-nom">Alexandra Grandry</p>
+  <p class="ouverture-ligne">Gestalt-thérapie · Sophrologie · Chatou</p>
+</div>
+<a class="evitement" href="#contenu">Aller au contenu</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" href="/" data-libelle="Accueil">
+      <img src="/assets/images/logo.svg" alt="" width="36" height="36"><span class="entete-nom">Alexandra Grandry<small>Gestalt-thérapeute et sophrologue</small></span>
+    </a>
+    <nav data-nav aria-label="Navigation principale">
+      <ul><li><a href="/accompagnements" data-libelle="Accompagnements">Accompagnements</a></li><li><a href="/gestalt-therapie" data-libelle="La Gestalt">La Gestalt</a></li><li><a href="/sophrologie" data-libelle="La sophrologie" aria-current="page">La sophrologie</a></li><li><a href="/contact" data-libelle="Contact">Contact</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="bouton entete-action" href="/contact#demande" data-libelle="Contact"><span class="long">Prendre rendez-vous</span><span class="court" aria-hidden="true">Rendez-vous</span></a>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Fermer"><span data-libelle-bouton>Menu</span></button>
+    </div>
+  </div>
+</header>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <ul><li style="--i:0"><a href="/" class="menu-lien" data-libelle="Accueil">Accueil</a></li><li style="--i:1"><a href="/accompagnements" class="menu-lien" data-libelle="Accompagnements">Accompagnements</a></li><li style="--i:2"><a href="/gestalt-therapie" class="menu-lien" data-libelle="La Gestalt">La Gestalt</a></li><li style="--i:3"><a href="/sophrologie" class="menu-lien" data-libelle="La sophrologie" aria-current="page">La sophrologie</a></li><li style="--i:4"><a href="/contact" class="menu-lien" data-libelle="Contact">Contact</a></li></ul>
+  <p><a class="bouton" href="tel:+33617874513">Appeler 06 17 87 45 13</a></p>
+  <p><button type="button" class="lien" data-calme-bascule data-libelle-reduire="Réduire les animations" data-libelle-retablir="Rétablir les animations" data-libelle-systeme="Animations réduites par le réglage de votre appareil"><span data-libelle-bouton>Réduire les animations</span></button></p>
+</div>
+<main id="contenu" tabindex="-1">
+<section class="ouv-sophro" id="debut">
+  <div class="ouv-sophro__visuel">
+    <figure class="media ouv-sophro__photo" data-grok style="--cadrage:40% 50%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/sophrologie-ouverture-mobile-640.webp 640w, /assets/images/grok/sophrologie-ouverture-mobile-1080.webp 1080w" sizes="(max-width: 760px) 100vw, 46vw">
+    <img src="/assets/images/grok/sophrologie-ouverture-640.webp" srcset="/assets/images/grok/sophrologie-ouverture-640.webp 640w" sizes="(max-width: 760px) 100vw, 46vw" alt="Galets plats affleurant une eau parfaitement calme" width="640" height="800" fetchpriority="high" loading="eager" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+    <div class="souffle" data-anime="gsap" data-effet="respiration" role="img" aria-label="Cercle qui s’ouvre et se referme au rythme d’une respiration lente">
+      <span class="souffle__anneau souffle__anneau--2" aria-hidden="true"></span>
+      <span class="souffle__anneau" aria-hidden="true"></span>
+      <span class="souffle__mot" aria-live="polite" data-souffle-mot>Inspirez</span>
+    </div>
+  </div>
+  <div class="ouv-sophro__texte">
+    <h1 data-anime="lignes">La sophrologie</h1>
+    <p data-anime>Une technique de gestion du stress, élaborée dans les années 60 par le neuropsychiatre Alfonso Caycedo.</p>
+    <p class="actions" data-anime><a href="/contact#demande" class="bouton" data-libelle="Contact" data-action-principale>Prendre rendez-vous</a>
+      <button type="button" class="bouton bouton--contour" data-souffle-bouton data-libelle-essayer="Respirer avec le cercle" data-libelle-arreter="Arrêter" aria-pressed="false">Respirer avec le cercle</button></p>
+    <p class="info-cle" data-info-cle data-anime>Sophrologue certifiée RNCP</p>
+    <p class="note" data-anime>Tarif des séances de sophrologie : à compléter. Démonstration : elle ne remplace pas une séance.</p>
+  </div>
+</section>
+<section class="outils conteneur" id="corps-esprit">
+  <div class="outils__tete">
+    <p class="surtitre" data-anime>Une approche psychocorporelle</p>
+    <h2 data-anime="lignes">Réunir le corps et l’esprit</h2>
+    <p data-anime>Approche globale, psychocorporelle, elle vise à relâcher les tensions et à retrouver un calme intérieur, avec des outils simples.</p>
+  </div>
+  <ol class="outils__liste" data-anime="cascade">
+    <li class="outil">
+      <figure class="media outil__media" data-grok data-fx="parallaxe" data-fx-force="8" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/sophro-respiration-800.webp" srcset="/assets/images/grok/sophro-respiration-480.webp 480w, /assets/images/grok/sophro-respiration-640.webp 640w, /assets/images/grok/sophro-respiration-800.webp 800w" sizes="(max-width: 760px) 100vw, 30vw" alt="Vapeur qui s’élève d’une tasse sur un rebord de fenêtre" width="800" height="534" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+      <p class="outil__num" aria-hidden="true">01</p>
+      <h3>La respiration</h3>
+      <p>Porter attention au souffle, et le laisser ralentir.</p>
+    </li><li class="outil">
+      <figure class="media outil__media" data-grok data-fx="parallaxe" data-fx-force="8" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/sophro-relachement-800.webp" srcset="/assets/images/grok/sophro-relachement-480.webp 480w, /assets/images/grok/sophro-relachement-640.webp 640w, /assets/images/grok/sophro-relachement-800.webp 800w" sizes="(max-width: 760px) 100vw, 30vw" alt="Couverture en lin pliée sur un banc en chêne" width="800" height="534" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+      <p class="outil__num" aria-hidden="true">02</p>
+      <h3>Le relâchement musculaire</h3>
+      <p>Repérer les tensions du corps pour les relâcher.</p>
+    </li><li class="outil">
+      <figure class="media outil__media" data-grok data-fx="parallaxe" data-fx-force="8" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/sophro-visualisation-800.webp" srcset="/assets/images/grok/sophro-visualisation-480.webp 480w, /assets/images/grok/sophro-visualisation-640.webp 640w, /assets/images/grok/sophro-visualisation-800.webp 800w" sizes="(max-width: 760px) 100vw, 30vw" alt="Collines douces dans la brume de l’aube" width="800" height="534" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+      <p class="outil__num" aria-hidden="true">03</p>
+      <h3>La visualisation positive</h3>
+      <p>S’appuyer sur des images intérieures apaisantes.</p>
+    </li>
+  </ol>
+</section>
+<section class="quotidien" id="quotidien">
+  <figure class="media quotidien__fond" data-grok data-fx="zoom" data-fx-force="14" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/sophro-quotidien-1280.webp" srcset="/assets/images/grok/sophro-quotidien-640.webp 640w, /assets/images/grok/sophro-quotidien-1280.webp 1280w" sizes="100vw" alt="Coussin en lin posé près d’une fenêtre" width="1280" height="854" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+  <div class="conteneur quotidien__contenu">
+    <div class="quotidien__carte">
+      <h2 data-anime="lignes">Des outils pour le quotidien</h2>
+      <p data-anime>Une pratique concrète : des exercices à faire, et des séances de relaxation enregistrées à écouter chez soi.</p>
+    </div>
+  </div>
+</section>
+<section class="appel-court conteneur" id="appel">
+  <svg class="appel-court__forme" viewBox="-1 -1 2 2" aria-hidden="true" data-fx="trace" data-visuel><circle cx="0" cy="0" r="0.8" fill="none" stroke="currentColor" stroke-width="0.03"/><circle cx="0" cy="0" r="0.55" fill="none" stroke="currentColor" stroke-width="0.02"/></svg>
+  <div>
+    <h2 data-anime="lignes">Essayer la sophrologie</h2>
+    <p data-anime>Au cabinet de Chatou, ou en visio si le contexte le nécessite.</p>
+    <p class="actions" data-anime><a href="/contact?public=adultes#demande" class="bouton" data-libelle="Contact">Prendre rendez-vous</a> <a href="/gestalt-therapie" class="lien-fleche" data-libelle="La Gestalt">La Gestalt</a></p>
+  </div>
+</section>
+</main>
+<footer class="pied" id="pied">
+  <div class="conteneur pied-grille">
+    <div>
+      <p class="pied-nom"><img src="/assets/images/logo-clair.svg" alt="" width="44" height="44"><strong>Alexandra Grandry</strong></p>
+      <p>Gestalt-thérapeute et sophrologue</p>
+      <p>3 bis rue des Écoles, 78400 Chatou<br>à 2 min à pied du RER A Chatou-Croissy<br><a href="tel:+33617874513">06 17 87 45 13</a><br><a href="mailto:ah.grandry@gmail.com">ah.grandry@gmail.com</a></p>
+    </div>
+    <nav aria-label="Sommaire">
+      <p><strong>Sommaire</strong></p>
+      <ul><li><a href="/" data-libelle="Accueil">Accueil</a></li><li><a href="/accompagnements" data-libelle="Accompagnements">Accompagnements</a></li><li><a href="/gestalt-therapie" data-libelle="La Gestalt">La Gestalt</a></li><li><a href="/sophrologie" data-libelle="La sophrologie" aria-current="page">La sophrologie</a></li><li><a href="/contact" data-libelle="Contact">Contact</a></li></ul>
+    </nav>
+    <div>
+      <p><strong>Confort de lecture</strong></p>
+      <ul>
+        <li><button type="button" class="lien" data-calme-bascule data-libelle-reduire="Réduire les animations" data-libelle-retablir="Rétablir les animations" data-libelle-systeme="Animations réduites par le réglage de votre appareil"><span data-libelle-bouton>Réduire les animations</span></button></li>
+        <li><a href="#haut" data-sans-transition>Retour en haut</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="conteneur pied-bas"><p>Mentions légales et politique de confidentialité : à compléter</p><p>Maquette : les informations marquées « à compléter » seront fournies par Alexandra Grandry.</p><p>© Alexandra Grandry</p></div>
+</footer>
+<div data-barre-fixe>
+  <a class="bouton bouton--contour" href="tel:+33617874513">Appeler</a>
+  <a class="bouton" href="/contact#demande" data-libelle="Contact">Rendez-vous</a>
+</div>
+</body>
+</html>

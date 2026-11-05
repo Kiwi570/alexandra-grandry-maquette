@@ -1,0 +1,182 @@
+{
+  "avertissements": [
+    "logo pris dans assets/images (logo.svg) : aucun logo dans donnees/images.json, vérifier que ce n'est pas celui du socle"
+  ],
+  "cartes": [
+    {
+      "page": "accompagnements",
+      "langue": "fr",
+      "fichier": "assets/partage/accompagnements-fr.jpg",
+      "gabarit": "droite",
+      "image": "grok/accompagnements-ouverture-1280.webp",
+      "poids": 63548,
+      "sujet": {
+        "x": 600,
+        "y": 0,
+        "l": 600,
+        "h": 534
+      },
+      "textes": [
+        {
+          "x": 64,
+          "y": 56,
+          "l": 280,
+          "h": 64
+        },
+        {
+          "x": 64,
+          "y": 267,
+          "l": 480,
+          "h": 129
+        },
+        {
+          "x": 64,
+          "y": 543,
+          "l": 480,
+          "h": 35
+        }
+      ],
+      "recouvrement": 0
+    },
+    {
+      "page": "accueil",
+      "langue": "fr",
+      "fichier": "assets/partage/accueil-fr.jpg",
+      "gabarit": "droite",
+      "image": "grok/accueil-ouverture-640.webp",
+      "poids": 46089,
+      "sujet": {
+        "x": 600,
+        "y": 0,
+        "l": 573,
+        "h": 630
+      },
+      "textes": [
+        {
+          "x": 64,
+          "y": 56,
+          "l": 280,
+          "h": 64
+        },
+        {
+          "x": 64,
+          "y": 267,
+          "l": 480,
+          "h": 129
+        },
+        {
+          "x": 64,
+          "y": 543,
+          "l": 480,
+          "h": 35
+        }
+      ],
+      "recouvrement": 0
+    },
+    {
+      "page": "contact",
+      "langue": "fr",
+      "fichier": "assets/partage/contact-fr.jpg",
+      "gabarit": "droite",
+      "image": "grok/contact-ouverture-1280.webp",
+      "poids": 40030,
+      "sujet": {
+        "x": 600,
+        "y": 0,
+        "l": 600,
+        "h": 630
+      },
+      "textes": [
+        {
+          "x": 64,
+          "y": 56,
+          "l": 280,
+          "h": 64
+        },
+        {
+          "x": 64,
+          "y": 267,
+          "l": 480,
+          "h": 129
+        },
+        {
+          "x": 64,
+          "y": 543,
+          "l": 480,
+          "h": 35
+        }
+      ],
+      "recouvrement": 0
+    },
+    {
+      "page": "gestalt",
+      "langue": "fr",
+      "fichier": "assets/partage/gestalt-fr.jpg",
+      "gabarit": "droite",
+      "image": "grok/gestalt-ouverture-1280.webp",
+      "poids": 40854,
+      "sujet": {
+        "x": 600,
+        "y": 0,
+        "l": 600,
+        "h": 630
+      },
+      "textes": [
+        {
+          "x": 64,
+          "y": 56,
+          "l": 280,
+          "h": 64
+        },
+        {
+          "x": 64,
+          "y": 267,
+          "l": 480,
+          "h": 129
+        },
+        {
+          "x": 64,
+          "y": 543,
+          "l": 480,
+          "h": 35
+        }
+      ],
+      "recouvrement": 0
+    },
+    {
+      "page": "sophrologie",
+      "langue": "fr",
+      "fichier": "assets/partage/sophrologie-fr.jpg",
+      "gabarit": "droite",
+      "image": "grok/sophro-respiration-800.webp",
+      "poids": 63231,
+      "sujet": {
+        "x": 600,
+        "y": 0,
+        "l": 600,
+        "h": 605
+      },
+      "textes": [
+        {
+          "x": 64,
+          "y": 56,
+          "l": 280,
+          "h": 64
+        },
+        {
+          "x": 64,
+          "y": 267,
+          "l": 480,
+          "h": 129
+        },
+        {
+          "x": 64,
+          "y": 543,
+          "l": 480,
+          "h": 35
+        }
+      ],
+      "recouvrement": 0
+    }
+  ]
+}

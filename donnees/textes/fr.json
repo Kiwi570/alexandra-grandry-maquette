@@ -1,0 +1,352 @@
+{
+  "commun": {
+    "navigation": "Navigation principale",
+    "menu": "Menu",
+    "fermer": "Fermer",
+    "langueAutre": "English version",
+    "actionEntete": "Prendre rendez-vous",
+    "actionEnteteCourt": "Rendez-vous",
+    "appeler": "Appeler",
+    "ecrire": "Écrire un e-mail",
+    "calmeReduire": "Réduire les animations",
+    "calmeRetablir": "Rétablir les animations",
+    "calmeSysteme": "Animations réduites par le réglage de votre appareil",
+    "sommaire": "Sommaire",
+    "confort": "Confort de lecture",
+    "retourHaut": "Retour en haut",
+    "maquette": "Maquette : les informations marquées « à compléter » seront fournies par Alexandra Grandry.",
+    "mentions": "Mentions légales et politique de confidentialité : à compléter",
+    "evitement": "Aller au contenu",
+    "mentionIa": "Illustration générée",
+    "pause": "Pause",
+    "lecture": "Lecture",
+    "introLigne": "Gestalt-thérapie · Sophrologie · Chatou",
+    "metier": "Gestalt-thérapeute et sophrologue",
+    "acompleter": "à compléter",
+    "rer": "à 2 min à pied du RER A Chatou-Croissy",
+    "visio": "Séances en visio si le contexte le nécessite",
+    "rendezvous": "Rendez-vous par téléphone ou par e-mail",
+    "tarifManquant": "Tarif à compléter"
+  },
+  "pages": {
+    "accueil": {
+      "titre": "Alexandra Grandry : Gestalt-thérapeute et sophrologue à Chatou",
+      "description": "Gestalt-thérapie et sophrologie à Chatou pour enfants, adolescents, adultes, couples, familles et groupe. Cabinet à 2 min du RER A.",
+      "nav": "Accueil",
+      "partageAlt": "Alexandra Grandry, Gestalt-thérapeute et sophrologue à Chatou",
+      "accroche": "Donner forme à ce qui se vit"
+    },
+    "accompagnements": {
+      "titre": "Accompagnements : adultes, enfants, adolescents, couples, familles, groupe",
+      "description": "Le cadre et le tarif de chaque accompagnement en Gestalt-thérapie au cabinet de Chatou.",
+      "nav": "Accompagnements",
+      "partageAlt": "Les accompagnements d’Alexandra Grandry",
+      "accroche": "Un cadre pour chacun"
+    },
+    "gestalt": {
+      "titre": "La Gestalt-thérapie : donner forme, ici et maintenant",
+      "description": "Une approche existentielle, humaniste et relationnelle, conçue par Fritz Perls, qui travaille avec les mots, le corps et les émotions.",
+      "nav": "La Gestalt",
+      "partageAlt": "La Gestalt-thérapie expliquée par Alexandra Grandry",
+      "accroche": "Donner forme, ici et maintenant"
+    },
+    "sophrologie": {
+      "titre": "La sophrologie : respirer, relâcher, visualiser",
+      "description": "Une technique de gestion du stress, avec des outils simples à utiliser au quotidien. Sophrologue certifiée RNCP à Chatou.",
+      "nav": "La sophrologie",
+      "partageAlt": "La sophrologie avec Alexandra Grandry",
+      "accroche": "Respirer, relâcher, visualiser"
+    },
+    "contact": {
+      "titre": "Prendre rendez-vous : Alexandra Grandry à Chatou",
+      "description": "06 17 87 45 13 · 3 bis rue des Écoles, 78400 Chatou, à 2 min du RER A. Tarifs, accès et demande de rendez-vous.",
+      "nav": "Contact",
+      "partageAlt": "Prendre rendez-vous avec Alexandra Grandry",
+      "accroche": "06 17 87 45 13 · Chatou"
+    },
+    "404": {
+      "titre": "Page introuvable : Alexandra Grandry",
+      "description": "Cette page n’existe pas ou plus.",
+      "nav": "Page introuvable",
+      "partageAlt": "Page introuvable",
+      "accroche": "Page introuvable"
+    }
+  },
+  "accueil": {
+    "hero": {
+      "surtitre": "Gestalt-thérapeute et sophrologue à Chatou",
+      "titre1": "Alexandra",
+      "titre2": "Grandry",
+      "accroche": "Un espace-temps privilégié pour donner <em>forme</em> à ce qui se vit.",
+      "texte": "J’accueille enfants, adolescents, adultes, couples et familles, seuls ou en groupe, avec bienveillance et confidentialité.",
+      "action": "Prendre rendez-vous",
+      "info": "Cabinet à 2 min du RER A · séance adulte 80 € (45 min)",
+      "alt": "Lumière du matin sur un mur enduit et un fauteuil en lin",
+      "figure": "Deux profils qui se font face : entre eux, le vide dessine une coupe"
+    },
+    "presentation": {
+      "surtitre": "Présentation",
+      "titre": "Je vous accueille",
+      "texte1": "Gestalt-thérapeute et sophrologue, je propose un accompagnement psychothérapeutique en Gestalt-thérapie et des séances de sophrologie, au cabinet de Chatou ou en visio si le contexte le nécessite.",
+      "texte2": "Ma pratique est supervisée, et je me suis engagée à respecter les codes de déontologie de ma profession.",
+      "t1": "Diplômée de l’École Parisienne de Gestalt",
+      "t2": "Titulaire du CEP, European Certificate of Psychotherapy",
+      "t3": "Sophrologue certifiée RNCP",
+      "t4": "Formée à l’accompagnement de la fin de vie"
+    },
+    "raisons": {
+      "surtitre": "Consulter",
+      "titre": "Ce qui peut amener à consulter",
+      "texte": "Une période difficile : deuil, licenciement, séparation, burn-out. Des difficultés qui reviennent, au travail, en famille, en amour. Des souffrances liées à un trauma. Des addictions. Une dépression ou une anxiété excessive. Des troubles du comportement alimentaire.",
+      "note": "Liste non exhaustive.",
+      "aussi1": "Ce peut être aussi",
+      "aussi2": "trouver un sens à sa vie, à son travail, ou questionner son parcours avant un choix important.",
+      "ponctuel": "Quelques séances de soutien ponctuel ou d’information sont également possibles.",
+      "alt": "Goutte d’encre verte qui s’épanouit dans l’eau claire"
+    },
+    "publics": {
+      "surtitre": "Pour qui",
+      "titre": "Une forme pour chaque histoire",
+      "intro": "Six cadres d’accompagnement, du plus intime au plus collectif.",
+      "voir": "Voir le détail",
+      "etape": "Accompagnement {n} sur 6",
+      "forme": "Forme d’encre qui change selon l’accompagnement"
+    },
+    "approches": {
+      "surtitre": "Deux approches",
+      "titre": "Gestalt-thérapie et sophrologie",
+      "gestaltTitre": "La Gestalt-thérapie",
+      "gestaltTexte": "« Gestalt » vient de l’allemand et renvoie à l’idée de donner forme. Une approche existentielle, humaniste et relationnelle, qui travaille avec les mots, le corps et les émotions.",
+      "gestaltLien": "Découvrir la Gestalt",
+      "gestaltAlt": "Deux tasses en céramique qui se font face sur du lin",
+      "sophroTitre": "La sophrologie",
+      "sophroTexte": "Une technique de gestion du stress, avec des outils simples pour le quotidien : respiration, relâchement musculaire, visualisation positive.",
+      "sophroLien": "Découvrir la sophrologie",
+      "sophroAlt": "Voilage de lin soulevé par un souffle d’air dans une fenêtre"
+    },
+    "cadre": {
+      "surtitre": "Une pratique encadrée",
+      "titre": "Regardée, questionnée, partagée",
+      "conviction": "Mon approche s’appuie sur la conviction que tout être humain peut évoluer, et changer certaines choses dans sa vie, quels que soient son passé et ses difficultés actuelles.",
+      "supervisionTitre": "Supervisée",
+      "supervisionTexte": "Ma pratique est regardée et questionnée par un tiers professionnel.",
+      "rechercheTitre": "Engagée dans la recherche",
+      "rechercheTexte": "Je coordonne deux équipes de praticiens-chercheurs qui participent à un projet de recherche en psychothérapie gestaltiste, encadré par l’IDeT (Institut de Développement du Thérapeute) et l’EAGT.",
+      "deontoTitre": "Déontologie",
+      "deontoTexte": "Engagée à respecter les codes de déontologie de l’EAGT (European Association for Gestalt Therapy) et de la FF2P (Fédération Française de Psychothérapie et Psychanalyse). Membre de la SFG (Société Française de Gestalt), formée et supervisée à l’EPG (École Parisienne de Gestalt).",
+      "alt": "Deux fauteuils vides qui se font face dans une pièce claire"
+    },
+    "deroule": {
+      "surtitre": "Comment ça se passe",
+      "titre": "Le temps qu’il faut",
+      "e1Titre": "La première séance",
+      "e1Texte": "Un temps d’échange sur votre demande et sur ce que vous vivez.",
+      "e2Titre": "Le chemin",
+      "e2Texte": "La thérapie n’a pas de durée prédéfinie : elle se termine à votre initiative.",
+      "e3Titre": "La clôture",
+      "e3Texte": "Une ou deux séances pour clore le travail.",
+      "tarif": "la séance adulte de 45 min. Non remboursée par la Sécurité sociale, prise en charge possible par certaines mutuelles.",
+      "alt": "Porte entrouverte sur un couloir lumineux"
+    },
+    "appel": {
+      "titre": "Prendre rendez-vous",
+      "texte": "Par téléphone ou par e-mail. Le cabinet est au 3 bis rue des Écoles, à Chatou, à 2 min à pied du RER A.",
+      "demande": "Demande en ligne",
+      "alt": "Chemin au bord de l’eau bordé de saules à l’aube"
+    }
+  },
+  "accompagnements": {
+    "titre": "Accompagnements",
+    "intro": "Enfants, adolescents, adultes, couples, familles ou groupe : un cadre pour chacun.",
+    "info": "Adulte 80 € · Couple 140 € · Famille 150 € · Groupe 90 €",
+    "sommaire": "Aller directement à",
+    "alt": "Galets de tailles différentes posés sur du lin : seul, à deux, en cercle",
+    "tarif": "Tarif",
+    "cadre": "Le cadre",
+    "demander": "Demander un rendez-vous",
+    "pour": "pour {nom}",
+    "signes": "Ce qui peut amener à consulter",
+    "dates": "Prochaines dates : à compléter",
+    "cercle": "Cercle du groupe : des points qui tournent lentement",
+    "pratique": {
+      "titre": "Bon à savoir",
+      "q1": "La séance est-elle remboursée ?",
+      "r1": "Non par la Sécurité sociale, mais certaines mutuelles la prennent en charge.",
+      "q2": "Combien de temps dure une thérapie ?",
+      "r2": "Il n’y a pas de durée prédéfinie : vous décidez de la fin, avec une ou deux séances de clôture.",
+      "q3": "Les séances peuvent-elles se faire à distance ?",
+      "r3": "Oui, en visioconférence, quand le contexte le nécessite.",
+      "q4": "Comment se passe la première séance ?",
+      "r4": "C’est un temps d’échange sur votre demande et sur ce que vous vivez. Pour un enfant, le premier rendez-vous a lieu avec les parents seuls.",
+      "q5": "Comment prendre rendez-vous ?",
+      "r5": "Par téléphone au 06 17 87 45 13 ou par e-mail à ah.grandry@gmail.com.",
+      "alt": "Verre d’eau et petite plante sur une table d’appoint"
+    },
+    "appel": {
+      "titre": "Un premier échange",
+      "texte": "Pour savoir quel cadre vous convient, le plus simple est d’en parler."
+    },
+    "entretien": "Demander l’entretien préalable",
+    "tarifManquant": "Tarif à compléter"
+  },
+  "gestalt": {
+    "titre": "La Gestalt-thérapie",
+    "mot": "Gestalt",
+    "sous": "donner forme",
+    "texte": "« Gestalt » vient de l’allemand : il renvoie à l’idée de donner forme, à l’émergence d’une forme structurée qui prend sens.",
+    "info": "Existentielle · humaniste · relationnelle",
+    "alt": "Encre vert profond qui se déploie dans l’eau",
+    "origine": {
+      "surtitre": "Origine",
+      "titre": "Une approche née après-guerre",
+      "texte": "Elle a été conçue par Fritz Perls, psychanalyste allemand.",
+      "d1": "Années 50",
+      "l1": "Naissance aux États-Unis",
+      "d2": "Années 70",
+      "l2": "Arrivée en Europe",
+      "frise": "Frise : des États-Unis dans les années 50 à l’Europe dans les années 70"
+    },
+    "ici": {
+      "titre": "Ici et maintenant",
+      "texte": "La Gestalt s’intéresse au processus en cours, dans l’ici et maintenant de la séance. La thérapeute y adopte une posture dite engagée.",
+      "alt": "Tache de soleil et ombre d’une fenêtre sur un mur"
+    },
+    "corps": {
+      "titre": "Pas seulement avec les mots",
+      "texte": "Comme la psychanalyse, elle travaille avec les mots et leur sens. Mais aussi avec ce qui se vit autrement, et avec la manière dont chacun est en contact avec le monde.",
+      "m1": "le corps",
+      "m2": "les émotions",
+      "m3": "le mouvement",
+      "m4": "l’imaginaire",
+      "m5": "la créativité",
+      "m6": "les sensations",
+      "alt": "Silhouette de dos près d’une fenêtre, à contre-jour"
+    },
+    "vase": {
+      "titre": "Une forme qui prend sens",
+      "texte": "Selon où se pose le regard, on voit deux visages, ou une coupe. La forme qui se détache du fond, c’est celle qui prend sens.",
+      "bouton": "Voir la coupe",
+      "visages": "Deux visages",
+      "coupe": "Une coupe",
+      "note": "Illustration : en psychologie de la forme, le vase de Rubin montre comment une figure se détache d’un fond.",
+      "desc": "Vase de Rubin : deux profils face à face, ou une coupe entre eux",
+      "boutonRetour": "Voir les deux visages"
+    },
+    "qualites": {
+      "surtitre": "Trois mots pour la dire",
+      "titre": "Existentielle, humaniste, relationnelle",
+      "eTitre": "Existentielle",
+      "eTexte": "Elle aborde le sens de la vie, la liberté, la responsabilité et la conscience de la finitude.",
+      "eAlt": "Sentier dans les hautes herbes vers la lumière",
+      "hTitre": "Humaniste",
+      "hTexte": "Elle place au centre la conscience, la subjectivité, l’amour et le lien aux autres.",
+      "hAlt": "Bol en céramique tourné à la main dans une lumière chaude",
+      "rTitre": "Relationnelle",
+      "rTexte": "Elle met la relation et le contact au cœur de l’évolution.",
+      "rAlt": "Deux jeunes arbres dont les branches se touchent",
+      "planche": "Planche {n} sur 3"
+    },
+    "appel": {
+      "titre": "En parler ensemble",
+      "texte": "La première séance est un temps d’échange sur votre demande et sur ce que vous vivez."
+    }
+  },
+  "sophrologie": {
+    "titre": "La sophrologie",
+    "texte": "Une technique de gestion du stress, élaborée dans les années 60 par le neuropsychiatre Alfonso Caycedo.",
+    "info": "Sophrologue certifiée RNCP",
+    "alt": "Galets plats affleurant une eau parfaitement calme",
+    "inspirez": "Inspirez",
+    "expirez": "Expirez",
+    "essayer": "Respirer avec le cercle",
+    "arreter": "Arrêter",
+    "demo": "Démonstration : elle ne remplace pas une séance.",
+    "cercle": "Cercle qui s’ouvre et se referme au rythme d’une respiration lente",
+    "corps": {
+      "surtitre": "Une approche psychocorporelle",
+      "titre": "Réunir le corps et l’esprit",
+      "texte": "Approche globale, psychocorporelle, elle vise à relâcher les tensions et à retrouver un calme intérieur, avec des outils simples.",
+      "o1Titre": "La respiration",
+      "o1Texte": "Porter attention au souffle, et le laisser ralentir.",
+      "o1Alt": "Vapeur qui s’élève d’une tasse sur un rebord de fenêtre",
+      "o2Titre": "Le relâchement musculaire",
+      "o2Texte": "Repérer les tensions du corps pour les relâcher.",
+      "o2Alt": "Couverture en lin pliée sur un banc en chêne",
+      "o3Titre": "La visualisation positive",
+      "o3Texte": "S’appuyer sur des images intérieures apaisantes.",
+      "o3Alt": "Collines douces dans la brume de l’aube"
+    },
+    "quotidien": {
+      "titre": "Des outils pour le quotidien",
+      "texte": "Une pratique concrète : des exercices à faire, et des séances de relaxation enregistrées à écouter chez soi.",
+      "alt": "Coussin en lin posé près d’une fenêtre"
+    },
+    "appel": {
+      "titre": "Essayer la sophrologie",
+      "texte": "Au cabinet de Chatou, ou en visio si le contexte le nécessite."
+    },
+    "tarif": "Tarif des séances de sophrologie : à compléter."
+  },
+  "contact": {
+    "titre": "Prendre rendez-vous",
+    "texte": "Par téléphone ou par e-mail : il n’y a pas de prise de rendez-vous en ligne sur le site actuel. La demande ci-dessous est une démonstration.",
+    "info": "3 bis rue des Écoles, 78400 Chatou · à 2 min du RER A",
+    "alt": "Entrée calme avec un banc en bois et une plante",
+    "numero": "Appeler le 06 17 87 45 13",
+    "demande": {
+      "surtitre": "Demande de rendez-vous",
+      "titre": "En quatre étapes",
+      "texte": "Dites pour qui, où, et comment vous joindre : Alexandra Grandry vous rappelle.",
+      "simule": "Démonstration : rien n’est envoyé depuis cette maquette.",
+      "e1": "Pour qui",
+      "e1q": "Pour qui est ce rendez-vous ?",
+      "e2": "Où",
+      "e2q": "Où souhaitez-vous la séance ?",
+      "cabinet": "Au cabinet",
+      "cabinetDetail": "3 bis rue des Écoles, Chatou",
+      "visio": "En visio",
+      "visioDetail": "Si le contexte le nécessite",
+      "e3": "Coordonnées",
+      "e3q": "Comment vous joindre ?",
+      "nom": "Nom et prénom",
+      "tel": "Téléphone",
+      "email": "E-mail",
+      "message": "Un mot sur votre demande (facultatif)",
+      "e4": "Récapitulatif",
+      "e4q": "Vérifiez votre demande",
+      "donnees": "Ces informations servent uniquement à vous recontacter. Politique de confidentialité : à compléter.",
+      "precedent": "Retour",
+      "suivant": "Continuer",
+      "envoyer": "Envoyer la demande",
+      "merci": "Merci",
+      "recommencer": "Nouvelle demande",
+      "alt": "Fenêtre ouverte sur un feuillage vert au matin"
+    },
+    "acces": {
+      "surtitre": "Venir au cabinet",
+      "titre": "À deux minutes du RER",
+      "texte": "Le cabinet est au 3 bis rue des Écoles, à Chatou. Depuis la gare RER A Chatou-Croissy, comptez environ 2 minutes à pied.",
+      "gare": "Gare RER A Chatou-Croissy",
+      "cabinet": "Cabinet, 3 bis rue des Écoles",
+      "duree": "2 min à pied",
+      "note": "Plan schématique, non à l’échelle.",
+      "desc": "Plan schématique : de la gare RER A Chatou-Croissy au cabinet, 2 minutes à pied",
+      "visio": "Séances en visio possibles si le contexte le nécessite."
+    },
+    "tarifs": {
+      "surtitre": "Tarifs et modalités",
+      "titre": "Ce qu’il faut savoir",
+      "remboursement": "Les séances ne sont pas remboursées par la Sécurité sociale, mais peuvent être prises en charge par certaines mutuelles.",
+      "duree": "Pas de durée prédéfinie : la thérapie se termine à votre initiative, avec une ou deux séances de clôture.",
+      "colonneCadre": "Accompagnement",
+      "colonneDuree": "Durée",
+      "colonneTarif": "Tarif"
+    }
+  },
+  "introuvable": {
+    "titre": "Cette page n’a pas encore pris forme",
+    "texte": "L’adresse demandée n’existe pas, ou plus. Les autres pages sont toujours là.",
+    "retour": "Revenir à l’accueil",
+    "alt": "Horizon calme au-dessus d’une eau immobile"
+  }
+}

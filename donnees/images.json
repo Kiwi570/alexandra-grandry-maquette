@@ -1,0 +1,2210 @@
+{
+  "portrait": {
+    "nom": "portrait",
+    "source": "recu/alexandra-grandry-gestalt-therapeute.jpg",
+    "role": "portrait",
+    "alt": "Alexandra Grandry, Gestalt-thérapeute et sophrologue",
+    "grok": false,
+    "mention": null,
+    "empreinte": "c9766cca21204cdc",
+    "ratio": "4:5",
+    "largeurs": [
+      480,
+      640,
+      784
+    ],
+    "mobile": null,
+    "cadrage": "50% 36%",
+    "sujet": {
+      "x": 3.7,
+      "y": 0,
+      "l": 93.1,
+      "h": 79.5
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0.25,
+        "ton": "clair"
+      },
+      {
+        "cote": "haut",
+        "score": 0.22,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.19,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.04,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 2250,
+      "height": 2813,
+      "source": [
+        2250,
+        3000
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "portrait-480.webp",
+      "portrait-640.webp",
+      "portrait-784.webp"
+    ],
+    "poids": {
+      "portrait-480.webp": 26090,
+      "portrait-640.webp": 38678,
+      "portrait-784.webp": 51312
+    },
+    "media": "c.media({ nom: 'portrait', alt: \"Alexandra Grandry, Gestalt-thérapeute et sophrologue\", cadrage: '50% 36%', sizes: '(max-width: 760px) 100vw, 40vw', ratio: '4 / 5' })"
+  },
+  "grok/accueil-ouverture": {
+    "nom": "grok/accueil-ouverture",
+    "source": "recu/grok/accueil-ouverture.jpg",
+    "role": "ouverture",
+    "alt": "Lumière du matin sur un mur enduit et un fauteuil en lin",
+    "grok": true,
+    "mention": "Illustration générée",
+    "empreinte": "83ad07e11c7ae5be",
+    "ratio": "4:5",
+    "largeurs": [
+      640
+    ],
+    "mobile": {
+      "ratio": "4:5",
+      "largeurs": [
+        640,
+        1080
+      ],
+      "cadrage": "32% 56%"
+    },
+    "cadrage": "32% 56%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 95.5,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "droite",
+        "score": 0.42,
+        "ton": "clair"
+      },
+      {
+        "cote": "haut",
+        "score": 0.37,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.11,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.08,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 188,
+      "width": 784,
+      "height": 980,
+      "source": [
+        784,
+        1168
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "largeurs retirées (source trop petite) : 1280, 1920",
+      "784 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "grok/accueil-ouverture-640.webp",
+      "grok/accueil-ouverture-mobile-640.webp",
+      "grok/accueil-ouverture-mobile-1080.webp"
+    ],
+    "poids": {
+      "grok/accueil-ouverture-640.webp": 24100,
+      "grok/accueil-ouverture-mobile-640.webp": 24100,
+      "grok/accueil-ouverture-mobile-1080.webp": 56394
+    },
+    "media": "c.media({ nom: 'grok/accueil-ouverture', alt: \"Lumière du matin sur un mur enduit et un fauteuil en lin\", cadrage: '32% 56%', cadrageMobile: '32% 56%', sizes: '100vw', priorite: true })"
+  },
+  "grok/accueil-raisons": {
+    "nom": "grok/accueil-raisons",
+    "source": "recu/grok/accueil-raisons.jpg",
+    "role": "section-fond",
+    "alt": "Goutte d'encre verte qui s'épanouit dans l'eau claire",
+    "grok": true,
+    "mention": "Illustration générée",
+    "empreinte": "5aa7b3e7b24a8158",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "67% 58%",
+    "sujet": {
+      "x": 21.9,
+      "y": 13,
+      "l": 68.8,
+      "h": 68.6
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0.53,
+        "ton": "clair"
+      },
+      {
+        "cote": "haut",
+        "score": 0.49,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.3,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.1,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": "gauche",
+    "recadrage": {
+      "left": 0,
+      "top": 5,
+      "width": 1168,
+      "height": 779,
+      "source": [
+        1168,
+        784
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "largeurs retirées (source trop petite) : 1920",
+      "1168 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,1 fois (source de 1168 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/accueil-raisons-640.webp",
+      "grok/accueil-raisons-1280.webp"
+    ],
+    "poids": {
+      "grok/accueil-raisons-640.webp": 21348,
+      "grok/accueil-raisons-1280.webp": 50692
+    },
+    "media": "c.media({ nom: 'grok/accueil-raisons', alt: \"Goutte d'encre verte qui s'épanouit dans l'eau claire\", cadrage: '67% 58%', sizes: '100vw' })"
+  },
+  "grok/accueil-gestalt": {
+    "nom": "grok/accueil-gestalt",
+    "source": "recu/grok/accueil-gestalt.jpg",
+    "role": "carte-service",
+    "alt": "Deux tasses en céramique qui se font face sur du lin",
+    "grok": true,
+    "mention": "Illustration générée",
+    "empreinte": "5c3c618c4a7c17b8",
+    "ratio": "2:3",
+    "largeurs": [
+      480,
+      640,
+      784
+    ],
+    "mobile": null,
+    "cadrage": "45% 45%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 96.1,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.25,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.17,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.12,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.12,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 779,
+      "height": 1168,
+      "source": [
+        784,
+        1168
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "784 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "grok/accueil-gestalt-480.webp",
+      "grok/accueil-gestalt-640.webp",
+      "grok/accueil-gestalt-784.webp"
+    ],
+    "poids": {
+      "grok/accueil-gestalt-480.webp": 27266,
+      "grok/accueil-gestalt-640.webp": 43726,
+      "grok/accueil-gestalt-784.webp": 55256
+    },
+    "media": "c.media({ nom: 'grok/accueil-gestalt', alt: \"Deux tasses en céramique qui se font face sur du lin\", cadrage: '45% 45%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '2 / 3' })"
+  },
+  "grok/accueil-sophrologie": {
+    "nom": "grok/accueil-sophrologie",
+    "source": "recu/grok/accueil-sophrologie.jpg",
+    "role": "carte-service",
+    "alt": "Voilage de lin soulevé par un souffle d'air dans une fenêtre",
+    "grok": true,
+    "mention": "Illustration générée",
+    "empreinte": "e8c9e77e7c411bc0",
+    "ratio": "2:3",
+    "largeurs": [
+      480,
+      640,
+      784
+    ],
+    "mobile": null,
+    "cadrage": "40% 55%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 96.1,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.29,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.17,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.01,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.01,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 779,
+      "height": 1168,
+      "source": [
+        784,
+        1168
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "784 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "grok/accueil-sophrologie-480.webp",
+      "grok/accueil-sophrologie-640.webp",
+      "grok/accueil-sophrologie-784.webp"
+    ],
+    "poids": {
+      "grok/accueil-sophrologie-480.webp": 33576,
+      "grok/accueil-sophrologie-640.webp": 54418,
+      "grok/accueil-sophrologie-784.webp": 70904
+    },
+    "media": "c.media({ nom: 'grok/accueil-sophrologie', alt: \"Voilage de lin soulevé par un souffle d'air dans une fenêtre\", cadrage: '40% 55%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '2 / 3' })"
+  },
+  "grok/accueil-cadre": {
+    "nom": "grok/accueil-cadre",
+    "source": "recu/grok/accueil-cadre.jpg",
+    "role": "vignette",
+    "alt": "Deux fauteuils vides qui se font face dans une pièce claire",
+    "grok": true,
+    "mention": "Illustration générée",
+    "empreinte": "91f500d9ba15b7bf",
+    "ratio": "3:2",
+    "largeurs": [
+      480,
+      640,
+      800
+    ],
+    "mobile": null,
+    "cadrage": "39% 54%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 96.1
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.23,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.15,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.07,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.03,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1168,
+      "height": 779,
+      "source": [
+        1168,
+        784
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1168 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "grok/accueil-cadre-480.webp",
+      "grok/accueil-cadre-640.webp",
+      "grok/accueil-cadre-800.webp"
+    ],
+    "poids": {
+      "grok/accueil-cadre-480.webp": 11780,
+      "grok/accueil-cadre-640.webp": 20080,
+      "grok/accueil-cadre-800.webp": 31480
+    },
+    "media": "c.media({ nom: 'grok/accueil-cadre', alt: \"Deux fauteuils vides qui se font face dans une pièce claire\", cadrage: '39% 54%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '3 / 2' })"
+  },
+  "grok/accueil-deroule": {
+    "nom": "grok/accueil-deroule",
+    "source": "recu/grok/accueil-deroule.jpg",
+    "role": "vignette",
+    "alt": "Porte entrouverte sur un couloir lumineux",
+    "grok": true,
+    "mention": "Illustration générée",
+    "empreinte": "7c1eba103c50e1b6",
+    "ratio": "3:2",
+    "largeurs": [
+      480,
+      640,
+      800
+    ],
+    "mobile": null,
+    "cadrage": "38% 51%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 93.8,
+      "h": 96.1
+    },
+    "zones_calmes": [
+      {
+        "cote": "droite",
+        "score": 0.14,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.11,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.03,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1168,
+      "height": 779,
+      "source": [
+        1168,
+        784
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1168 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "grok/accueil-deroule-480.webp",
+      "grok/accueil-deroule-640.webp",
+      "grok/accueil-deroule-800.webp"
+    ],
+    "poids": {
+      "grok/accueil-deroule-480.webp": 14352,
+      "grok/accueil-deroule-640.webp": 22814,
+      "grok/accueil-deroule-800.webp": 33128
+    },
+    "media": "c.media({ nom: 'grok/accueil-deroule', alt: \"Porte entrouverte sur un couloir lumineux\", cadrage: '38% 51%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '3 / 2' })"
+  },
+  "grok/accueil-appel": {
+    "nom": "grok/accueil-appel",
+    "source": "recu/grok/accueil-appel.jpg",
+    "role": "section-fond",
+    "alt": "Chemin au bord de l'eau bordé de saules à l'aube",
+    "grok": true,
+    "mention": "Illustration générée",
+    "empreinte": "1805f75db2a85fa1",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "63% 45%",
+    "sujet": {
+      "x": 6.3,
+      "y": 0,
+      "l": 93.7,
+      "h": 96.1
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0.22,
+        "ton": "clair"
+      },
+      {
+        "cote": "haut",
+        "score": 0.08,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.04,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": "gauche",
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1168,
+      "height": 779,
+      "source": [
+        1168,
+        784
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "largeurs retirées (source trop petite) : 1920",
+      "1168 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,1 fois (source de 1168 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/accueil-appel-640.webp",
+      "grok/accueil-appel-1280.webp"
+    ],
+    "poids": {
+      "grok/accueil-appel-640.webp": 31694,
+      "grok/accueil-appel-1280.webp": 93322
+    },
+    "media": "c.media({ nom: 'grok/accueil-appel', alt: \"Chemin au bord de l'eau bordé de saules à l'aube\", cadrage: '63% 45%', sizes: '100vw' })"
+  },
+  "grok/accompagnements-ouverture": {
+    "nom": "grok/accompagnements-ouverture",
+    "source": "recu/grok/accompagnements-ouverture.jpg",
+    "role": "ouverture",
+    "alt": "Galets de tailles différentes posés sur du lin : seul, à deux, en cercle",
+    "grok": true,
+    "mention": "Illustration générée",
+    "empreinte": "d157c24e45e3927a",
+    "ratio": "21:9",
+    "largeurs": [
+      640,
+      1280
+    ],
+    "mobile": {
+      "ratio": "4:5",
+      "largeurs": [
+        640,
+        1080
+      ],
+      "cadrage": "56% 55%"
+    },
+    "cadrage": "51% 50%",
+    "sujet": {
+      "x": 21.9,
+      "y": 0,
+      "l": 50,
+      "h": 84.8
+    },
+    "zones_calmes": [
+      {
+        "cote": "droite",
+        "score": 0.6,
+        "ton": "clair"
+      },
+      {
+        "cote": "haut",
+        "score": 0.58,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.56,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.49,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 181,
+      "width": 1168,
+      "height": 501,
+      "source": [
+        1168,
+        784
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "largeurs retirées (source trop petite) : 1920",
+      "1168 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,1 fois (source de 1168 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/accompagnements-ouverture-640.webp",
+      "grok/accompagnements-ouverture-1280.webp",
+      "grok/accompagnements-ouverture-mobile-640.webp",
+      "grok/accompagnements-ouverture-mobile-1080.webp"
+    ],
+    "poids": {
+      "grok/accompagnements-ouverture-640.webp": 18802,
+      "grok/accompagnements-ouverture-1280.webp": 72966,
+      "grok/accompagnements-ouverture-mobile-640.webp": 60290,
+      "grok/accompagnements-ouverture-mobile-1080.webp": 127848
+    },
+    "media": "c.media({ nom: 'grok/accompagnements-ouverture', alt: \"Galets de tailles différentes posés sur du lin : seul, à deux, en cercle\", cadrage: '51% 50%', cadrageMobile: '56% 55%', sizes: '100vw', priorite: true })"
+  },
+  "grok/adultes": {
+    "nom": "grok/adultes",
+    "source": "recu/grok/adultes.jpg",
+    "role": "carte-service",
+    "alt": "Fauteuil en lin vide près d'une grande fenêtre",
+    "grok": true,
+    "mention": "Illustration générée",
+    "empreinte": "c63d5639608a397d",
+    "ratio": "2:3",
+    "largeurs": [
+      480,
+      640,
+      784
+    ],
+    "mobile": null,
+    "cadrage": "43% 54%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 96.1,
+      "h": 93.8
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.28,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.21,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 779,
+      "height": 1168,
+      "source": [
+        784,
+        1168
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "784 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "grok/adultes-480.webp",
+      "grok/adultes-640.webp",
+      "grok/adultes-784.webp"
+    ],
+    "poids": {
+      "grok/adultes-480.webp": 38400,
+      "grok/adultes-640.webp": 61624,
+      "grok/adultes-784.webp": 79540
+    },
+    "media": "c.media({ nom: 'grok/adultes', alt: \"Fauteuil en lin vide près d'une grande fenêtre\", cadrage: '43% 54%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '2 / 3' })"
+  },
+  "grok/enfants": {
+    "nom": "grok/enfants",
+    "source": "recu/grok/enfants.jpg",
+    "role": "carte-service",
+    "alt": "Table basse avec des cubes en bois et des crayons de couleur",
+    "grok": true,
+    "mention": "Illustration générée",
+    "empreinte": "37fe994cee43d6fb",
+    "ratio": "2:3",
+    "largeurs": [
+      480,
+      640,
+      784
+    ],
+    "mobile": null,
+    "cadrage": "39% 58%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 96.1,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.18,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.13,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 779,
+      "height": 1168,
+      "source": [
+        784,
+        1168
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "784 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "grok/enfants-480.webp",
+      "grok/enfants-640.webp",
+      "grok/enfants-784.webp"
+    ],
+    "poids": {
+      "grok/enfants-480.webp": 38262,
+      "grok/enfants-640.webp": 56066,
+      "grok/enfants-784.webp": 72014
+    },
+    "media": "c.media({ nom: 'grok/enfants', alt: \"Table basse avec des cubes en bois et des crayons de couleur\", cadrage: '39% 58%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '2 / 3' })"
+  },
+  "grok/adolescents": {
+    "nom": "grok/adolescents",
+    "source": "recu/grok/adolescents.jpg",
+    "role": "carte-service",
+    "alt": "Casque audio et sweat posés sur un rebord de fenêtre",
+    "grok": true,
+    "mention": "Illustration générée",
+    "empreinte": "f03d57a1b14bf02f",
+    "ratio": "2:3",
+    "largeurs": [
+      480,
+      640,
+      784
+    ],
+    "mobile": null,
+    "cadrage": "48% 51%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 96.1,
+      "h": 87.5
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.2,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.17,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.16,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.03,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 779,
+      "height": 1168,
+      "source": [
+        784,
+        1168
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "784 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "grok/adolescents-480.webp",
+      "grok/adolescents-640.webp",
+      "grok/adolescents-784.webp"
+    ],
+    "poids": {
+      "grok/adolescents-480.webp": 26994,
+      "grok/adolescents-640.webp": 44098,
+      "grok/adolescents-784.webp": 58308
+    },
+    "media": "c.media({ nom: 'grok/adolescents', alt: \"Casque audio et sweat posés sur un rebord de fenêtre\", cadrage: '48% 51%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '2 / 3' })"
+  },
+  "grok/couples": {
+    "nom": "grok/couples",
+    "source": "recu/grok/couples.jpg",
+    "role": "carte-service",
+    "alt": "Deux manteaux suspendus côte à côte",
+    "grok": true,
+    "mention": "Illustration générée",
+    "empreinte": "7642398bcde768f6",
+    "ratio": "2:3",
+    "largeurs": [
+      480,
+      640,
+      784
+    ],
+    "mobile": null,
+    "cadrage": "53% 54%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 96.1,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.16,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.13,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 779,
+      "height": 1168,
+      "source": [
+        784,
+        1168
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "784 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "grok/couples-480.webp",
+      "grok/couples-640.webp",
+      "grok/couples-784.webp"
+    ],
+    "poids": {
+      "grok/couples-480.webp": 31126,
+      "grok/couples-640.webp": 51392,
+      "grok/couples-784.webp": 67398
+    },
+    "media": "c.media({ nom: 'grok/couples', alt: \"Deux manteaux suspendus côte à côte\", cadrage: '53% 54%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '2 / 3' })"
+  },
+  "grok/familles": {
+    "nom": "grok/familles",
+    "source": "recu/grok/familles.jpg",
+    "role": "carte-service",
+    "alt": "Chaussures de tailles différentes alignées à l'entrée",
+    "grok": true,
+    "mention": "Illustration générée",
+    "empreinte": "9ff6ffa80470b7ba",
+    "ratio": "2:3",
+    "largeurs": [
+      480,
+      640,
+      784
+    ],
+    "mobile": null,
+    "cadrage": "44% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 96.1,
+      "h": 90.6
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.09,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.06,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.01,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 779,
+      "height": 1168,
+      "source": [
+        784,
+        1168
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "784 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "grok/familles-480.webp",
+      "grok/familles-640.webp",
+      "grok/familles-784.webp"
+    ],
+    "poids": {
+      "grok/familles-480.webp": 34030,
+      "grok/familles-640.webp": 53892,
+      "grok/familles-784.webp": 70078
+    },
+    "media": "c.media({ nom: 'grok/familles', alt: \"Chaussures de tailles différentes alignées à l'entrée\", cadrage: '44% 50%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '2 / 3' })"
+  },
+  "grok/groupe": {
+    "nom": "grok/groupe",
+    "source": "recu/grok/groupe.jpg",
+    "role": "carte-service",
+    "alt": "Cercle de chaises en bois dans une salle lumineuse",
+    "grok": true,
+    "mention": "Illustration générée",
+    "empreinte": "c4a524de1c42a685",
+    "ratio": "2:3",
+    "largeurs": [
+      480,
+      640,
+      784
+    ],
+    "mobile": null,
+    "cadrage": "50% 55%",
+    "sujet": {
+      "x": 0,
+      "y": 3.1,
+      "l": 96.1,
+      "h": 90.6
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.13,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 779,
+      "height": 1168,
+      "source": [
+        784,
+        1168
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "784 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "grok/groupe-480.webp",
+      "grok/groupe-640.webp",
+      "grok/groupe-784.webp"
+    ],
+    "poids": {
+      "grok/groupe-480.webp": 41958,
+      "grok/groupe-640.webp": 65662,
+      "grok/groupe-784.webp": 84508
+    },
+    "media": "c.media({ nom: 'grok/groupe', alt: \"Cercle de chaises en bois dans une salle lumineuse\", cadrage: '50% 55%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '2 / 3' })"
+  },
+  "grok/accompagnements-pratique": {
+    "nom": "grok/accompagnements-pratique",
+    "source": "recu/grok/accompagnements-pratique.jpg",
+    "role": "vignette",
+    "alt": "Verre d'eau et petite plante sur une table d'appoint",
+    "grok": true,
+    "mention": "Illustration générée",
+    "empreinte": "f001a7cb0304a989",
+    "ratio": "3:2",
+    "largeurs": [
+      480,
+      640,
+      800
+    ],
+    "mobile": null,
+    "cadrage": "54% 56%",
+    "sujet": {
+      "x": 3.1,
+      "y": 3.9,
+      "l": 87.5,
+      "h": 91.5
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.42,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.29,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.27,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.16,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 5,
+      "width": 1168,
+      "height": 779,
+      "source": [
+        1168,
+        784
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1168 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "grok/accompagnements-pratique-480.webp",
+      "grok/accompagnements-pratique-640.webp",
+      "grok/accompagnements-pratique-800.webp"
+    ],
+    "poids": {
+      "grok/accompagnements-pratique-480.webp": 11026,
+      "grok/accompagnements-pratique-640.webp": 19514,
+      "grok/accompagnements-pratique-800.webp": 29608
+    },
+    "media": "c.media({ nom: 'grok/accompagnements-pratique', alt: \"Verre d'eau et petite plante sur une table d'appoint\", cadrage: '54% 56%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '3 / 2' })"
+  },
+  "grok/gestalt-ouverture": {
+    "nom": "grok/gestalt-ouverture",
+    "source": "recu/grok/gestalt-ouverture.jpg",
+    "role": "ouverture",
+    "alt": "Encre vert profond qui se déploie dans l'eau",
+    "grok": true,
+    "mention": "Illustration générée",
+    "empreinte": "07b3fd30e7de0bd5",
+    "ratio": "16:9",
+    "largeurs": [
+      640,
+      1280
+    ],
+    "mobile": {
+      "ratio": "9:16",
+      "largeurs": [
+        640
+      ],
+      "cadrage": "68% 15%"
+    },
+    "cadrage": "88% 18%",
+    "sujet": {
+      "x": 40.6,
+      "y": 0,
+      "l": 59.4,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0.82,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0.68,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0.58,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.51,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": "centre",
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1168,
+      "height": 657,
+      "source": [
+        1168,
+        784
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "largeurs retirées (source trop petite) : 1920",
+      "1168 px de large"
+    ],
+    "avertissements": [
+      "version téléphone sans 1080 px (source trop petite)",
+      "agrandie 1,1 fois (source de 1168 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/gestalt-ouverture-640.webp",
+      "grok/gestalt-ouverture-1280.webp",
+      "grok/gestalt-ouverture-mobile-640.webp"
+    ],
+    "poids": {
+      "grok/gestalt-ouverture-640.webp": 12296,
+      "grok/gestalt-ouverture-1280.webp": 35166,
+      "grok/gestalt-ouverture-mobile-640.webp": 25440
+    },
+    "media": "c.media({ nom: 'grok/gestalt-ouverture', alt: \"Encre vert profond qui se déploie dans l'eau\", cadrage: '88% 18%', cadrageMobile: '68% 15%', sizes: '100vw', priorite: true })"
+  },
+  "grok/gestalt-ici": {
+    "nom": "grok/gestalt-ici",
+    "source": "recu/grok/gestalt-ici.jpg",
+    "role": "galerie",
+    "alt": "Tache de soleil et ombre d'une fenêtre sur un mur",
+    "grok": true,
+    "mention": "Illustration générée",
+    "empreinte": "9a27e270fafa2319",
+    "ratio": "3:4",
+    "largeurs": [
+      480,
+      640,
+      960
+    ],
+    "mobile": null,
+    "cadrage": "44% 53%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 95.5,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.38,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.32,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.11,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.11,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 123,
+      "width": 784,
+      "height": 1045,
+      "source": [
+        784,
+        1168
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "784 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,22 fois (source de 784 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/gestalt-ici-480.webp",
+      "grok/gestalt-ici-640.webp",
+      "grok/gestalt-ici-960.webp"
+    ],
+    "poids": {
+      "grok/gestalt-ici-480.webp": 13590,
+      "grok/gestalt-ici-640.webp": 25516,
+      "grok/gestalt-ici-960.webp": 50390
+    },
+    "media": "c.media({ nom: 'grok/gestalt-ici', alt: \"Tache de soleil et ombre d'une fenêtre sur un mur\", cadrage: '44% 53%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 4' })"
+  },
+  "grok/gestalt-corps": {
+    "nom": "grok/gestalt-corps",
+    "source": "recu/grok/gestalt-corps.jpg",
+    "role": "portrait",
+    "alt": "Silhouette de dos près d'une fenêtre, à contre-jour",
+    "grok": true,
+    "mention": "Illustration générée",
+    "empreinte": "7ec5b40802a24b68",
+    "ratio": "4:5",
+    "largeurs": [
+      480,
+      640,
+      784
+    ],
+    "mobile": null,
+    "cadrage": "43% 45%",
+    "sujet": {
+      "x": 4.5,
+      "y": 0,
+      "l": 90.9,
+      "h": 92.6
+    },
+    "zones_calmes": [
+      {
+        "cote": "droite",
+        "score": 0.31,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.22,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.07,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.01,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 188,
+      "width": 784,
+      "height": 980,
+      "source": [
+        784,
+        1168
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "784 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "grok/gestalt-corps-480.webp",
+      "grok/gestalt-corps-640.webp",
+      "grok/gestalt-corps-784.webp"
+    ],
+    "poids": {
+      "grok/gestalt-corps-480.webp": 21028,
+      "grok/gestalt-corps-640.webp": 34358,
+      "grok/gestalt-corps-784.webp": 48936
+    },
+    "media": "c.media({ nom: 'grok/gestalt-corps', alt: \"Silhouette de dos près d'une fenêtre, à contre-jour\", cadrage: '43% 45%', sizes: '(max-width: 760px) 100vw, 40vw', ratio: '4 / 5' })"
+  },
+  "grok/gestalt-existentielle": {
+    "nom": "grok/gestalt-existentielle",
+    "source": "recu/grok/gestalt-existentielle.jpg",
+    "role": "galerie",
+    "alt": "Sentier dans les hautes herbes vers la lumière",
+    "grok": true,
+    "mention": "Illustration générée",
+    "empreinte": "ae122bb08bcba44d",
+    "ratio": "3:4",
+    "largeurs": [
+      480,
+      640,
+      960
+    ],
+    "mobile": null,
+    "cadrage": "44% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 95.5,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.18,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.07,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 38,
+      "width": 784,
+      "height": 1045,
+      "source": [
+        784,
+        1168
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "784 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,22 fois (source de 784 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/gestalt-existentielle-480.webp",
+      "grok/gestalt-existentielle-640.webp",
+      "grok/gestalt-existentielle-960.webp"
+    ],
+    "poids": {
+      "grok/gestalt-existentielle-480.webp": 36164,
+      "grok/gestalt-existentielle-640.webp": 59284,
+      "grok/gestalt-existentielle-960.webp": 96820
+    },
+    "media": "c.media({ nom: 'grok/gestalt-existentielle', alt: \"Sentier dans les hautes herbes vers la lumière\", cadrage: '44% 50%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 4' })"
+  },
+  "grok/gestalt-humaniste": {
+    "nom": "grok/gestalt-humaniste",
+    "source": "recu/grok/gestalt-humaniste.jpg",
+    "role": "galerie",
+    "alt": "Bol en céramique tourné à la main dans une lumière chaude",
+    "grok": true,
+    "mention": "Illustration générée",
+    "empreinte": "45b6d6c8a14aa0a5",
+    "ratio": "3:4",
+    "largeurs": [
+      480,
+      640,
+      960
+    ],
+    "mobile": null,
+    "cadrage": "44% 56%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 95.5,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.32,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.28,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 123,
+      "width": 784,
+      "height": 1045,
+      "source": [
+        784,
+        1168
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "784 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,22 fois (source de 784 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/gestalt-humaniste-480.webp",
+      "grok/gestalt-humaniste-640.webp",
+      "grok/gestalt-humaniste-960.webp"
+    ],
+    "poids": {
+      "grok/gestalt-humaniste-480.webp": 32132,
+      "grok/gestalt-humaniste-640.webp": 50726,
+      "grok/gestalt-humaniste-960.webp": 81714
+    },
+    "media": "c.media({ nom: 'grok/gestalt-humaniste', alt: \"Bol en céramique tourné à la main dans une lumière chaude\", cadrage: '44% 56%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 4' })"
+  },
+  "grok/gestalt-relationnelle": {
+    "nom": "grok/gestalt-relationnelle",
+    "source": "recu/grok/gestalt-relationnelle.jpg",
+    "role": "galerie",
+    "alt": "Deux jeunes arbres dont les branches se touchent",
+    "grok": true,
+    "mention": "Illustration générée",
+    "empreinte": "2e57c365b8adfe8d",
+    "ratio": "3:4",
+    "largeurs": [
+      480,
+      640,
+      960
+    ],
+    "mobile": null,
+    "cadrage": "45% 53%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 95.5,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.32,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.12,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 123,
+      "width": 784,
+      "height": 1045,
+      "source": [
+        784,
+        1168
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "784 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,22 fois (source de 784 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/gestalt-relationnelle-480.webp",
+      "grok/gestalt-relationnelle-640.webp",
+      "grok/gestalt-relationnelle-960.webp"
+    ],
+    "poids": {
+      "grok/gestalt-relationnelle-480.webp": 31376,
+      "grok/gestalt-relationnelle-640.webp": 50232,
+      "grok/gestalt-relationnelle-960.webp": 83420
+    },
+    "media": "c.media({ nom: 'grok/gestalt-relationnelle', alt: \"Deux jeunes arbres dont les branches se touchent\", cadrage: '45% 53%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 4' })"
+  },
+  "grok/sophrologie-ouverture": {
+    "nom": "grok/sophrologie-ouverture",
+    "source": "recu/grok/sophrologie-ouverture.jpg",
+    "role": "ouverture",
+    "alt": "Galets plats affleurant une eau parfaitement calme",
+    "grok": true,
+    "mention": "Illustration générée",
+    "empreinte": "82d70cdcc31c49c4",
+    "ratio": "4:5",
+    "largeurs": [
+      640
+    ],
+    "mobile": {
+      "ratio": "4:5",
+      "largeurs": [
+        640,
+        1080
+      ],
+      "cadrage": "37% 42%"
+    },
+    "cadrage": "37% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 95.5,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "droite",
+        "score": 0.12,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.1,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.08,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 82,
+      "width": 784,
+      "height": 980,
+      "source": [
+        784,
+        1168
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "largeurs retirées (source trop petite) : 1280, 1920",
+      "784 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "grok/sophrologie-ouverture-640.webp",
+      "grok/sophrologie-ouverture-mobile-640.webp",
+      "grok/sophrologie-ouverture-mobile-1080.webp"
+    ],
+    "poids": {
+      "grok/sophrologie-ouverture-640.webp": 49568,
+      "grok/sophrologie-ouverture-mobile-640.webp": 49948,
+      "grok/sophrologie-ouverture-mobile-1080.webp": 97136
+    },
+    "media": "c.media({ nom: 'grok/sophrologie-ouverture', alt: \"Galets plats affleurant une eau parfaitement calme\", cadrage: '37% 50%', cadrageMobile: '37% 42%', sizes: '100vw', priorite: true })"
+  },
+  "grok/sophro-respiration": {
+    "nom": "grok/sophro-respiration",
+    "source": "recu/grok/sophro-respiration.jpg",
+    "role": "vignette",
+    "alt": "Vapeur qui s'élève d'une tasse sur un rebord de fenêtre",
+    "grok": true,
+    "mention": "Illustration générée",
+    "empreinte": "fcb6cf1ac60d3f26",
+    "ratio": "3:2",
+    "largeurs": [
+      480,
+      640,
+      800
+    ],
+    "mobile": null,
+    "cadrage": "45% 55%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 96.1
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.25,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.08,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1168,
+      "height": 779,
+      "source": [
+        1168,
+        784
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1168 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "grok/sophro-respiration-480.webp",
+      "grok/sophro-respiration-640.webp",
+      "grok/sophro-respiration-800.webp"
+    ],
+    "poids": {
+      "grok/sophro-respiration-480.webp": 17660,
+      "grok/sophro-respiration-640.webp": 28848,
+      "grok/sophro-respiration-800.webp": 41398
+    },
+    "media": "c.media({ nom: 'grok/sophro-respiration', alt: \"Vapeur qui s'élève d'une tasse sur un rebord de fenêtre\", cadrage: '45% 55%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '3 / 2' })"
+  },
+  "grok/sophro-relachement": {
+    "nom": "grok/sophro-relachement",
+    "source": "recu/grok/sophro-relachement.jpg",
+    "role": "vignette",
+    "alt": "Couverture en lin pliée sur un banc en chêne",
+    "grok": true,
+    "mention": "Illustration générée",
+    "empreinte": "38e2b2f8c181ca7f",
+    "ratio": "3:2",
+    "largeurs": [
+      480,
+      640,
+      800
+    ],
+    "mobile": null,
+    "cadrage": "41% 56%",
+    "sujet": {
+      "x": 0,
+      "y": 3.9,
+      "l": 93.8,
+      "h": 91.5
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.38,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.26,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.14,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.09,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 5,
+      "width": 1168,
+      "height": 779,
+      "source": [
+        1168,
+        784
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1168 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "grok/sophro-relachement-480.webp",
+      "grok/sophro-relachement-640.webp",
+      "grok/sophro-relachement-800.webp"
+    ],
+    "poids": {
+      "grok/sophro-relachement-480.webp": 15108,
+      "grok/sophro-relachement-640.webp": 26366,
+      "grok/sophro-relachement-800.webp": 39998
+    },
+    "media": "c.media({ nom: 'grok/sophro-relachement', alt: \"Couverture en lin pliée sur un banc en chêne\", cadrage: '41% 56%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '3 / 2' })"
+  },
+  "grok/sophro-visualisation": {
+    "nom": "grok/sophro-visualisation",
+    "source": "recu/grok/sophro-visualisation.jpg",
+    "role": "vignette",
+    "alt": "Collines douces dans la brume de l'aube",
+    "grok": true,
+    "mention": "Illustration générée",
+    "empreinte": "e21651c71c661b94",
+    "ratio": "3:2",
+    "largeurs": [
+      480,
+      640,
+      800
+    ],
+    "mobile": null,
+    "cadrage": "50% 45%",
+    "sujet": {
+      "x": 3.1,
+      "y": 0,
+      "l": 96.9,
+      "h": 96.1
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0.2,
+        "ton": "clair"
+      },
+      {
+        "cote": "haut",
+        "score": 0.07,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.05,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1168,
+      "height": 779,
+      "source": [
+        1168,
+        784
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1168 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "grok/sophro-visualisation-480.webp",
+      "grok/sophro-visualisation-640.webp",
+      "grok/sophro-visualisation-800.webp"
+    ],
+    "poids": {
+      "grok/sophro-visualisation-480.webp": 15142,
+      "grok/sophro-visualisation-640.webp": 24042,
+      "grok/sophro-visualisation-800.webp": 34860
+    },
+    "media": "c.media({ nom: 'grok/sophro-visualisation', alt: \"Collines douces dans la brume de l'aube\", cadrage: '50% 45%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '3 / 2' })"
+  },
+  "grok/sophro-quotidien": {
+    "nom": "grok/sophro-quotidien",
+    "source": "recu/grok/sophro-quotidien.jpg",
+    "role": "section-fond",
+    "alt": "Coussin en lin et écouteurs posés près d'une fenêtre",
+    "grok": true,
+    "mention": "Illustration générée",
+    "empreinte": "aa35ec8dc87a7339",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "59% 75%",
+    "sujet": {
+      "x": 31.3,
+      "y": 3.9,
+      "l": 62.5,
+      "h": 91.5
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0.73,
+        "ton": "clair"
+      },
+      {
+        "cote": "haut",
+        "score": 0.51,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.29,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.13,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": "gauche",
+    "recadrage": {
+      "left": 0,
+      "top": 5,
+      "width": 1168,
+      "height": 779,
+      "source": [
+        1168,
+        784
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "largeurs retirées (source trop petite) : 1920",
+      "1168 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,1 fois (source de 1168 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/sophro-quotidien-640.webp",
+      "grok/sophro-quotidien-1280.webp"
+    ],
+    "poids": {
+      "grok/sophro-quotidien-640.webp": 18432,
+      "grok/sophro-quotidien-1280.webp": 59570
+    },
+    "media": "c.media({ nom: 'grok/sophro-quotidien', alt: \"Coussin en lin et écouteurs posés près d'une fenêtre\", cadrage: '59% 75%', sizes: '100vw' })"
+  },
+  "grok/contact-ouverture": {
+    "nom": "grok/contact-ouverture",
+    "source": "recu/grok/contact-ouverture.jpg",
+    "role": "ouverture",
+    "alt": "Entrée calme avec un banc en bois et une plante",
+    "grok": true,
+    "mention": "Illustration générée",
+    "empreinte": "c8853d8949a1866b",
+    "ratio": "21:9",
+    "largeurs": [
+      640,
+      1280
+    ],
+    "mobile": {
+      "ratio": "4:5",
+      "largeurs": [
+        640,
+        1080
+      ],
+      "cadrage": "48% 46%"
+    },
+    "cadrage": "49% 50%",
+    "sujet": {
+      "x": 3.1,
+      "y": 0,
+      "l": 90.6,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.3,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.13,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.09,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.04,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 173,
+      "width": 1168,
+      "height": 501,
+      "source": [
+        1168,
+        784
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "largeurs retirées (source trop petite) : 1920",
+      "1168 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,1 fois (source de 1168 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/contact-ouverture-640.webp",
+      "grok/contact-ouverture-1280.webp",
+      "grok/contact-ouverture-mobile-640.webp",
+      "grok/contact-ouverture-mobile-1080.webp"
+    ],
+    "poids": {
+      "grok/contact-ouverture-640.webp": 13980,
+      "grok/contact-ouverture-1280.webp": 39134,
+      "grok/contact-ouverture-mobile-640.webp": 34216,
+      "grok/contact-ouverture-mobile-1080.webp": 77992
+    },
+    "media": "c.media({ nom: 'grok/contact-ouverture', alt: \"Entrée calme avec un banc en bois et une plante\", cadrage: '49% 50%', cadrageMobile: '48% 46%', sizes: '100vw', priorite: true })"
+  },
+  "grok/contact-formulaire": {
+    "nom": "grok/contact-formulaire",
+    "source": "recu/grok/contact-formulaire.jpg",
+    "role": "carte-service",
+    "alt": "Fenêtre ouverte sur un feuillage vert au matin",
+    "grok": true,
+    "mention": "Illustration générée",
+    "empreinte": "069d65f819618976",
+    "ratio": "2:3",
+    "largeurs": [
+      480,
+      640,
+      784
+    ],
+    "mobile": null,
+    "cadrage": "46% 51%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 96.1,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "droite",
+        "score": 0.14,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 779,
+      "height": 1168,
+      "source": [
+        784,
+        1168
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "784 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "grok/contact-formulaire-480.webp",
+      "grok/contact-formulaire-640.webp",
+      "grok/contact-formulaire-784.webp"
+    ],
+    "poids": {
+      "grok/contact-formulaire-480.webp": 37562,
+      "grok/contact-formulaire-640.webp": 60722,
+      "grok/contact-formulaire-784.webp": 77770
+    },
+    "media": "c.media({ nom: 'grok/contact-formulaire', alt: \"Fenêtre ouverte sur un feuillage vert au matin\", cadrage: '46% 51%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '2 / 3' })"
+  },
+  "grok/page-404": {
+    "nom": "grok/page-404",
+    "source": "recu/grok/page-404.jpg",
+    "role": "404",
+    "alt": "Horizon calme au-dessus d'une eau immobile, légèrement penché",
+    "grok": true,
+    "mention": "Illustration générée",
+    "empreinte": "ebd72815948e68d3",
+    "ratio": "16:9",
+    "largeurs": [
+      800,
+      1600
+    ],
+    "mobile": null,
+    "cadrage": "52% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.13,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.06,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.05,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.03,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 71,
+      "width": 1168,
+      "height": 657,
+      "source": [
+        1168,
+        784
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1168 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,37 fois (source de 1168 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/page-404-800.webp",
+      "grok/page-404-1600.webp"
+    ],
+    "poids": {
+      "grok/page-404-800.webp": 34272,
+      "grok/page-404-1600.webp": 86786
+    },
+    "media": "c.media({ nom: 'grok/page-404', alt: \"Horizon calme au-dessus d'une eau immobile, légèrement penché\", cadrage: '52% 50%', sizes: '100vw', ratio: '16 / 9' })"
+  }
+}

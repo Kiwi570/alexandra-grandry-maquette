@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="fr" data-v="1">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>La Gestalt-thérapie : donner forme, ici et maintenant</title>
+<meta name="description" content="Une approche existentielle, humaniste et relationnelle, conçue par Fritz Perls, qui travaille avec les mots, le corps et les émotions.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://alexandra-grandry-maquette.vercel.app/gestalt-therapie">
+<style>:root{--fond:#f3ece0;--texte:#1c3029;--voile-fond:#1e3a32;--ouverture-fond:#f3ece0;--menu-fond:#1e3a32}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.calme):not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.calme):not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) [data-voile] { transform: none; visibility: visible; } html.calme [data-voile], html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var calme = false;
+try { calme = !!ls && ls.getItem('socle:calme') === 'oui'; } catch (e) {}
+if (!calme && window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) calme = true;
+if (calme) d.classList.add('calme');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var retourSection = false;
+try { retourSection = !!ss.getItem('socle:calme-retour'); } catch (e) {}
+var mode = type === 'back_forward' || retourSection ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+if (!retourSection) history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<link rel="preload" href="/assets/fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/figtree.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="stylesheet" href="/assets/css/modules/planches-empilees.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#f3ece0">
+<link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Alexandra Grandry">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="La Gestalt-thérapie : donner forme, ici et maintenant">
+<meta property="og:description" content="Une approche existentielle, humaniste et relationnelle, conçue par Fritz Perls, qui travaille avec les mots, le corps et les émotions.">
+<meta property="og:url" content="https://alexandra-grandry-maquette.vercel.app/gestalt-therapie">
+<meta property="og:image" content="https://alexandra-grandry-maquette.vercel.app/assets/partage/gestalt-fr.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="La Gestalt-thérapie expliquée par Alexandra Grandry">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Alexandra Grandry, Gestalt-thérapeute et sophrologue","url":"https://alexandra-grandry-maquette.vercel.app/","telephone":"+33617874513","email":"ah.grandry@gmail.com","address":{"@type":"PostalAddress","streetAddress":"3 bis rue des Écoles","postalCode":"78400","addressLocality":"Chatou","addressCountry":"FR"},"description":"Gestalt-thérapie et sophrologie à Chatou : enfants, adolescents, adultes, couples, familles et groupe. Cabinet à 2 minutes à pied du RER A Chatou-Croissy."}</script>
+</head>
+<body id="haut">
+<div data-voile aria-hidden="true"><div class="voile-contenu"><img src="/assets/images/logo-clair.svg" alt="" width="56" height="56"><span data-voile-libelle>La Gestalt</span></div></div>
+<div class="ouverture-panneau" data-ouverture aria-hidden="true">
+  <svg class="intro-figure" viewBox="0 0 1000 1000" focusable="false">
+    <defs>
+      <clipPath id="intro-clip-g"><path d="M0 0 L318 0 C320 15 324.3 56.7 330 90 C335.7 123.3 345 167.5 352 200 C359 232.5 370.7 265.3 372 285 C373.3 304.7 359 307.2 360 318 C361 328.8 364.7 333.3 378 350 C391.3 366.7 437.7 401 440 418 C442.3 435 398.3 442 392 452 C385.7 462 403 470 402 478 C401 486 386.3 492.3 386 500 C385.7 507.7 402.3 514.7 400 524 C397.7 533.3 372.3 541.7 372 556 C371.7 570.3 401.3 591.3 398 610 C394.7 628.7 363.3 643 352 668 C340.7 693 335 724.7 330 760 C325 795.3 327 840 322 880 C317 920 303.7 980 300 1000 L0 1000 Z"/></clipPath>
+      <clipPath id="intro-clip-d"><path d="M1000 0 L682 0 C680 15 675.7 56.7 670 90 C664.3 123.3 655 167.5 648 200 C641 232.5 629.3 265.3 628 285 C626.7 304.7 641 307.2 640 318 C639 328.8 635.3 333.3 622 350 C608.7 366.7 562.3 401 560 418 C557.7 435 601.7 442 608 452 C614.3 462 597 470 598 478 C599 486 613.7 492.3 614 500 C614.3 507.7 597.7 514.7 600 524 C602.3 533.3 627.7 541.7 628 556 C628.3 570.3 598.7 591.3 602 610 C605.3 628.7 636.7 643 648 668 C659.3 693 665 724.7 670 760 C675 795.3 673 840 678 880 C683 920 696.3 980 700 1000 L1000 1000 Z"/></clipPath>
+    </defs>
+    <path class="intro-coupe" d="M318 0 C320 15 324.3 56.7 330 90 C335.7 123.3 345 167.5 352 200 C359 232.5 370.7 265.3 372 285 C373.3 304.7 359 307.2 360 318 C361 328.8 364.7 333.3 378 350 C391.3 366.7 437.7 401 440 418 C442.3 435 398.3 442 392 452 C385.7 462 403 470 402 478 C401 486 386.3 492.3 386 500 C385.7 507.7 402.3 514.7 400 524 C397.7 533.3 372.3 541.7 372 556 C371.7 570.3 401.3 591.3 398 610 C394.7 628.7 363.3 643 352 668 C340.7 693 335 724.7 330 760 C325 795.3 327 840 322 880 C317 920 303.7 980 300 1000 L700 1000 C696.3 980 683 920 678 880 C673 840 675 795.3 670 760 C665 724.7 659.3 693 648 668 C636.7 643 605.3 628.7 602 610 C598.7 591.3 628.3 570.3 628 556 C627.7 541.7 602.3 533.3 600 524 C597.7 514.7 614.3 507.7 614 500 C613.7 492.3 599 486 598 478 C597 470 614.3 462 608 452 C601.7 442 557.7 435 560 418 C562.3 401 608.7 366.7 622 350 C635.3 333.3 639 328.8 640 318 C641 307.2 626.7 304.7 628 285 C629.3 265.3 641 232.5 648 200 C655 167.5 664.3 123.3 670 90 C675.7 56.7 680 15 682 0 Z"/>
+    <g class="intro-face intro-face--g" clip-path="url(#intro-clip-g)"><circle class="intro-tache" cx="150" cy="160" r="0"></circle><circle class="intro-tache" cx="260" cy="360" r="0"></circle><circle class="intro-tache" cx="120" cy="560" r="0"></circle><circle class="intro-tache" cx="280" cy="760" r="0"></circle><circle class="intro-tache" cx="150" cy="930" r="0"></circle><circle class="intro-tache" cx="40" cy="420" r="0"></circle><circle class="intro-tache" cx="50" cy="60" r="0"></circle></g>
+    <g class="intro-face intro-face--d" clip-path="url(#intro-clip-d)"><circle class="intro-tache" cx="850" cy="160" r="0"></circle><circle class="intro-tache" cx="740" cy="360" r="0"></circle><circle class="intro-tache" cx="880" cy="560" r="0"></circle><circle class="intro-tache" cx="720" cy="760" r="0"></circle><circle class="intro-tache" cx="850" cy="930" r="0"></circle><circle class="intro-tache" cx="960" cy="420" r="0"></circle><circle class="intro-tache" cx="950" cy="60" r="0"></circle></g>
+    <g class="intro-gouttes"><circle cx="90" cy="120" r="16"></circle><circle cx="230" cy="60" r="10"></circle><circle cx="120" cy="470" r="12"></circle><circle cx="40" cy="760" r="18"></circle><circle cx="250" cy="900" r="11"></circle><circle cx="470" cy="150" r="9"></circle><circle cx="560" cy="860" r="13"></circle><circle cx="770" cy="90" r="14"></circle><circle cx="930" cy="300" r="10"></circle><circle cx="880" cy="620" r="17"></circle><circle cx="700" cy="960" r="9"></circle><circle cx="960" cy="840" r="12"></circle></g>
+  </svg>
+  <p class="ouverture-nom">Alexandra Grandry</p>
+  <p class="ouverture-ligne">Gestalt-thérapie · Sophrologie · Chatou</p>
+</div>
+<a class="evitement" href="#contenu">Aller au contenu</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" href="/" data-libelle="Accueil">
+      <img src="/assets/images/logo.svg" alt="" width="36" height="36"><span class="entete-nom">Alexandra Grandry<small>Gestalt-thérapeute et sophrologue</small></span>
+    </a>
+    <nav data-nav aria-label="Navigation principale">
+      <ul><li><a href="/accompagnements" data-libelle="Accompagnements">Accompagnements</a></li><li><a href="/gestalt-therapie" data-libelle="La Gestalt" aria-current="page">La Gestalt</a></li><li><a href="/sophrologie" data-libelle="La sophrologie">La sophrologie</a></li><li><a href="/contact" data-libelle="Contact">Contact</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="bouton entete-action" href="/contact#demande" data-libelle="Contact"><span class="long">Prendre rendez-vous</span><span class="court" aria-hidden="true">Rendez-vous</span></a>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Fermer"><span data-libelle-bouton>Menu</span></button>
+    </div>
+  </div>
+</header>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <ul><li style="--i:0"><a href="/" class="menu-lien" data-libelle="Accueil">Accueil</a></li><li style="--i:1"><a href="/accompagnements" class="menu-lien" data-libelle="Accompagnements">Accompagnements</a></li><li style="--i:2"><a href="/gestalt-therapie" class="menu-lien" data-libelle="La Gestalt" aria-current="page">La Gestalt</a></li><li style="--i:3"><a href="/sophrologie" class="menu-lien" data-libelle="La sophrologie">La sophrologie</a></li><li style="--i:4"><a href="/contact" class="menu-lien" data-libelle="Contact">Contact</a></li></ul>
+  <p><a class="bouton" href="tel:+33617874513">Appeler 06 17 87 45 13</a></p>
+  <p><button type="button" class="lien" data-calme-bascule data-libelle-reduire="Réduire les animations" data-libelle-retablir="Rétablir les animations" data-libelle-systeme="Animations réduites par le réglage de votre appareil"><span data-libelle-bouton>Réduire les animations</span></button></p>
+</div>
+<main id="contenu" tabindex="-1">
+<section class="ouv-gestalt" id="debut" data-gouttiere="#14271f">
+  <figure class="media ouv-gestalt__fond" data-grok data-fx="zoom" data-fx-force="10" style="--cadrage:50% 50%;--cadrage-mobile:50% 50%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/gestalt-ouverture-mobile-640.webp 640w" sizes="100vw">
+    <img src="/assets/images/grok/gestalt-ouverture-1280.webp" srcset="/assets/images/grok/gestalt-ouverture-640.webp 640w, /assets/images/grok/gestalt-ouverture-1280.webp 1280w" sizes="100vw" alt="Encre vert profond qui se déploie dans l’eau" width="1280" height="720" fetchpriority="high" loading="eager" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+  <div class="ouv-gestalt__contenu conteneur">
+    <h1 class="ouv-gestalt__titre"><span class="visuellement-cache">La Gestalt-thérapie</span><span class="ouv-gestalt__mot" aria-hidden="true" data-effet="gestalt-lettres"><span class="lettre" style="--i:0"><span class="lettre-in" data-anime="gsap">G</span></span><span class="lettre" style="--i:1"><span class="lettre-in" data-anime="gsap">e</span></span><span class="lettre" style="--i:2"><span class="lettre-in" data-anime="gsap">s</span></span><span class="lettre" style="--i:3"><span class="lettre-in" data-anime="gsap">t</span></span><span class="lettre" style="--i:4"><span class="lettre-in" data-anime="gsap">a</span></span><span class="lettre" style="--i:5"><span class="lettre-in" data-anime="gsap">l</span></span><span class="lettre" style="--i:6"><span class="lettre-in" data-anime="gsap">t</span></span></span></h1>
+    <p class="ouv-gestalt__sous" data-anime="gsap" data-intro><em>donner forme</em></p>
+    <p class="ouv-gestalt__texte" data-anime="gsap" data-intro>« Gestalt » vient de l’allemand : il renvoie à l’idée de donner forme, à l’émergence d’une forme structurée qui prend sens.</p>
+    <p class="actions" data-anime="gsap" data-intro><a href="/contact#demande" class="bouton bouton--clair" data-libelle="Contact" data-action-principale>Prendre rendez-vous</a></p>
+    <p class="info-cle" data-info-cle data-anime="gsap" data-intro>Existentielle · humaniste · relationnelle</p>
+  </div>
+</section>
+<section class="origine conteneur" id="origine">
+  <div>
+    <p class="surtitre" data-anime>Origine</p>
+    <h2 data-anime="lignes">Une approche née après-guerre</h2>
+    <p data-anime>Elle a été conçue par Fritz Perls, psychanalyste allemand.</p>
+  </div>
+  <div class="frise" role="img" aria-label="Frise : des États-Unis dans les années 50 à l’Europe dans les années 70" data-visuel>
+    <svg class="frise__trait" viewBox="0 0 600 120" preserveAspectRatio="none" aria-hidden="true" data-fx="trace"><path d="M20 80 C 140 10, 260 120, 360 60 S 520 20, 580 70" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+    <ol class="frise__dates" data-anime="cascade" aria-hidden="true">
+      <li><strong>Années 50</strong><span>Naissance aux États-Unis</span></li>
+      <li><strong>Années 70</strong><span>Arrivée en Europe</span></li>
+    </ol>
+  </div>
+</section>
+<section class="ici" id="ici-et-maintenant">
+  <div class="conteneur ici__grille">
+    <figure class="media ici__media" data-grok data-fx="onde" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/gestalt-ici-960.webp" srcset="/assets/images/grok/gestalt-ici-480.webp 480w, /assets/images/grok/gestalt-ici-640.webp 640w, /assets/images/grok/gestalt-ici-960.webp 960w" sizes="(max-width: 760px) 100vw, 38vw" alt="Tache de soleil et ombre d’une fenêtre sur un mur" width="960" height="1280" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+    <div class="ici__texte">
+      <h2 class="ici__titre" data-anime="lignes"><span>Ici et maintenant</span></h2>
+      <p data-anime>La Gestalt s’intéresse au processus en cours, dans l’ici et maintenant de la séance. La thérapeute y adopte une posture dite engagée.</p>
+    </div>
+  </div>
+</section>
+<section class="corps conteneur" id="corps">
+  <div class="corps__texte">
+    <h2 data-anime="lignes">Pas seulement avec les mots</h2>
+    <p data-anime>Comme la psychanalyse, elle travaille avec les mots et leur sens. Mais aussi avec ce qui se vit autrement, et avec la manière dont chacun est en contact avec le monde.</p>
+    <ul class="corps__mots" data-anime="cascade"><li>le corps</li><li>les émotions</li><li>le mouvement</li><li>l’imaginaire</li><li>la créativité</li><li>les sensations</li></ul>
+  </div>
+  <figure class="media corps__media" data-grok data-fx="parallaxe" style="--cadrage:50% 0%">
+  <picture>
+    <img src="/assets/images/grok/gestalt-corps-784.webp" srcset="/assets/images/grok/gestalt-corps-480.webp 480w, /assets/images/grok/gestalt-corps-640.webp 640w, /assets/images/grok/gestalt-corps-784.webp 784w" sizes="(max-width: 760px) 100vw, 36vw" alt="Silhouette de dos près d’une fenêtre, à contre-jour" width="784" height="980" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+</section>
+<section class="vase" id="donner-forme" data-vase="visages">
+  <div class="conteneur vase__grille">
+    <div class="vase__figure">
+      <svg class="vase__svg" viewBox="0 0 1000 1000" role="img" aria-label="Vase de Rubin : deux profils face à face, ou une coupe entre eux" data-effet="vase" focusable="false">
+        <rect class="vase__fond" width="1000" height="1000"></rect>
+        <path class="vase__coupe" d="M318 0 C320 15 324.3 56.7 330 90 C335.7 123.3 345 167.5 352 200 C359 232.5 370.7 265.3 372 285 C373.3 304.7 359 307.2 360 318 C361 328.8 364.7 333.3 378 350 C391.3 366.7 437.7 401 440 418 C442.3 435 398.3 442 392 452 C385.7 462 403 470 402 478 C401 486 386.3 492.3 386 500 C385.7 507.7 402.3 514.7 400 524 C397.7 533.3 372.3 541.7 372 556 C371.7 570.3 401.3 591.3 398 610 C394.7 628.7 363.3 643 352 668 C340.7 693 335 724.7 330 760 C325 795.3 327 840 322 880 C317 920 303.7 980 300 1000 L700 1000 C696.3 980 683 920 678 880 C673 840 675 795.3 670 760 C665 724.7 659.3 693 648 668 C636.7 643 605.3 628.7 602 610 C598.7 591.3 628.3 570.3 628 556 C627.7 541.7 602.3 533.3 600 524 C597.7 514.7 614.3 507.7 614 500 C613.7 492.3 599 486 598 478 C597 470 614.3 462 608 452 C601.7 442 557.7 435 560 418 C562.3 401 608.7 366.7 622 350 C635.3 333.3 639 328.8 640 318 C641 307.2 626.7 304.7 628 285 C629.3 265.3 641 232.5 648 200 C655 167.5 664.3 123.3 670 90 C675.7 56.7 680 15 682 0 Z"></path>
+        <path class="vase__profil vase__profil--g" d="M0 0 L318 0 C320 15 324.3 56.7 330 90 C335.7 123.3 345 167.5 352 200 C359 232.5 370.7 265.3 372 285 C373.3 304.7 359 307.2 360 318 C361 328.8 364.7 333.3 378 350 C391.3 366.7 437.7 401 440 418 C442.3 435 398.3 442 392 452 C385.7 462 403 470 402 478 C401 486 386.3 492.3 386 500 C385.7 507.7 402.3 514.7 400 524 C397.7 533.3 372.3 541.7 372 556 C371.7 570.3 401.3 591.3 398 610 C394.7 628.7 363.3 643 352 668 C340.7 693 335 724.7 330 760 C325 795.3 327 840 322 880 C317 920 303.7 980 300 1000 L0 1000 Z"></path>
+        <path class="vase__profil vase__profil--d" d="M1000 0 L682 0 C680 15 675.7 56.7 670 90 C664.3 123.3 655 167.5 648 200 C641 232.5 629.3 265.3 628 285 C626.7 304.7 641 307.2 640 318 C639 328.8 635.3 333.3 622 350 C608.7 366.7 562.3 401 560 418 C557.7 435 601.7 442 608 452 C614.3 462 597 470 598 478 C599 486 613.7 492.3 614 500 C614.3 507.7 597.7 514.7 600 524 C602.3 533.3 627.7 541.7 628 556 C628.3 570.3 598.7 591.3 602 610 C605.3 628.7 636.7 643 648 668 C659.3 693 665 724.7 670 760 C675 795.3 673 840 678 880 C683 920 696.3 980 700 1000 L1000 1000 Z"></path>
+      </svg>
+    </div>
+    <div class="vase__texte">
+      <h2 data-anime="lignes">Une forme qui prend sens</h2>
+      <p data-anime>Selon où se pose le regard, on voit deux visages, ou une coupe. La forme qui se détache du fond, c’est celle qui prend sens.</p>
+      <p data-anime><button type="button" class="bouton bouton--contour" data-vase-bouton aria-pressed="false" data-libelle-coupe="Voir la coupe" data-libelle-visages="Voir les deux visages">Voir la coupe</button></p>
+      <p class="note" data-anime>Illustration : en psychologie de la forme, le vase de Rubin montre comment une figure se détache d’un fond.</p>
+    </div>
+  </div>
+</section>
+<section class="ple qualites" data-module="planches-empilees" id="qualites" aria-labelledby="qualites-titre">
+  <div class="ple__tete conteneur">
+    <p class="surtitre">Trois mots pour la dire</p>
+    <h2 class="ple__titre" id="qualites-titre" data-anime="lignes">Existentielle, humaniste, relationnelle</h2>
+  </div>
+  <div class="ple__pile conteneur">
+    <article class="ple__planche" data-epingle data-tient aria-labelledby="ple-e" data-effet="planche">
+      <div class="ple__contenu">
+        <p class="ple__cartouche"><span>Planche 1 sur 3</span></p>
+        <h3 class="ple__nom" id="ple-e">Existentielle</h3>
+        <p class="ple__texte">Elle aborde le sens de la vie, la liberté, la responsabilité et la conscience de la finitude.</p>
+      </div>
+      <div class="ple__visuel"><figure class="media ple__media" data-grok style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/gestalt-existentielle-960.webp" srcset="/assets/images/grok/gestalt-existentielle-480.webp 480w, /assets/images/grok/gestalt-existentielle-640.webp 640w, /assets/images/grok/gestalt-existentielle-960.webp 960w" sizes="(max-width: 760px) 100vw, 40vw" alt="Sentier dans les hautes herbes vers la lumière" width="960" height="1280" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure></div>
+    </article><article class="ple__planche" data-epingle data-tient aria-labelledby="ple-h" data-effet="planche">
+      <div class="ple__contenu">
+        <p class="ple__cartouche"><span>Planche 2 sur 3</span></p>
+        <h3 class="ple__nom" id="ple-h">Humaniste</h3>
+        <p class="ple__texte">Elle place au centre la conscience, la subjectivité, l’amour et le lien aux autres.</p>
+      </div>
+      <div class="ple__visuel"><figure class="media ple__media" data-grok style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/gestalt-humaniste-960.webp" srcset="/assets/images/grok/gestalt-humaniste-480.webp 480w, /assets/images/grok/gestalt-humaniste-640.webp 640w, /assets/images/grok/gestalt-humaniste-960.webp 960w" sizes="(max-width: 760px) 100vw, 40vw" alt="Bol en céramique tourné à la main dans une lumière chaude" width="960" height="1280" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure></div>
+    </article><article class="ple__planche" data-epingle data-tient aria-labelledby="ple-r" data-effet="planche">
+      <div class="ple__contenu">
+        <p class="ple__cartouche"><span>Planche 3 sur 3</span></p>
+        <h3 class="ple__nom" id="ple-r">Relationnelle</h3>
+        <p class="ple__texte">Elle met la relation et le contact au cœur de l’évolution.</p>
+      </div>
+      <div class="ple__visuel"><figure class="media ple__media" data-grok style="--cadrage:60% 30%">
+  <picture>
+    <img src="/assets/images/grok/gestalt-relationnelle-960.webp" srcset="/assets/images/grok/gestalt-relationnelle-480.webp 480w, /assets/images/grok/gestalt-relationnelle-640.webp 640w, /assets/images/grok/gestalt-relationnelle-960.webp 960w" sizes="(max-width: 760px) 100vw, 40vw" alt="Deux jeunes arbres dont les branches se touchent" width="960" height="1280" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure></div>
+    </article>
+  </div>
+</section>
+<section class="appel-court conteneur" id="appel">
+  <svg class="appel-court__forme" viewBox="-1 -1 2 2" aria-hidden="true" data-fx="trace" data-visuel><path d="M-0.8 0.1 C -0.7 -0.6, 0.1 -0.85, 0.6 -0.45 S 0.95 0.55, 0.2 0.75 S -0.9 0.75, -0.8 0.1" fill="none" stroke="currentColor" stroke-width="0.03" stroke-linecap="round"/></svg>
+  <div>
+    <h2 data-anime="lignes">En parler ensemble</h2>
+    <p data-anime>La première séance est un temps d’échange sur votre demande et sur ce que vous vivez.</p>
+    <p class="actions" data-anime><a href="/contact#demande" class="bouton" data-libelle="Contact">Prendre rendez-vous</a> <a href="/accompagnements" class="lien-fleche" data-libelle="Accompagnements">Accompagnements</a></p>
+  </div>
+</section>
+</main>
+<footer class="pied" id="pied">
+  <div class="conteneur pied-grille">
+    <div>
+      <p class="pied-nom"><img src="/assets/images/logo-clair.svg" alt="" width="44" height="44"><strong>Alexandra Grandry</strong></p>
+      <p>Gestalt-thérapeute et sophrologue</p>
+      <p>3 bis rue des Écoles, 78400 Chatou<br>à 2 min à pied du RER A Chatou-Croissy<br><a href="tel:+33617874513">06 17 87 45 13</a><br><a href="mailto:ah.grandry@gmail.com">ah.grandry@gmail.com</a></p>
+    </div>
+    <nav aria-label="Sommaire">
+      <p><strong>Sommaire</strong></p>
+      <ul><li><a href="/" data-libelle="Accueil">Accueil</a></li><li><a href="/accompagnements" data-libelle="Accompagnements">Accompagnements</a></li><li><a href="/gestalt-therapie" data-libelle="La Gestalt" aria-current="page">La Gestalt</a></li><li><a href="/sophrologie" data-libelle="La sophrologie">La sophrologie</a></li><li><a href="/contact" data-libelle="Contact">Contact</a></li></ul>
+    </nav>
+    <div>
+      <p><strong>Confort de lecture</strong></p>
+      <ul>
+        <li><button type="button" class="lien" data-calme-bascule data-libelle-reduire="Réduire les animations" data-libelle-retablir="Rétablir les animations" data-libelle-systeme="Animations réduites par le réglage de votre appareil"><span data-libelle-bouton>Réduire les animations</span></button></li>
+        <li><a href="#haut" data-sans-transition>Retour en haut</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="conteneur pied-bas"><p>Mentions légales et politique de confidentialité : à compléter</p><p>Maquette : les informations marquées « à compléter » seront fournies par Alexandra Grandry.</p><p>© Alexandra Grandry</p></div>
+</footer>
+<div data-barre-fixe>
+  <a class="bouton bouton--contour" href="tel:+33617874513">Appeler</a>
+  <a class="bouton" href="/contact#demande" data-libelle="Contact">Rendez-vous</a>
+</div>
+</body>
+</html>

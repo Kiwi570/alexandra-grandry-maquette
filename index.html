@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="fr" data-v="1">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Alexandra Grandry : Gestalt-thérapeute et sophrologue à Chatou</title>
+<meta name="description" content="Gestalt-thérapie et sophrologie à Chatou pour enfants, adolescents, adultes, couples, familles et groupe. Cabinet à 2 min du RER A.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://alexandra-grandry-maquette.vercel.app/">
+<style>:root{--fond:#f3ece0;--texte:#1c3029;--voile-fond:#1e3a32;--ouverture-fond:#f3ece0;--menu-fond:#1e3a32}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.calme):not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.calme):not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) [data-voile] { transform: none; visibility: visible; } html.calme [data-voile], html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var calme = false;
+try { calme = !!ls && ls.getItem('socle:calme') === 'oui'; } catch (e) {}
+if (!calme && window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) calme = true;
+if (calme) d.classList.add('calme');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var retourSection = false;
+try { retourSection = !!ss.getItem('socle:calme-retour'); } catch (e) {}
+var mode = type === 'back_forward' || retourSection ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+if (!retourSection) history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<link rel="preload" href="/assets/fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/figtree.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="stylesheet" href="/assets/css/modules/manifeste-mot-a-mot.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#f3ece0">
+<link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Alexandra Grandry">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Alexandra Grandry : Gestalt-thérapeute et sophrologue à Chatou">
+<meta property="og:description" content="Gestalt-thérapie et sophrologie à Chatou pour enfants, adolescents, adultes, couples, familles et groupe. Cabinet à 2 min du RER A.">
+<meta property="og:url" content="https://alexandra-grandry-maquette.vercel.app/">
+<meta property="og:image" content="https://alexandra-grandry-maquette.vercel.app/assets/partage/accueil-fr.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Alexandra Grandry, Gestalt-thérapeute et sophrologue à Chatou">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Alexandra Grandry, Gestalt-thérapeute et sophrologue","url":"https://alexandra-grandry-maquette.vercel.app/","telephone":"+33617874513","email":"ah.grandry@gmail.com","address":{"@type":"PostalAddress","streetAddress":"3 bis rue des Écoles","postalCode":"78400","addressLocality":"Chatou","addressCountry":"FR"},"description":"Gestalt-thérapie et sophrologie à Chatou : enfants, adolescents, adultes, couples, familles et groupe. Cabinet à 2 minutes à pied du RER A Chatou-Croissy."}</script>
+</head>
+<body id="haut">
+<div data-voile aria-hidden="true"><div class="voile-contenu"><img src="/assets/images/logo-clair.svg" alt="" width="56" height="56"><span data-voile-libelle>Accueil</span></div></div>
+<div class="ouverture-panneau" data-ouverture aria-hidden="true">
+  <svg class="intro-figure" viewBox="0 0 1000 1000" focusable="false">
+    <defs>
+      <clipPath id="intro-clip-g"><path d="M0 0 L318 0 C320 15 324.3 56.7 330 90 C335.7 123.3 345 167.5 352 200 C359 232.5 370.7 265.3 372 285 C373.3 304.7 359 307.2 360 318 C361 328.8 364.7 333.3 378 350 C391.3 366.7 437.7 401 440 418 C442.3 435 398.3 442 392 452 C385.7 462 403 470 402 478 C401 486 386.3 492.3 386 500 C385.7 507.7 402.3 514.7 400 524 C397.7 533.3 372.3 541.7 372 556 C371.7 570.3 401.3 591.3 398 610 C394.7 628.7 363.3 643 352 668 C340.7 693 335 724.7 330 760 C325 795.3 327 840 322 880 C317 920 303.7 980 300 1000 L0 1000 Z"/></clipPath>
+      <clipPath id="intro-clip-d"><path d="M1000 0 L682 0 C680 15 675.7 56.7 670 90 C664.3 123.3 655 167.5 648 200 C641 232.5 629.3 265.3 628 285 C626.7 304.7 641 307.2 640 318 C639 328.8 635.3 333.3 622 350 C608.7 366.7 562.3 401 560 418 C557.7 435 601.7 442 608 452 C614.3 462 597 470 598 478 C599 486 613.7 492.3 614 500 C614.3 507.7 597.7 514.7 600 524 C602.3 533.3 627.7 541.7 628 556 C628.3 570.3 598.7 591.3 602 610 C605.3 628.7 636.7 643 648 668 C659.3 693 665 724.7 670 760 C675 795.3 673 840 678 880 C683 920 696.3 980 700 1000 L1000 1000 Z"/></clipPath>
+    </defs>
+    <path class="intro-coupe" d="M318 0 C320 15 324.3 56.7 330 90 C335.7 123.3 345 167.5 352 200 C359 232.5 370.7 265.3 372 285 C373.3 304.7 359 307.2 360 318 C361 328.8 364.7 333.3 378 350 C391.3 366.7 437.7 401 440 418 C442.3 435 398.3 442 392 452 C385.7 462 403 470 402 478 C401 486 386.3 492.3 386 500 C385.7 507.7 402.3 514.7 400 524 C397.7 533.3 372.3 541.7 372 556 C371.7 570.3 401.3 591.3 398 610 C394.7 628.7 363.3 643 352 668 C340.7 693 335 724.7 330 760 C325 795.3 327 840 322 880 C317 920 303.7 980 300 1000 L700 1000 C696.3 980 683 920 678 880 C673 840 675 795.3 670 760 C665 724.7 659.3 693 648 668 C636.7 643 605.3 628.7 602 610 C598.7 591.3 628.3 570.3 628 556 C627.7 541.7 602.3 533.3 600 524 C597.7 514.7 614.3 507.7 614 500 C613.7 492.3 599 486 598 478 C597 470 614.3 462 608 452 C601.7 442 557.7 435 560 418 C562.3 401 608.7 366.7 622 350 C635.3 333.3 639 328.8 640 318 C641 307.2 626.7 304.7 628 285 C629.3 265.3 641 232.5 648 200 C655 167.5 664.3 123.3 670 90 C675.7 56.7 680 15 682 0 Z"/>
+    <g class="intro-face intro-face--g" clip-path="url(#intro-clip-g)"><circle class="intro-tache" cx="150" cy="160" r="0"></circle><circle class="intro-tache" cx="260" cy="360" r="0"></circle><circle class="intro-tache" cx="120" cy="560" r="0"></circle><circle class="intro-tache" cx="280" cy="760" r="0"></circle><circle class="intro-tache" cx="150" cy="930" r="0"></circle><circle class="intro-tache" cx="40" cy="420" r="0"></circle><circle class="intro-tache" cx="50" cy="60" r="0"></circle></g>
+    <g class="intro-face intro-face--d" clip-path="url(#intro-clip-d)"><circle class="intro-tache" cx="850" cy="160" r="0"></circle><circle class="intro-tache" cx="740" cy="360" r="0"></circle><circle class="intro-tache" cx="880" cy="560" r="0"></circle><circle class="intro-tache" cx="720" cy="760" r="0"></circle><circle class="intro-tache" cx="850" cy="930" r="0"></circle><circle class="intro-tache" cx="960" cy="420" r="0"></circle><circle class="intro-tache" cx="950" cy="60" r="0"></circle></g>
+    <g class="intro-gouttes"><circle cx="90" cy="120" r="16"></circle><circle cx="230" cy="60" r="10"></circle><circle cx="120" cy="470" r="12"></circle><circle cx="40" cy="760" r="18"></circle><circle cx="250" cy="900" r="11"></circle><circle cx="470" cy="150" r="9"></circle><circle cx="560" cy="860" r="13"></circle><circle cx="770" cy="90" r="14"></circle><circle cx="930" cy="300" r="10"></circle><circle cx="880" cy="620" r="17"></circle><circle cx="700" cy="960" r="9"></circle><circle cx="960" cy="840" r="12"></circle></g>
+  </svg>
+  <p class="ouverture-nom">Alexandra Grandry</p>
+  <p class="ouverture-ligne">Gestalt-thérapie · Sophrologie · Chatou</p>
+</div>
+<a class="evitement" href="#contenu">Aller au contenu</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" href="/" data-libelle="Accueil" aria-current="page">
+      <img src="/assets/images/logo.svg" alt="" width="36" height="36"><span class="entete-nom">Alexandra Grandry<small>Gestalt-thérapeute et sophrologue</small></span>
+    </a>
+    <nav data-nav aria-label="Navigation principale">
+      <ul><li><a href="/accompagnements" data-libelle="Accompagnements">Accompagnements</a></li><li><a href="/gestalt-therapie" data-libelle="La Gestalt">La Gestalt</a></li><li><a href="/sophrologie" data-libelle="La sophrologie">La sophrologie</a></li><li><a href="/contact" data-libelle="Contact">Contact</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="bouton entete-action" href="/contact#demande" data-libelle="Contact"><span class="long">Prendre rendez-vous</span><span class="court" aria-hidden="true">Rendez-vous</span></a>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Fermer"><span data-libelle-bouton>Menu</span></button>
+    </div>
+  </div>
+</header>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <ul><li style="--i:0"><a href="/" class="menu-lien" data-libelle="Accueil" aria-current="page">Accueil</a></li><li style="--i:1"><a href="/accompagnements" class="menu-lien" data-libelle="Accompagnements">Accompagnements</a></li><li style="--i:2"><a href="/gestalt-therapie" class="menu-lien" data-libelle="La Gestalt">La Gestalt</a></li><li style="--i:3"><a href="/sophrologie" class="menu-lien" data-libelle="La sophrologie">La sophrologie</a></li><li style="--i:4"><a href="/contact" class="menu-lien" data-libelle="Contact">Contact</a></li></ul>
+  <p><a class="bouton" href="tel:+33617874513">Appeler 06 17 87 45 13</a></p>
+  <p><button type="button" class="lien" data-calme-bascule data-libelle-reduire="Réduire les animations" data-libelle-retablir="Rétablir les animations" data-libelle-systeme="Animations réduites par le réglage de votre appareil"><span data-libelle-bouton>Réduire les animations</span></button></p>
+</div>
+<main id="contenu" tabindex="-1">
+<section class="ouv-accueil" id="debut" data-plein-ecran>
+  <div class="ouv-accueil__texte">
+    <p class="surtitre" data-anime="gsap" data-intro>Gestalt-thérapeute et sophrologue à Chatou</p>
+    <h1 class="ouv-accueil__titre"><span class="ligne-masque"><span class="ouv-ligne" data-anime="gsap" data-superpose>Alexandra</span></span><span class="ligne-masque"><span class="ouv-ligne ouv-ligne--italique" data-anime="gsap" data-superpose>Grandry</span></span></h1>
+    <p class="ouv-accueil__accroche" data-anime="gsap" data-intro>Un espace-temps privilégié pour donner <em>forme</em> à ce qui se vit.</p>
+    <p class="ouv-accueil__chapo" data-anime="gsap" data-intro>J’accueille enfants, adolescents, adultes, couples et familles, seuls ou en groupe, avec bienveillance et confidentialité.</p>
+    <p class="actions" data-anime="gsap" data-intro><a href="/contact#demande" class="bouton" data-libelle="Contact" data-action-principale data-survol="magnetique">Prendre rendez-vous</a> <a class="lien-tel" href="tel:+33617874513">06 17 87 45 13</a></p>
+    <p class="info-cle" data-info-cle data-anime="gsap" data-intro>Cabinet à 2 min du RER A · séance adulte 80 € (45 min)</p>
+  </div>
+  <div class="ouv-accueil__figure">
+    <div class="figure-boite">
+      <figure class="media figure-photo" data-grok data-anime="gsap" style="--cadrage:40% 50%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/accueil-ouverture-mobile-640.webp 640w, /assets/images/grok/accueil-ouverture-mobile-1080.webp 1080w" sizes="(max-width: 760px) 90vw, 46vw">
+    <img src="/assets/images/grok/accueil-ouverture-640.webp" srcset="/assets/images/grok/accueil-ouverture-640.webp 640w" sizes="(max-width: 760px) 90vw, 46vw" alt="Lumière du matin sur un mur enduit et un fauteuil en lin" width="640" height="800" fetchpriority="high" loading="eager" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+      <svg class="figure-svg" data-anime="gsap" data-effet="figure-fond" viewBox="0 0 1000 1000" role="img" aria-label="Deux profils qui se font face : entre eux, le vide dessine une coupe" focusable="false">
+        <path class="figure-profil figure-profil--g" d="M0 0 L318 0 C320 15 324.3 56.7 330 90 C335.7 123.3 345 167.5 352 200 C359 232.5 370.7 265.3 372 285 C373.3 304.7 359 307.2 360 318 C361 328.8 364.7 333.3 378 350 C391.3 366.7 437.7 401 440 418 C442.3 435 398.3 442 392 452 C385.7 462 403 470 402 478 C401 486 386.3 492.3 386 500 C385.7 507.7 402.3 514.7 400 524 C397.7 533.3 372.3 541.7 372 556 C371.7 570.3 401.3 591.3 398 610 C394.7 628.7 363.3 643 352 668 C340.7 693 335 724.7 330 760 C325 795.3 327 840 322 880 C317 920 303.7 980 300 1000 L0 1000 Z"/>
+        <path class="figure-profil figure-profil--d" d="M1000 0 L682 0 C680 15 675.7 56.7 670 90 C664.3 123.3 655 167.5 648 200 C641 232.5 629.3 265.3 628 285 C626.7 304.7 641 307.2 640 318 C639 328.8 635.3 333.3 622 350 C608.7 366.7 562.3 401 560 418 C557.7 435 601.7 442 608 452 C614.3 462 597 470 598 478 C599 486 613.7 492.3 614 500 C614.3 507.7 597.7 514.7 600 524 C602.3 533.3 627.7 541.7 628 556 C628.3 570.3 598.7 591.3 602 610 C605.3 628.7 636.7 643 648 668 C659.3 693 665 724.7 670 760 C675 795.3 673 840 678 880 C683 920 696.3 980 700 1000 L1000 1000 Z"/>
+      </svg>
+    </div>
+  </div>
+</section>
+<section class="presentation conteneur" id="presentation">
+  <div class="presentation__portrait">
+    <figure class="media portrait-media" data-anime="rideau" style="--cadrage:50% 36%">
+  <picture>
+    <img src="/assets/images/portrait-784.webp" srcset="/assets/images/portrait-480.webp 480w, /assets/images/portrait-640.webp 640w, /assets/images/portrait-784.webp 784w" sizes="(max-width: 760px) 80vw, 34vw" alt="Alexandra Grandry, Gestalt-thérapeute et sophrologue" width="784" height="980" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    <svg class="presentation__trait" viewBox="0 0 400 60" preserveAspectRatio="none" aria-hidden="true" data-fx="trace"><path d="M6 40 C 90 6, 170 58, 250 26 S 360 16, 394 34" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+  </div>
+  <div class="presentation__texte">
+    <p class="surtitre" data-anime>Présentation</p>
+    <h2 data-anime="lignes">Je vous accueille</h2>
+    <p data-anime>Gestalt-thérapeute et sophrologue, je propose un accompagnement psychothérapeutique en Gestalt-thérapie et des séances de sophrologie, au cabinet de Chatou ou en visio si le contexte le nécessite.</p>
+    <p data-anime>Ma pratique est supervisée, et je me suis engagée à respecter les codes de déontologie de ma profession.</p>
+    <ul class="titres" data-anime="cascade">
+      <li>Diplômée de l’École Parisienne de Gestalt</li>
+      <li>Titulaire du CEP, European Certificate of Psychotherapy</li>
+      <li>Sophrologue certifiée RNCP</li>
+      <li>Formée à l’accompagnement de la fin de vie</li>
+    </ul>
+  </div>
+</section>
+<section class="mmm raisons" data-module="manifeste-mot-a-mot" id="raisons" aria-labelledby="raisons-titre">
+  <div class="mmm__fond" aria-hidden="true"><figure class="media raisons-fond" data-grok style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/accueil-raisons-1280.webp" srcset="/assets/images/grok/accueil-raisons-640.webp 640w, /assets/images/grok/accueil-raisons-1280.webp 1280w" sizes="100vw" alt="" width="1280" height="854" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure></div>
+  <div class="mmm__cadre conteneur">
+    <p class="surtitre">Consulter</p>
+    <h2 id="raisons-titre" class="raisons__titre" data-anime="lignes">Ce qui peut amener à consulter</h2>
+    <p class="mmm__texte" data-effet="manifeste">Une période difficile : deuil, licenciement, séparation, burn-out. Des difficultés qui reviennent, au travail, en famille, en amour. Des souffrances liées à un trauma. Des addictions. Une dépression ou une anxiété excessive. Des troubles du comportement alimentaire.</p>
+    <p class="mmm__signature">Liste non exhaustive.</p>
+    <p class="raisons__aussi" data-anime>Ce peut être aussi <span class="re-trouver"><span class="re">(re)</span>trouver un sens à sa vie, à son travail, ou questionner son parcours avant un choix important.</span></p>
+    <p class="raisons__ponctuel" data-anime>Quelques séances de soutien ponctuel ou d’information sont également possibles.</p>
+  </div>
+</section>
+<section class="publics" id="pour-qui" aria-labelledby="publics-titre" data-formes='[[[0,0,0.4],[0.14,0.1,0.22],[-0.12,-0.12,0.2],[0,0,0],[0,0,0],[0,0,0],[0,0,0]],[[-0.3,0.02,0.29],[0.3,-0.02,0.29],[-0.4,0.18,0.14],[0.38,-0.16,0.13],[0,0,0],[0,0,0],[0,0,0]],[[-0.16,0.06,0.36],[0.34,-0.14,0.19],[-0.26,-0.14,0.18],[0,0,0],[0,0,0],[0,0,0],[0,0,0]],[[-0.3,0.04,0.33],[0.46,0.14,0.2],[0.14,0.1,0.07],[-0.4,-0.16,0.16],[0,0,0],[0,0,0],[0,0,0]],[[-0.3,0.12,0.27],[0.26,0.14,0.25],[-0.06,-0.24,0.17],[0.32,-0.26,0.13],[-0.4,-0.22,0.1],[0,0,0],[0,0,0]],[[0,0.44,0.13],[0.42,0.14,0.13],[0.26,-0.36,0.13],[-0.26,-0.36,0.13],[-0.42,0.14,0.13],[0,0,0.09],[0,0,0]]]'>
+  <div class="publics__scene">
+    <div class="conteneur publics__tete">
+      <p class="surtitre">Pour qui</p>
+      <h2 id="publics-titre" data-anime="lignes">Une forme pour chaque histoire</h2>
+      <p class="publics__intro">Six cadres d’accompagnement, du plus intime au plus collectif.</p>
+    </div>
+    <div class="conteneur publics__corps">
+      <div class="publics__forme" data-effet="forme" data-visuel>
+        <canvas class="publics__canvas" aria-hidden="true" data-audit-ignorer></canvas>
+        <svg class="forme-svg forme-svg--repli" viewBox="-1 -1 2 2" aria-hidden="true" focusable="false"><circle cx="0" cy="0" r="0.4"></circle><circle cx="0.14" cy="-0.1" r="0.22"></circle><circle cx="-0.12" cy="0.12" r="0.2"></circle></svg>
+      </div>
+      <div class="publics__details">
+        <article class="public" data-public="0" id="pour-qui-adultes">
+          <div class="public__forme"><svg class="forme-svg " viewBox="-1 -1 2 2" aria-hidden="true" focusable="false"><circle cx="0" cy="0" r="0.4"></circle><circle cx="0.14" cy="-0.1" r="0.22"></circle><circle cx="-0.12" cy="0.12" r="0.2"></circle></svg></div>
+          <p class="public__etape">Accompagnement 1 sur 6</p>
+          <h3 class="public__nom">Adultes</h3>
+          <p class="public__phrase">Une période difficile, une question de sens, un choix à faire.</p>
+          <p class="public__tarif"><strong data-prix>80 €</strong> <span>la séance de 45 min</span></p>
+          <ul class="public__cadre"><li>Au cabinet, ou en visio si le contexte le nécessite</li></ul>
+          <p><a href="/accompagnements#adultes" class="lien-fleche" data-libelle="Accompagnements">Voir le détail<span class="visuellement-cache"> : Adultes</span></a></p>
+        </article><article class="public" data-public="1" id="pour-qui-couples">
+          <div class="public__forme"><svg class="forme-svg " viewBox="-1 -1 2 2" aria-hidden="true" focusable="false"><circle cx="-0.3" cy="-0.02" r="0.29"></circle><circle cx="0.3" cy="0.02" r="0.29"></circle><circle cx="-0.4" cy="-0.18" r="0.14"></circle><circle cx="0.38" cy="0.16" r="0.13"></circle></svg></div>
+          <p class="public__etape">Accompagnement 2 sur 6</p>
+          <h3 class="public__nom">Couples</h3>
+          <p class="public__phrase">Comprendre ce qui se passe entre vous.</p>
+          <p class="public__tarif"><strong data-prix>140 €</strong> <span>la séance de 1 h 30</span></p>
+          <ul class="public__cadre"><li>2 séances par mois au début, puis 1 par mois</li><li>Au cabinet</li></ul>
+          <p><a href="/accompagnements#couples" class="lien-fleche" data-libelle="Accompagnements">Voir le détail<span class="visuellement-cache"> : Couples</span></a></p>
+        </article><article class="public" data-public="2" id="pour-qui-enfants">
+          <div class="public__forme"><svg class="forme-svg " viewBox="-1 -1 2 2" aria-hidden="true" focusable="false"><circle cx="-0.16" cy="-0.06" r="0.36"></circle><circle cx="0.34" cy="0.14" r="0.19"></circle><circle cx="-0.26" cy="0.14" r="0.18"></circle></svg></div>
+          <p class="public__etape">Accompagnement 3 sur 6</p>
+          <h3 class="public__nom">Enfants</h3>
+          <p class="public__phrase">L’enfant s’exprime surtout par le jeu.</p>
+          <p class="public__tarif"><span class="prix-manquant" data-prix>Tarif à compléter</span></p>
+          <ul class="public__cadre"><li>1 séance par semaine, rythme aménageable</li><li>Premier rendez-vous avec les parents seuls</li></ul>
+          <p><a href="/accompagnements#enfants" class="lien-fleche" data-libelle="Accompagnements">Voir le détail<span class="visuellement-cache"> : Enfants</span></a></p>
+        </article><article class="public" data-public="3" id="pour-qui-adolescents">
+          <div class="public__forme"><svg class="forme-svg " viewBox="-1 -1 2 2" aria-hidden="true" focusable="false"><circle cx="-0.3" cy="-0.04" r="0.33"></circle><circle cx="0.46" cy="-0.14" r="0.2"></circle><circle cx="0.14" cy="-0.1" r="0.07"></circle><circle cx="-0.4" cy="0.16" r="0.16"></circle></svg></div>
+          <p class="public__etape">Accompagnement 4 sur 6</p>
+          <h3 class="public__nom">Adolescents</h3>
+          <p class="public__phrase">Un espace pour réfléchir, se questionner, être écouté.</p>
+          <p class="public__tarif"><span class="prix-manquant" data-prix>Tarif à compléter</span></p>
+          <ul class="public__cadre"><li>Rythme et durée : à compléter</li><li>Au cabinet</li></ul>
+          <p><a href="/accompagnements#adolescents" class="lien-fleche" data-libelle="Accompagnements">Voir le détail<span class="visuellement-cache"> : Adolescents</span></a></p>
+        </article><article class="public" data-public="4" id="pour-qui-familles">
+          <div class="public__forme"><svg class="forme-svg " viewBox="-1 -1 2 2" aria-hidden="true" focusable="false"><circle cx="-0.3" cy="-0.12" r="0.27"></circle><circle cx="0.26" cy="-0.14" r="0.25"></circle><circle cx="-0.06" cy="0.24" r="0.17"></circle><circle cx="0.32" cy="0.26" r="0.13"></circle><circle cx="-0.4" cy="0.22" r="0.1"></circle></svg></div>
+          <p class="public__etape">Accompagnement 5 sur 6</p>
+          <h3 class="public__nom">Familles</h3>
+          <p class="public__phrase">Un lieu sûr pour faire circuler la parole.</p>
+          <p class="public__tarif"><strong data-prix>150 €</strong> <span>la séance de 1 h 30</span></p>
+          <ul class="public__cadre"><li>Court entretien téléphonique avant</li><li>Au cabinet</li></ul>
+          <p><a href="/accompagnements#familles" class="lien-fleche" data-libelle="Accompagnements">Voir le détail<span class="visuellement-cache"> : Familles</span></a></p>
+        </article><article class="public" data-public="5" id="pour-qui-groupe">
+          <div class="public__forme"><svg class="forme-svg " viewBox="-1 -1 2 2" aria-hidden="true" focusable="false"><circle cx="0" cy="-0.44" r="0.13"></circle><circle cx="0.42" cy="-0.14" r="0.13"></circle><circle cx="0.26" cy="0.36" r="0.13"></circle><circle cx="-0.26" cy="0.36" r="0.13"></circle><circle cx="-0.42" cy="-0.14" r="0.13"></circle><circle cx="0" cy="0" r="0.09"></circle></svg></div>
+          <p class="public__etape">Accompagnement 6 sur 6</p>
+          <h3 class="public__nom">Groupe</h3>
+          <p class="public__phrase">D’autres points de vue, chacun à son rythme.</p>
+          <p class="public__tarif"><strong data-prix>90 €</strong> <span>la séance de 3 h</span></p>
+          <ul class="public__cadre"><li>Un lundi par mois, de 14 h à 17 h</li><li>Centre Corroze, rue Laubeuf, Chatou</li></ul>
+          <p><a href="/accompagnements#groupe" class="lien-fleche" data-libelle="Accompagnements">Voir le détail<span class="visuellement-cache"> : Groupe</span></a></p>
+        </article>
+      </div>
+      <ol class="publics__liste" aria-hidden="true"><li data-index="0"><span class="publics__num">01</span><span class="publics__nom">Adultes</span><span class="publics__prix">80 €</span></li><li data-index="1"><span class="publics__num">02</span><span class="publics__nom">Couples</span><span class="publics__prix">140 €</span></li><li data-index="2"><span class="publics__num">03</span><span class="publics__nom">Enfants</span><span class="publics__prix">—</span></li><li data-index="3"><span class="publics__num">04</span><span class="publics__nom">Adolescents</span><span class="publics__prix">—</span></li><li data-index="4"><span class="publics__num">05</span><span class="publics__nom">Familles</span><span class="publics__prix">150 €</span></li><li data-index="5"><span class="publics__num">06</span><span class="publics__nom">Groupe</span><span class="publics__prix">90 €</span></li></ol>
+    </div>
+  </div>
+</section>
+<section class="approches conteneur" id="approches">
+  <div class="approches__tete">
+    <p class="surtitre" data-anime>Deux approches</p>
+    <h2 data-anime="lignes">Gestalt-thérapie et sophrologie</h2>
+  </div>
+  <div class="approches__grille" data-anime="cascade">
+    <article class="approche" data-survol="incline" data-survol-force="4">
+      <figure class="media approche__media" data-grok data-fx="parallaxe" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/accueil-gestalt-784.webp" srcset="/assets/images/grok/accueil-gestalt-480.webp 480w, /assets/images/grok/accueil-gestalt-640.webp 640w, /assets/images/grok/accueil-gestalt-784.webp 784w" sizes="(max-width: 760px) 100vw, 40vw" alt="Deux tasses en céramique qui se font face sur du lin" width="784" height="1175" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+      <h3>La Gestalt-thérapie</h3>
+      <p>« Gestalt » vient de l’allemand et renvoie à l’idée de donner forme. Une approche existentielle, humaniste et relationnelle, qui travaille avec les mots, le corps et les émotions.</p>
+      <p><a href="/gestalt-therapie" class="lien-fleche" data-libelle="La Gestalt">Découvrir la Gestalt</a></p>
+    </article>
+    <article class="approche approche--decale" data-survol="incline" data-survol-force="4">
+      <figure class="media approche__media" data-grok data-fx="parallaxe" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/accueil-sophrologie-784.webp" srcset="/assets/images/grok/accueil-sophrologie-480.webp 480w, /assets/images/grok/accueil-sophrologie-640.webp 640w, /assets/images/grok/accueil-sophrologie-784.webp 784w" sizes="(max-width: 760px) 100vw, 40vw" alt="Voilage de lin soulevé par un souffle d’air dans une fenêtre" width="784" height="1175" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+      <h3>La sophrologie</h3>
+      <p>Une technique de gestion du stress, avec des outils simples pour le quotidien : respiration, relâchement musculaire, visualisation positive.</p>
+      <p><a href="/sophrologie" class="lien-fleche" data-libelle="La sophrologie">Découvrir la sophrologie</a></p>
+    </article>
+  </div>
+</section>
+<section class="cadre" id="cadre">
+  <div class="conteneur cadre__grille">
+    <div class="cadre__texte">
+      <p class="surtitre" data-anime>Une pratique encadrée</p>
+      <h2 data-anime="lignes">Regardée, questionnée, partagée</h2>
+      <blockquote class="cadre__conviction" data-anime="mots"><p>Mon approche s’appuie sur la conviction que tout être humain peut évoluer, et changer certaines choses dans sa vie, quels que soient son passé et ses difficultés actuelles.</p></blockquote>
+      <dl class="cadre__liste" data-anime="cascade">
+        <div><dt>Supervisée</dt><dd>Ma pratique est regardée et questionnée par un tiers professionnel.</dd></div>
+        <div><dt>Engagée dans la recherche</dt><dd>Je coordonne deux équipes de praticiens-chercheurs qui participent à un projet de recherche en psychothérapie gestaltiste, encadré par l’IDeT (Institut de Développement du Thérapeute) et l’EAGT.</dd></div>
+        <div><dt>Déontologie</dt><dd>Engagée à respecter les codes de déontologie de l’EAGT (European Association for Gestalt Therapy) et de la FF2P (Fédération Française de Psychothérapie et Psychanalyse). Membre de la SFG (Société Française de Gestalt), formée et supervisée à l’EPG (École Parisienne de Gestalt).</dd></div>
+      </dl>
+    </div>
+    <figure class="media cadre__media" data-grok data-fx="onde" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/accueil-cadre-800.webp" srcset="/assets/images/grok/accueil-cadre-480.webp 480w, /assets/images/grok/accueil-cadre-640.webp 640w, /assets/images/grok/accueil-cadre-800.webp 800w" sizes="(max-width: 760px) 100vw, 42vw" alt="Deux fauteuils vides qui se font face dans une pièce claire" width="800" height="534" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+  </div>
+</section>
+<section class="deroule conteneur" id="deroule">
+  <div class="deroule__tete">
+    <p class="surtitre" data-anime>Comment ça se passe</p>
+    <h2 data-anime="lignes">Le temps qu’il faut</h2>
+  </div>
+  <div class="deroule__grille">
+    <figure class="media deroule__media" data-grok data-fx="zoom" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/accueil-deroule-800.webp" srcset="/assets/images/grok/accueil-deroule-480.webp 480w, /assets/images/grok/accueil-deroule-640.webp 640w, /assets/images/grok/accueil-deroule-800.webp 800w" sizes="(max-width: 760px) 100vw, 40vw" alt="Porte entrouverte sur un couloir lumineux" width="800" height="534" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+    <div class="deroule__frise">
+      <svg class="deroule__trait" viewBox="0 0 40 600" preserveAspectRatio="none" aria-hidden="true" data-fx="trace"><path d="M20 4 C 34 120, 6 220, 20 300 S 34 480, 20 596" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+      <ol class="deroule__etapes" data-anime="cascade">
+        <li><h3>La première séance</h3><p>Un temps d’échange sur votre demande et sur ce que vous vivez.</p></li>
+        <li><h3>Le chemin</h3><p>La thérapie n’a pas de durée prédéfinie : elle se termine à votre initiative.</p></li>
+        <li><h3>La clôture</h3><p>Une ou deux séances pour clore le travail.</p></li>
+      </ol>
+      <p class="deroule__tarif" data-anime><strong data-prix>80 €</strong> la séance adulte de 45 min. Non remboursée par la Sécurité sociale, prise en charge possible par certaines mutuelles.</p>
+      <p class="note" data-anime>Séances en visio si le contexte le nécessite</p>
+    </div>
+  </div>
+</section>
+<section class="appel" id="appel" data-gouttiere="#14271f">
+  <figure class="media appel__fond" data-grok data-fx="parallaxe" data-fx-force="12" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/accueil-appel-1280.webp" srcset="/assets/images/grok/accueil-appel-640.webp 640w, /assets/images/grok/accueil-appel-1280.webp 1280w" sizes="100vw" alt="Chemin au bord de l’eau bordé de saules à l’aube" width="1280" height="854" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+  <div class="conteneur appel__contenu">
+    <h2 data-anime="lignes">Prendre rendez-vous</h2>
+    <p data-anime>Par téléphone ou par e-mail. Le cabinet est au 3 bis rue des Écoles, à Chatou, à 2 min à pied du RER A.</p>
+    <p class="appel__actions" data-anime>
+      <a class="bouton bouton--clair" href="tel:+33617874513" data-survol="magnetique">Appeler 06 17 87 45 13</a>
+      <a class="bouton bouton--contour-clair" href="mailto:ah.grandry@gmail.com">Écrire un e-mail</a>
+      <a href="/contact#demande" class="lien-fleche lien-fleche--clair" data-libelle="Contact">Demande en ligne</a>
+    </p>
+  </div>
+</section>
+</main>
+<footer class="pied" id="pied">
+  <div class="conteneur pied-grille">
+    <div>
+      <p class="pied-nom"><img src="/assets/images/logo-clair.svg" alt="" width="44" height="44"><strong>Alexandra Grandry</strong></p>
+      <p>Gestalt-thérapeute et sophrologue</p>
+      <p>3 bis rue des Écoles, 78400 Chatou<br>à 2 min à pied du RER A Chatou-Croissy<br><a href="tel:+33617874513">06 17 87 45 13</a><br><a href="mailto:ah.grandry@gmail.com">ah.grandry@gmail.com</a></p>
+    </div>
+    <nav aria-label="Sommaire">
+      <p><strong>Sommaire</strong></p>
+      <ul><li><a href="/" data-libelle="Accueil" aria-current="page">Accueil</a></li><li><a href="/accompagnements" data-libelle="Accompagnements">Accompagnements</a></li><li><a href="/gestalt-therapie" data-libelle="La Gestalt">La Gestalt</a></li><li><a href="/sophrologie" data-libelle="La sophrologie">La sophrologie</a></li><li><a href="/contact" data-libelle="Contact">Contact</a></li></ul>
+    </nav>
+    <div>
+      <p><strong>Confort de lecture</strong></p>
+      <ul>
+        <li><button type="button" class="lien" data-calme-bascule data-libelle-reduire="Réduire les animations" data-libelle-retablir="Rétablir les animations" data-libelle-systeme="Animations réduites par le réglage de votre appareil"><span data-libelle-bouton>Réduire les animations</span></button></li>
+        <li><a href="#haut" data-sans-transition>Retour en haut</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="conteneur pied-bas"><p>Mentions légales et politique de confidentialité : à compléter</p><p>Maquette : les informations marquées « à compléter » seront fournies par Alexandra Grandry.</p><p>© Alexandra Grandry</p></div>
+</footer>
+<div data-barre-fixe>
+  <a class="bouton bouton--contour" href="tel:+33617874513">Appeler</a>
+  <a class="bouton" href="/contact#demande" data-libelle="Contact">Rendez-vous</a>
+</div>
+</body>
+</html>
