@@ -1,6 +1,6 @@
 // Manifeste mot à mot : le paragraphe est découpé en mots, qui passent de la couleur d'accent à 30 % d'opacité
 // à la couleur du texte à 100 %, au rythme de la molette. Fond en parallaxe léger.
-import { pret } from './pont.js?v=1';
+import { pret } from './pont.js?v=2';
 
 /**
  * @param {HTMLElement} root  section.mmm

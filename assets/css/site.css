@@ -125,7 +125,11 @@ html.menu-ouvert [data-menu-bouton] { background: var(--papier); color: var(--en
 .ouv-accueil__figure { display: grid; place-items: center; }
 .figure-boite { position: relative; width: min(100%, 74svh, 620px); aspect-ratio: 1; overflow: hidden; border-radius: 2px; }
 .figure-photo { position: absolute; inset: 0; border-radius: 0; background: #d9c8a3; }
-.figure-svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+.figure-boite { perspective: 1600px; }
+.battant { position: absolute; top: 0; bottom: 0; width: 50%; will-change: transform; }
+.battant svg { width: 100%; height: 100%; overflow: visible; }
+.battant--g { left: 0; transform-origin: 0% 50%; }
+.battant--d { right: 0; transform-origin: 100% 50%; }
 .figure-profil { fill: var(--encre); }
 .figure-photo .mention-ia { right: 50%; transform: translateX(50%); bottom: 10px; }
 @media (max-width: 760px) {
@@ -496,3 +500,35 @@ html.calme .vase[data-vase="coupe"] .vase__profil { opacity: 0; }
 
 /* Mode calme : version complète et lisible, rien ne bouge. */
 html.calme .souffle__anneau { transform: none !important; }
+
+/* ---------- v2 : pack signature ---------- */
+/* Raisons : « (re) » entouré à la main. */
+.re { position: relative; display: inline-block; }
+.re__cercle { position: absolute; left: -22%; top: -18%; width: 150%; height: 140%; color: var(--terre-vive); overflow: visible; pointer-events: none; }
+/* Sophrologie : la lumière suit la respiration, des ronds naissent sur l'eau à chaque expiration. */
+.ouv-sophro { position: relative; isolation: isolate; overflow: hidden; }
+.ouv-sophro__lumiere { position: absolute; inset: 0; z-index: -1; pointer-events: none; opacity: 0;
+  background: radial-gradient(ellipse at 28% 52%, rgba(255, 252, 244, .95), rgba(255, 252, 244, 0) 62%); }
+.ronds { position: absolute; left: 50%; top: 52%; width: 0; height: 0; z-index: 2; pointer-events: none; }
+.ronds span { position: absolute; left: -90px; top: -36px; width: 180px; height: 72px; border-radius: 50%; border: 1.5px solid rgba(243, 236, 224, .85); opacity: 0; }
+html.calme .ronds, html.calme .ouv-sophro__lumiere { display: none; }
+/* Contact : la plume qui écrit le numéro. */
+.ouv-contact__numero { position: relative; }
+.plume { position: absolute; left: 0; bottom: .12em; width: .16em; height: .16em; border-radius: 50%; background: var(--terre-claire); box-shadow: 0 0 0 .08em rgba(227, 180, 156, .25); pointer-events: none; }
+html.calme .plume, html[data-arrivee="retour"] .plume { display: none; }
+/* Voile de transition à bord d'encre : des coulures précèdent le voile, d'autres le suivent. */
+[data-voile] { overflow: visible; }
+.voile-bord { position: absolute; left: 0; width: 100%; height: clamp(60px, 10vh, 120px); fill: var(--voile-fond); pointer-events: none; }
+.voile-bord--haut { bottom: calc(100% - 1px); }
+.voile-bord--bas { top: calc(100% - 1px); }
+/* Fil d'encre (module fil-conducteur) : une goutte au bout. */
+.fic { --fic-epaisseur: 1.8px; }
+/* Sections qui ont leur propre contexte d'empilement : elles passent au-dessus du fil, qui file derrière elles. */
+.fic > .raisons, .fic > .appel, .fic > .ouv-gestalt, .fic > .ouv-sophro, .fic > .quotidien, .fic > .cadre { position: relative; z-index: 2; }
+.fil-goutte { fill: var(--terre-vive); }
+.fil-goutte-halo { fill: rgba(180, 97, 63, .14); }
+/* Gestalt : l'encre bouge sous le pointeur. */
+.ouv-gestalt__fond .encre-canvas { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 1; pointer-events: none; }
+.ouv-gestalt__fond .mention-ia { z-index: 3; }
+/* Curseur goutte : traînée d'encre (souris seulement). */
+.trainee { position: fixed; inset: 0; z-index: 795; pointer-events: none; }

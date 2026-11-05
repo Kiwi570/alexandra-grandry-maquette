@@ -45,14 +45,14 @@
   "consigne_scene": "Two simple handmade ceramic cups facing each other on raw linen, soft side light, the empty space between them forming a gentle vase-like shape, minimal still life"
  },
  {
-  "source": "recu/grok/accueil-sophrologie.jpg",
+  "source": "recu/grok/accueil-sophrologie-v2.jpg",
   "nom": "grok/accueil-sophrologie",
   "role": "carte-service",
-  "alt": "Voilage de lin soulevé par un souffle d'air dans une fenêtre",
+  "alt": "Herbes hautes qui plient sous la brise au lever du soleil",
   "page": "Accueil",
   "emplacement": "Carte « La sophrologie »",
   "priorite": "Indispensable",
-  "consigne_scene": "A sheer linen curtain softly lifted by a breath of air in a tall sunlit window, warm plaster wall, quiet and airy"
+  "consigne_scene": "Soft wind moving through a field of tall pale grasses at sunrise, seen close at grass height, shallow depth of field, warm golden backlight, airy and calm, nobody in the field"
  },
  {
   "source": "recu/grok/accueil-cadre.jpg",
@@ -220,14 +220,14 @@
   "consigne_scene": "A hand-thrown ceramic bowl with a soft uneven glaze on raw linen, warm side light"
  },
  {
-  "source": "recu/grok/gestalt-relationnelle.jpg",
+  "source": "recu/grok/gestalt-relationnelle-v2.jpg",
   "nom": "grok/gestalt-relationnelle",
   "role": "galerie",
-  "alt": "Deux jeunes arbres dont les branches se touchent",
+  "alt": "Deux tiges de plante grimpante qui s'entrelacent sur un mur enduit",
   "page": "La Gestalt-thérapie",
   "emplacement": "Planche « Relationnelle »",
-  "priorite": "Conseillée",
-  "consigne_scene": "Two young trees whose upper branches gently touch, standing in a misty meadow at dawn"
+  "priorite": "Indispensable",
+  "consigne_scene": "Two stems of a delicate climbing plant growing side by side and gently intertwining on a warm lime plaster wall, soft raking side light, simple and quiet, no furniture"
  },
  {
   "source": "recu/grok/sophrologie-ouverture.jpg",
@@ -273,15 +273,15 @@
   "consigne_scene": "Soft misty landscape of gentle layered hills at dawn, pale light, wide calm horizon"
  },
  {
-  "source": "recu/grok/sophro-quotidien.jpg",
+  "source": "recu/grok/sophro-quotidien-v2.jpg",
   "nom": "grok/sophro-quotidien",
   "role": "section-fond",
-  "alt": "Coussin en lin et écouteurs posés près d'une fenêtre",
+  "alt": "Banc de jardin sous un arbre dans la lumière du matin",
   "page": "La sophrologie",
   "emplacement": "Section « Des outils pour le quotidien », fond",
-  "priorite": "Conseillée",
+  "priorite": "Indispensable",
   "zone_texte": "gauche",
-  "consigne_scene": "A linen floor cushion on a wooden floor beside a window, a pair of simple unbranded wired earphones resting on it, soft light, calm empty space on the left"
+  "consigne_scene": "A quiet wooden garden bench under a large tree in soft morning light, a folded light linen blanket resting on the bench, dew on the grass, nobody around, calm empty space on the left of the frame"
  },
  {
   "source": "recu/grok/contact-ouverture.jpg",

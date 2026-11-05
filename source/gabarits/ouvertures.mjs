@@ -7,7 +7,8 @@ import { profilGauche, profilDroit } from './vase.mjs';
 const tel = (c) => html`<a class="lien-tel" href="tel:${c.site.contact.telephoneLien}">${c.site.contact.telephone}</a>`;
 
 /* Accueil · papier ivoire, texte à gauche, deux profils d'encre à droite dont la coupe laisse voir la photo.
-   Mouvement « figure-fond » : au défilement, les profils s'écartent et la photo prend toute la colonne. */
+   Mouvement « figure-fond » : les profils sont deux battants ; à l'arrivée ils se referment sur la coupe,
+   au défilement (section épinglée sur ordinateur) ils s'ouvrent en 3D comme une porte sur la photo. */
 export function ouvertureAccueil(c) {
   return html`<section class="ouv-accueil" id="debut" data-plein-ecran>
   <div class="ouv-accueil__texte">
@@ -19,12 +20,10 @@ export function ouvertureAccueil(c) {
     <p class="info-cle" data-info-cle data-anime="gsap" data-intro>${c.t('accueil.hero.info')}</p>
   </div>
   <div class="ouv-accueil__figure">
-    <div class="figure-boite">
+    <div class="figure-boite" data-effet="figure-fond" role="img" aria-label="${c.s('accueil.hero.figure')}">
       ${c.media({ nom: 'grok/accueil-ouverture', alt: c.s('accueil.hero.alt'), cadrage: '40% 50%', priorite: true, classe: 'figure-photo', sizes: '(max-width: 760px) 90vw, 46vw', attrs: 'data-anime="gsap"' })}
-      <svg class="figure-svg" data-anime="gsap" data-effet="figure-fond" viewBox="0 0 1000 1000" role="img" aria-label="${c.s('accueil.hero.figure')}" focusable="false">
-        <path class="figure-profil figure-profil--g" d="${brut(profilGauche)}"/>
-        <path class="figure-profil figure-profil--d" d="${brut(profilDroit)}"/>
-      </svg>
+      <div class="battant battant--g" data-anime="gsap" aria-hidden="true"><svg viewBox="0 0 500 1000" preserveAspectRatio="none" focusable="false"><path class="figure-profil" d="${brut(profilGauche)}"/></svg></div>
+      <div class="battant battant--d" data-anime="gsap" aria-hidden="true"><svg viewBox="500 0 500 1000" preserveAspectRatio="none" focusable="false"><path class="figure-profil" d="${brut(profilDroit)}"/></svg></div>
     </div>
   </div>
 </section>`;
@@ -55,7 +54,7 @@ export function ouvertureAccompagnements(c) {
 export function ouvertureGestalt(c) {
   const mot = c.s('gestalt.mot');
   return html`<section class="ouv-gestalt" id="debut" data-gouttiere="#14271f">
-  ${c.media({ nom: 'grok/gestalt-ouverture', alt: c.s('gestalt.alt'), cadrage: '50% 50%', cadrageMobile: '50% 50%', priorite: true, classe: 'ouv-gestalt__fond', sizes: '100vw', attrs: 'data-fx="zoom" data-fx-force="10"' })}
+  ${c.media({ nom: 'grok/gestalt-ouverture', alt: c.s('gestalt.alt'), cadrage: '50% 50%', cadrageMobile: '50% 50%', priorite: true, classe: 'ouv-gestalt__fond', sizes: '100vw', attrs: 'data-effet="encre" data-souris' })}
   <div class="ouv-gestalt__contenu conteneur">
     <h1 class="ouv-gestalt__titre"><span class="visuellement-cache">${c.t('gestalt.titre')}</span><span class="ouv-gestalt__mot" aria-hidden="true" data-effet="gestalt-lettres">${[...mot].map((l, i) => html`<span class="lettre" style="--i:${i}"><span class="lettre-in" data-anime="gsap">${l}</span></span>`)}</span></h1>
     <p class="ouv-gestalt__sous" data-anime="gsap" data-intro><em>${c.t('gestalt.sous')}</em></p>
@@ -70,7 +69,9 @@ export function ouvertureGestalt(c) {
    Mouvement « respiration » : le cercle s'ouvre et se referme lentement ; un bouton guide une respiration. */
 export function ouvertureSophrologie(c) {
   return html`<section class="ouv-sophro" id="debut">
+  <span class="ouv-sophro__lumiere" aria-hidden="true" data-audit-ignorer></span>
   <div class="ouv-sophro__visuel">
+    <span class="ronds" aria-hidden="true" data-audit-ignorer><span></span><span></span><span></span></span>
     ${c.media({ nom: 'grok/sophrologie-ouverture', alt: c.s('sophrologie.alt'), cadrage: '40% 50%', priorite: true, classe: 'ouv-sophro__photo', sizes: '(max-width: 760px) 100vw, 46vw' })}
     <div class="souffle" data-anime="gsap" data-effet="respiration" role="img" aria-label="${c.s('sophrologie.cercle')}">
       <span class="souffle__anneau souffle__anneau--2" aria-hidden="true"></span>
@@ -100,7 +101,7 @@ export function ouvertureContact(c) {
       <p data-anime>${c.t('contact.texte')}</p>
     </div>
     <div class="ouv-contact__joindre">
-      <a class="ouv-contact__numero" href="tel:${c.site.contact.telephoneLien}" data-action-principale aria-label="${c.s('contact.numero')}">${[...chiffres].map((ch, i) => html`<span class="chiffre${ch === ' ' ? ' chiffre--espace' : ''}" style="--i:${i}" aria-hidden="true" data-anime="gsap" data-effet="numero">${ch === ' ' ? ' ' : ch}</span>`)}</a>
+      <a class="ouv-contact__numero" href="tel:${c.site.contact.telephoneLien}" data-action-principale aria-label="${c.s('contact.numero')}">${[...chiffres].map((ch, i) => html`<span class="chiffre${ch === ' ' ? ' chiffre--espace' : ''}" style="--i:${i}" aria-hidden="true" data-anime="gsap" data-effet="numero">${ch === ' ' ? ' ' : ch}</span>`)}<span class="plume" aria-hidden="true" data-anime="gsap" data-ephemere></span></a>
       <p><a class="ouv-contact__email" href="mailto:${c.site.contact.email}">${c.site.contact.email}</a></p>
       <p class="info-cle" data-info-cle>${c.t('contact.info')}</p>
     </div>

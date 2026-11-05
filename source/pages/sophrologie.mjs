@@ -3,7 +3,7 @@
 import { html } from '../../outils/gabarit.mjs';
 import { ouvertureSophrologie } from '../gabarits/ouvertures.mjs';
 
-export const page = { cle: 'sophrologie', fichier: 'sophrologie', imagePartage: 'grok/sophro-respiration-800.webp' };
+export const page = { cle: 'sophrologie', fichier: 'sophrologie', imagePartage: 'grok/sophro-respiration-800.webp', modulesCss: ['fil-conducteur'], fil: true };
 
 export default (c) => {
   const o = (k) => c.t('sophrologie.corps.' + k);
@@ -11,7 +11,7 @@ export default (c) => {
   return html`
 ${ouvertureSophrologie(c)}
 
-<section class="outils conteneur" id="corps-esprit">
+<section class="outils conteneur" id="corps-esprit" data-fil="gauche">
   <div class="outils__tete">
     <p class="surtitre" data-anime>${o('surtitre')}</p>
     <h2 data-anime="lignes">${o('titre')}</h2>
@@ -42,7 +42,7 @@ ${ouvertureSophrologie(c)}
   <div>
     <h2 data-anime="lignes">${c.t('sophrologie.appel.titre')}</h2>
     <p data-anime>${c.t('sophrologie.appel.texte')}</p>
-    <p class="actions" data-anime>${c.lien('contact', { ancre: 'demande', params: 'public=adultes', classe: 'bouton', texte: c.t('commun.actionEntete') })} ${c.lien('gestalt', { classe: 'lien-fleche', texte: c.t('pages.gestalt.nav') })}</p>
+    <p class="actions" data-anime>${c.lien('contact', { ancre: 'demande', params: 'public=adultes', classe: 'bouton', texte: c.t('commun.actionEntete'), attrs: 'data-fil-point="0.5 0.5" data-fil-boucle' })} ${c.lien('gestalt', { classe: 'lien-fleche', texte: c.t('pages.gestalt.nav') })}</p>
   </div>
 </section>
 `;

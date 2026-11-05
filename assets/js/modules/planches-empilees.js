@@ -6,7 +6,7 @@
 //  - la classe est-epingle sur la planche collée (contrôle « tout tient dans l'écran ») ;
 //  - au clavier, une planche recouverte qui reçoit le focus est ramenée au-dessus de la pile.
 // Mode calme, « réduire les animations », téléphone (< 700 px) ou écran bas (< 520 px) : liste simple, rien ne bouge (CSS).
-import { pret } from './pont.js?v=1';
+import { pret } from './pont.js?v=2';
 
 /**
  * @param {HTMLElement} root  section.ple

@@ -5,15 +5,15 @@ import { html, brut } from '../../outils/gabarit.mjs';
 import { ouvertureGestalt } from '../gabarits/ouvertures.mjs';
 import { profilGauche, profilDroit, coupe } from '../gabarits/vase.mjs';
 
-export const page = { cle: 'gestalt', fichier: 'gestalt-therapie', imagePartage: 'grok/gestalt-ouverture-1280.webp', modulesCss: ['planches-empilees'] };
+export const page = { cle: 'gestalt', fichier: 'gestalt-therapie', imagePartage: 'grok/gestalt-ouverture-1280.webp', modulesCss: ['planches-empilees', 'fil-conducteur'], fil: true };
 
 export default (c) => {
   const q = (k) => c.t('gestalt.qualites.' + k);
-  const planches = [['e', 'grok/gestalt-existentielle', '50% 50%'], ['h', 'grok/gestalt-humaniste', '50% 50%'], ['r', 'grok/gestalt-relationnelle', '60% 30%']];
+  const planches = [['e', 'grok/gestalt-existentielle', '50% 50%'], ['h', 'grok/gestalt-humaniste', '50% 50%'], ['r', 'grok/gestalt-relationnelle', '50% 50%']];
   return html`
 ${ouvertureGestalt(c)}
 
-<section class="origine conteneur" id="origine">
+<section class="origine conteneur" id="origine" data-fil="gauche">
   <div>
     <p class="surtitre" data-anime>${c.t('gestalt.origine.surtitre')}</p>
     <h2 data-anime="lignes">${c.t('gestalt.origine.titre')}</h2>
@@ -28,7 +28,7 @@ ${ouvertureGestalt(c)}
   </div>
 </section>
 
-<section class="ici" id="ici-et-maintenant">
+<section class="ici" id="ici-et-maintenant" data-fil="gauche">
   <div class="conteneur ici__grille">
     ${c.media({ nom: 'grok/gestalt-ici', alt: c.s('gestalt.ici.alt'), classe: 'ici__media', sizes: '(max-width: 760px) 100vw, 38vw', attrs: 'data-fx="onde"' })}
     <div class="ici__texte">
@@ -38,7 +38,7 @@ ${ouvertureGestalt(c)}
   </div>
 </section>
 
-<section class="corps conteneur" id="corps">
+<section class="corps conteneur" id="corps" data-fil="droite">
   <div class="corps__texte">
     <h2 data-anime="lignes">${c.t('gestalt.corps.titre')}</h2>
     <p data-anime>${c.t('gestalt.corps.texte')}</p>
@@ -47,7 +47,7 @@ ${ouvertureGestalt(c)}
   ${c.media({ nom: 'grok/gestalt-corps', alt: c.s('gestalt.corps.alt'), cadrage: '50% 0%', classe: 'corps__media', sizes: '(max-width: 760px) 100vw, 36vw', attrs: 'data-fx="parallaxe"' })}
 </section>
 
-<section class="vase" id="donner-forme" data-vase="visages">
+<section class="vase" id="donner-forme" data-vase="visages" data-fil="droite">
   <div class="conteneur vase__grille">
     <div class="vase__figure">
       <svg class="vase__svg" viewBox="0 0 1000 1000" role="img" aria-label="${c.s('gestalt.vase.desc')}" data-effet="vase" focusable="false">
@@ -88,7 +88,7 @@ ${ouvertureGestalt(c)}
   <div>
     <h2 data-anime="lignes">${c.t('gestalt.appel.titre')}</h2>
     <p data-anime>${c.t('gestalt.appel.texte')}</p>
-    <p class="actions" data-anime>${c.lien('contact', { ancre: 'demande', classe: 'bouton', texte: c.t('commun.actionEntete') })} ${c.lien('accompagnements', { classe: 'lien-fleche', texte: c.t('pages.accompagnements.nav') })}</p>
+    <p class="actions" data-anime>${c.lien('contact', { ancre: 'demande', classe: 'bouton', texte: c.t('commun.actionEntete'), attrs: 'data-fil-point="0.5 0.5" data-fil-boucle' })} ${c.lien('accompagnements', { classe: 'lien-fleche', texte: c.t('pages.accompagnements.nav') })}</p>
   </div>
 </section>
 `;

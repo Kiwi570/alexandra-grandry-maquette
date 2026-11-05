@@ -1,33 +1,49 @@
 {
-  "date": "2026-11-05T13:46:11.186Z",
+  "date": "2026-11-05T15:43:49.664Z",
   "plan": "/home/claude/alexandra-grandry-maquette/plan-images.json",
-  "attendus": 32,
-  "recus": 32,
+  "attendus": 31,
+  "recus": 35,
   "planches": [
     "planche.jpg",
     "planche-2.jpg"
   ],
-  "inconnus": [],
+  "inconnus": [
+    "accueil-sophrologie.jpg",
+    "gestalt-ouverture-mobile.jpg",
+    "gestalt-relationnelle.jpg",
+    "sophro-quotidien.jpg"
+  ],
   "manquants": [],
-  "a_regenerer": [],
+  "a_regenerer": [
+    {
+      "fichier": "accueil-ouverture.jpg",
+      "problemes": [
+        "ratio 0.67 au lieu de 1168×784"
+      ],
+      "consigne_corrigee": "(consigne d'origine introuvable : relancer grok.mjs) Generate in landscape format, 1168×784 pixels."
+    },
+    {
+      "fichier": "sophrologie-ouverture.jpg",
+      "problemes": [
+        "ratio 0.67 au lieu de 1168×784"
+      ],
+      "consigne_corrigee": "(consigne d'origine introuvable : relancer grok.mjs) Generate in landscape format, 1168×784 pixels."
+    }
+  ],
   "images": [
     {
       "nom": "grok/accueil-ouverture",
       "attendu": "accueil-ouverture.jpg",
       "fichier": "accueil-ouverture.jpg",
       "priorite": "Indispensable",
-      "problemes": [],
-      "indications": [
-        "mains : 0, doigts reconnus - (indicatif, à regarder)"
+      "problemes": [
+        "ratio 0.67 au lieu de 1168×784"
       ],
+      "indications": [],
       "largeur": 784,
       "hauteur": 1168,
       "boites": [],
-      "mains": {
-        "annoncees": true,
-        "vues": 0,
-        "doigts": []
-      }
+      "consigne_corrigee": "(consigne d'origine introuvable : relancer grok.mjs) Generate in landscape format, 1168×784 pixels."
     },
     {
       "nom": "grok/accueil-raisons",
@@ -53,8 +69,8 @@
     },
     {
       "nom": "grok/accueil-sophrologie",
-      "attendu": "accueil-sophrologie.jpg",
-      "fichier": "accueil-sophrologie.jpg",
+      "attendu": "accueil-sophrologie-v2.jpg",
+      "fichier": "accueil-sophrologie-v2.jpg",
       "priorite": "Indispensable",
       "problemes": [],
       "indications": [],
@@ -101,17 +117,10 @@
       "fichier": "accompagnements-ouverture.jpg",
       "priorite": "Indispensable",
       "problemes": [],
-      "indications": [
-        "mains : 0, doigts reconnus - (indicatif, à regarder)"
-      ],
+      "indications": [],
       "largeur": 1168,
       "hauteur": 784,
-      "boites": [],
-      "mains": {
-        "annoncees": true,
-        "vues": 0,
-        "doigts": []
-      }
+      "boites": []
     },
     {
       "nom": "grok/accompagnements-ouverture",
@@ -120,17 +129,10 @@
       "fichier": "accompagnements-ouverture-mobile.jpg",
       "priorite": "Indispensable",
       "problemes": [],
-      "indications": [
-        "mains : 0, doigts reconnus - (indicatif, à regarder)"
-      ],
+      "indications": [],
       "largeur": 784,
       "hauteur": 1168,
-      "boites": [],
-      "mains": {
-        "annoncees": true,
-        "vues": 0,
-        "doigts": []
-      }
+      "boites": []
     },
     {
       "nom": "grok/adultes",
@@ -182,17 +184,10 @@
       "fichier": "familles.jpg",
       "priorite": "Indispensable",
       "problemes": [],
-      "indications": [
-        "mains : 0, doigts reconnus - (indicatif, à regarder)"
-      ],
+      "indications": [],
       "largeur": 784,
       "hauteur": 1168,
-      "boites": [],
-      "mains": {
-        "annoncees": true,
-        "vues": 0,
-        "doigts": []
-      }
+      "boites": []
     },
     {
       "nom": "grok/groupe",
@@ -222,36 +217,10 @@
       "fichier": "gestalt-ouverture.jpg",
       "priorite": "Indispensable",
       "problemes": [],
-      "indications": [
-        "mains : 0, doigts reconnus - (indicatif, à regarder)"
-      ],
+      "indications": [],
       "largeur": 1168,
       "hauteur": 784,
-      "boites": [],
-      "mains": {
-        "annoncees": true,
-        "vues": 0,
-        "doigts": []
-      }
-    },
-    {
-      "nom": "grok/gestalt-ouverture",
-      "mobile": true,
-      "attendu": "gestalt-ouverture-mobile.jpg",
-      "fichier": "gestalt-ouverture-mobile.jpg",
-      "priorite": "Indispensable",
-      "problemes": [],
-      "indications": [
-        "mains : 0, doigts reconnus - (indicatif, à regarder)"
-      ],
-      "largeur": 784,
-      "hauteur": 1168,
-      "boites": [],
-      "mains": {
-        "annoncees": true,
-        "vues": 0,
-        "doigts": []
-      }
+      "boites": []
     },
     {
       "nom": "grok/gestalt-ici",
@@ -259,17 +228,10 @@
       "fichier": "gestalt-ici.jpg",
       "priorite": "Conseillée",
       "problemes": [],
-      "indications": [
-        "mains : 0, doigts reconnus - (indicatif, à regarder)"
-      ],
+      "indications": [],
       "largeur": 784,
       "hauteur": 1168,
-      "boites": [],
-      "mains": {
-        "annoncees": true,
-        "vues": 0,
-        "doigts": []
-      }
+      "boites": []
     },
     {
       "nom": "grok/gestalt-corps",
@@ -277,17 +239,10 @@
       "fichier": "gestalt-corps.jpg",
       "priorite": "Conseillée",
       "problemes": [],
-      "indications": [
-        "mains : 0, doigts reconnus - (indicatif, à regarder)"
-      ],
+      "indications": [],
       "largeur": 784,
       "hauteur": 1168,
-      "boites": [],
-      "mains": {
-        "annoncees": true,
-        "vues": 0,
-        "doigts": []
-      }
+      "boites": []
     },
     {
       "nom": "grok/gestalt-existentielle",
@@ -295,17 +250,10 @@
       "fichier": "gestalt-existentielle.jpg",
       "priorite": "Conseillée",
       "problemes": [],
-      "indications": [
-        "mains : 0, doigts reconnus - (indicatif, à regarder)"
-      ],
+      "indications": [],
       "largeur": 784,
       "hauteur": 1168,
-      "boites": [],
-      "mains": {
-        "annoncees": true,
-        "vues": 0,
-        "doigts": []
-      }
+      "boites": []
     },
     {
       "nom": "grok/gestalt-humaniste",
@@ -327,9 +275,9 @@
     },
     {
       "nom": "grok/gestalt-relationnelle",
-      "attendu": "gestalt-relationnelle.jpg",
-      "fichier": "gestalt-relationnelle.jpg",
-      "priorite": "Conseillée",
+      "attendu": "gestalt-relationnelle-v2.jpg",
+      "fichier": "gestalt-relationnelle-v2.jpg",
+      "priorite": "Indispensable",
       "problemes": [],
       "indications": [
         "mains : 0, doigts reconnus - (indicatif, à regarder)"
@@ -348,18 +296,14 @@
       "attendu": "sophrologie-ouverture.jpg",
       "fichier": "sophrologie-ouverture.jpg",
       "priorite": "Indispensable",
-      "problemes": [],
-      "indications": [
-        "mains : 0, doigts reconnus - (indicatif, à regarder)"
+      "problemes": [
+        "ratio 0.67 au lieu de 1168×784"
       ],
+      "indications": [],
       "largeur": 784,
       "hauteur": 1168,
       "boites": [],
-      "mains": {
-        "annoncees": true,
-        "vues": 0,
-        "doigts": []
-      }
+      "consigne_corrigee": "(consigne d'origine introuvable : relancer grok.mjs) Generate in landscape format, 1168×784 pixels."
     },
     {
       "nom": "grok/sophro-respiration",
@@ -396,9 +340,9 @@
     },
     {
       "nom": "grok/sophro-quotidien",
-      "attendu": "sophro-quotidien.jpg",
-      "fichier": "sophro-quotidien.jpg",
-      "priorite": "Conseillée",
+      "attendu": "sophro-quotidien-v2.jpg",
+      "fichier": "sophro-quotidien-v2.jpg",
+      "priorite": "Indispensable",
       "problemes": [],
       "indications": [],
       "largeur": 1168,
@@ -411,17 +355,10 @@
       "fichier": "contact-ouverture.jpg",
       "priorite": "Indispensable",
       "problemes": [],
-      "indications": [
-        "mains : 0, doigts reconnus - (indicatif, à regarder)"
-      ],
+      "indications": [],
       "largeur": 1168,
       "hauteur": 784,
-      "boites": [],
-      "mains": {
-        "annoncees": true,
-        "vues": 0,
-        "doigts": []
-      }
+      "boites": []
     },
     {
       "nom": "grok/contact-ouverture",
@@ -430,17 +367,10 @@
       "fichier": "contact-ouverture-mobile.jpg",
       "priorite": "Indispensable",
       "problemes": [],
-      "indications": [
-        "mains : 0, doigts reconnus - (indicatif, à regarder)"
-      ],
+      "indications": [],
       "largeur": 784,
       "hauteur": 1168,
-      "boites": [],
-      "mains": {
-        "annoncees": true,
-        "vues": 0,
-        "doigts": []
-      }
+      "boites": []
     },
     {
       "nom": "grok/contact-formulaire",
@@ -459,17 +389,10 @@
       "fichier": "page-404.jpg",
       "priorite": "Conseillée",
       "problemes": [],
-      "indications": [
-        "mains : 0, doigts reconnus - (indicatif, à regarder)"
-      ],
+      "indications": [],
       "largeur": 1168,
       "hauteur": 784,
-      "boites": [],
-      "mains": {
-        "annoncees": true,
-        "vues": 0,
-        "doigts": []
-      }
+      "boites": []
     }
   ]
 }

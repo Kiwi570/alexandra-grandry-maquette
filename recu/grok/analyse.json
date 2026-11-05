@@ -1,6 +1,6 @@
 {
   "dossier": "/home/claude/alexandra-grandry-maquette/recu/grok",
-  "date": "2026-11-05T13:46:36.589Z",
+  "date": "2026-11-05T15:44:14.192Z",
   "detection": "mesures sharp seulement",
   "planches": [
     "planche.jpg",
@@ -605,8 +605,8 @@
       ]
     },
     {
-      "fichier": "accueil-sophrologie.jpg",
-      "nom": "accueil-sophrologie",
+      "fichier": "accueil-sophrologie-v2.jpg",
+      "nom": "accueil-sophrologie-v2",
       "drapeau": null,
       "largeur": 784,
       "hauteur": 1168,
@@ -614,58 +614,58 @@
       "ratio_valeur": 0.671,
       "orientation": "portrait",
       "format": "jpeg",
-      "poids": 303676,
+      "poids": 284077,
       "transparence": false,
       "sujet": {
         "x": 0,
-        "y": 0,
+        "y": 3.1,
         "l": 95.5,
-        "h": 100,
+        "h": 96.9,
         "source": "contrastes"
       },
       "visages": 0,
       "cadrage": [
-        40,
+        49,
         55
       ],
-      "cadrage_css": "40% 55%",
+      "cadrage_css": "49% 55%",
       "zones_calmes": [
         {
           "cote": "haut",
-          "score": 0.29,
+          "score": 0.56,
           "ton": "clair",
-          "recouvre_sujet": 0.96
-        },
-        {
-          "cote": "droite",
-          "score": 0.17,
-          "ton": "moyen",
-          "recouvre_sujet": 0.89
+          "recouvre_sujet": 0.87
         },
         {
           "cote": "gauche",
-          "score": 0.01,
-          "ton": "clair",
-          "recouvre_sujet": 1
+          "score": 0.07,
+          "ton": "moyen",
+          "recouvre_sujet": 0.97
+        },
+        {
+          "cote": "droite",
+          "score": 0.07,
+          "ton": "moyen",
+          "recouvre_sujet": 0.86
         },
         {
           "cote": "bas",
-          "score": 0.01,
-          "ton": "moyen",
+          "score": 0,
+          "ton": "sombre",
           "recouvre_sujet": 0.96
         }
       ],
       "qualite": {
-        "nettete": 44.4,
-        "bruit": 1.07,
-        "compression": 1.07,
+        "nettete": 40,
+        "bruit": 0.98,
+        "compression": 1.04,
         "faible": true,
         "raisons": [
           "784 px de large"
         ]
       },
       "lisible": null,
-      "empreinte": "989898989a8ac6e4",
+      "empreinte": "80009084a8e030ba",
       "drapeaux": [
         "petite"
       ]
@@ -1463,72 +1463,6 @@
       ]
     },
     {
-      "fichier": "gestalt-ouverture-mobile.jpg",
-      "nom": "gestalt-ouverture-mobile",
-      "drapeau": null,
-      "largeur": 784,
-      "hauteur": 1168,
-      "ratio": "2:3",
-      "ratio_valeur": 0.671,
-      "orientation": "portrait",
-      "format": "jpeg",
-      "poids": 267950,
-      "transparence": false,
-      "sujet": {
-        "x": 0,
-        "y": 0,
-        "l": 95.5,
-        "h": 100,
-        "source": "contrastes"
-      },
-      "visages": 0,
-      "cadrage": [
-        48,
-        65
-      ],
-      "cadrage_css": "48% 65%",
-      "zones_calmes": [
-        {
-          "cote": "haut",
-          "score": 0.34,
-          "ton": "clair",
-          "recouvre_sujet": 0.96
-        },
-        {
-          "cote": "droite",
-          "score": 0.14,
-          "ton": "moyen",
-          "recouvre_sujet": 0.89
-        },
-        {
-          "cote": "gauche",
-          "score": 0,
-          "ton": "clair",
-          "recouvre_sujet": 1
-        },
-        {
-          "cote": "bas",
-          "score": 0,
-          "ton": "moyen",
-          "recouvre_sujet": 0.96
-        }
-      ],
-      "qualite": {
-        "nettete": 20.4,
-        "bruit": 0.9,
-        "compression": 1.1,
-        "faible": true,
-        "raisons": [
-          "784 px de large"
-        ]
-      },
-      "lisible": null,
-      "empreinte": "2020383838870764",
-      "drapeaux": [
-        "petite"
-      ]
-    },
-    {
       "fichier": "gestalt-ouverture.jpg",
       "nom": "gestalt-ouverture",
       "drapeau": null,
@@ -1596,8 +1530,8 @@
       ]
     },
     {
-      "fichier": "gestalt-relationnelle.jpg",
-      "nom": "gestalt-relationnelle",
+      "fichier": "gestalt-relationnelle-v2.jpg",
+      "nom": "gestalt-relationnelle-v2",
       "drapeau": null,
       "largeur": 784,
       "hauteur": 1168,
@@ -1605,58 +1539,58 @@
       "ratio_valeur": 0.671,
       "orientation": "portrait",
       "format": "jpeg",
-      "poids": 284689,
+      "poids": 256681,
       "transparence": false,
       "sujet": {
         "x": 0,
-        "y": 3.1,
-        "l": 95.5,
-        "h": 96.9,
+        "y": 0,
+        "l": 86.4,
+        "h": 100,
         "source": "contrastes"
       },
       "visages": 0,
       "cadrage": [
-        45,
+        27,
         58
       ],
-      "cadrage_css": "45% 58%",
+      "cadrage_css": "27% 58%",
       "zones_calmes": [
         {
-          "cote": "haut",
-          "score": 0.32,
-          "ton": "clair",
-          "recouvre_sujet": 0.87
+          "cote": "droite",
+          "score": 0.6,
+          "ton": "moyen",
+          "recouvre_sujet": 0.66
         },
         {
-          "cote": "droite",
-          "score": 0.12,
+          "cote": "haut",
+          "score": 0.43,
           "ton": "clair",
           "recouvre_sujet": 0.86
         },
         {
-          "cote": "gauche",
-          "score": 0,
-          "ton": "clair",
-          "recouvre_sujet": 0.97
+          "cote": "bas",
+          "score": 0.31,
+          "ton": "moyen",
+          "recouvre_sujet": 0.86
         },
         {
-          "cote": "bas",
-          "score": 0,
-          "ton": "moyen",
-          "recouvre_sujet": 0.96
+          "cote": "gauche",
+          "score": 0.17,
+          "ton": "clair",
+          "recouvre_sujet": 1
         }
       ],
       "qualite": {
-        "nettete": 58.3,
-        "bruit": 0.99,
-        "compression": 1.09,
+        "nettete": 30.9,
+        "bruit": 1.08,
+        "compression": 1.07,
         "faible": true,
         "raisons": [
           "784 px de large"
         ]
       },
       "lisible": null,
-      "empreinte": "1818121a92386908",
+      "empreinte": "6060606060606031",
       "drapeaux": [
         "petite"
       ]
@@ -1794,8 +1728,8 @@
       ]
     },
     {
-      "fichier": "sophro-quotidien.jpg",
-      "nom": "sophro-quotidien",
+      "fichier": "sophro-quotidien-v2.jpg",
+      "nom": "sophro-quotidien-v2",
       "drapeau": null,
       "largeur": 1168,
       "hauteur": 784,
@@ -1803,61 +1737,60 @@
       "ratio_valeur": 1.49,
       "orientation": "paysage",
       "format": "jpeg",
-      "poids": 254101,
+      "poids": 384212,
       "transparence": false,
       "sujet": {
-        "x": 31.3,
-        "y": 4.5,
-        "l": 62.5,
-        "h": 90.9,
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 95.5,
         "source": "contrastes"
       },
       "visages": 0,
       "cadrage": [
-        59,
-        75
+        53,
+        40
       ],
-      "cadrage_css": "59% 75%",
+      "cadrage_css": "53% 40%",
       "zones_calmes": [
         {
           "cote": "gauche",
-          "score": 0.73,
+          "score": 0.05,
           "ton": "clair",
-          "recouvre_sujet": 0.2
-        },
-        {
-          "cote": "haut",
-          "score": 0.51,
-          "ton": "clair",
-          "recouvre_sujet": 0.54
-        },
-        {
-          "cote": "bas",
-          "score": 0.29,
-          "ton": "moyen",
-          "recouvre_sujet": 0.54
+          "recouvre_sujet": 0.96
         },
         {
           "cote": "droite",
-          "score": 0.13,
-          "ton": "clair",
-          "recouvre_sujet": 0.77
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.87
         }
       ],
       "qualite": {
-        "nettete": 24,
-        "bruit": 0.98,
-        "compression": 1.14,
+        "nettete": 54.5,
+        "bruit": 1.45,
+        "compression": 1.03,
         "faible": true,
         "raisons": [
           "1168 px de large"
         ]
       },
       "lisible": null,
-      "empreinte": "e6e6e6e6cecccde7",
+      "empreinte": "c0e3d3c2c2e0c0e0",
       "drapeaux": [
-        "petite",
-        "calme gauche"
+        "petite"
       ]
     },
     {

@@ -293,12 +293,12 @@
   },
   "grok/accueil-sophrologie": {
     "nom": "grok/accueil-sophrologie",
-    "source": "recu/grok/accueil-sophrologie.jpg",
+    "source": "recu/grok/accueil-sophrologie-v2.jpg",
     "role": "carte-service",
-    "alt": "Voilage de lin soulevé par un souffle d'air dans une fenêtre",
+    "alt": "Herbes hautes qui plient sous la brise au lever du soleil",
     "grok": true,
     "mention": "Illustration générée",
-    "empreinte": "e8c9e77e7c411bc0",
+    "empreinte": "ec6220568b20247a",
     "ratio": "2:3",
     "largeurs": [
       480,
@@ -306,33 +306,33 @@
       784
     ],
     "mobile": null,
-    "cadrage": "40% 55%",
+    "cadrage": "49% 55%",
     "sujet": {
       "x": 0,
-      "y": 0,
+      "y": 3.1,
       "l": 96.1,
-      "h": 100
+      "h": 96.9
     },
     "zones_calmes": [
       {
         "cote": "haut",
-        "score": 0.29,
+        "score": 0.56,
         "ton": "clair"
-      },
-      {
-        "cote": "droite",
-        "score": 0.17,
-        "ton": "moyen"
       },
       {
         "cote": "gauche",
-        "score": 0.01,
-        "ton": "clair"
+        "score": 0.07,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.07,
+        "ton": "moyen"
       },
       {
         "cote": "bas",
-        "score": 0.01,
-        "ton": "moyen"
+        "score": 0,
+        "ton": "sombre"
       }
     ],
     "zone_texte": null,
@@ -357,11 +357,11 @@
       "grok/accueil-sophrologie-784.webp"
     ],
     "poids": {
-      "grok/accueil-sophrologie-480.webp": 33576,
-      "grok/accueil-sophrologie-640.webp": 54418,
-      "grok/accueil-sophrologie-784.webp": 70904
+      "grok/accueil-sophrologie-480.webp": 38540,
+      "grok/accueil-sophrologie-640.webp": 58498,
+      "grok/accueil-sophrologie-784.webp": 72572
     },
-    "media": "c.media({ nom: 'grok/accueil-sophrologie', alt: \"Voilage de lin soulevé par un souffle d'air dans une fenêtre\", cadrage: '40% 55%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '2 / 3' })"
+    "media": "c.media({ nom: 'grok/accueil-sophrologie', alt: \"Herbes hautes qui plient sous la brise au lever du soleil\", cadrage: '49% 55%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '2 / 3' })"
   },
   "grok/accueil-cadre": {
     "nom": "grok/accueil-cadre",
@@ -1543,12 +1543,12 @@
   },
   "grok/gestalt-relationnelle": {
     "nom": "grok/gestalt-relationnelle",
-    "source": "recu/grok/gestalt-relationnelle.jpg",
+    "source": "recu/grok/gestalt-relationnelle-v2.jpg",
     "role": "galerie",
-    "alt": "Deux jeunes arbres dont les branches se touchent",
+    "alt": "Deux tiges de plante grimpante qui s'entrelacent sur un mur enduit",
     "grok": true,
     "mention": "Illustration générée",
-    "empreinte": "2e57c365b8adfe8d",
+    "empreinte": "97bd26fb52beb3b1",
     "ratio": "3:4",
     "largeurs": [
       480,
@@ -1556,33 +1556,33 @@
       960
     ],
     "mobile": null,
-    "cadrage": "45% 53%",
+    "cadrage": "27% 53%",
     "sujet": {
       "x": 0,
       "y": 0,
-      "l": 95.5,
+      "l": 86.4,
       "h": 100
     },
     "zones_calmes": [
       {
-        "cote": "haut",
-        "score": 0.32,
-        "ton": "clair"
-      },
-      {
         "cote": "droite",
-        "score": 0.12,
-        "ton": "clair"
+        "score": 0.6,
+        "ton": "moyen"
       },
       {
-        "cote": "gauche",
-        "score": 0,
+        "cote": "haut",
+        "score": 0.43,
         "ton": "clair"
       },
       {
         "cote": "bas",
-        "score": 0,
+        "score": 0.31,
         "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.17,
+        "ton": "clair"
       }
     ],
     "zone_texte": null,
@@ -1609,11 +1609,11 @@
       "grok/gestalt-relationnelle-960.webp"
     ],
     "poids": {
-      "grok/gestalt-relationnelle-480.webp": 31376,
-      "grok/gestalt-relationnelle-640.webp": 50232,
-      "grok/gestalt-relationnelle-960.webp": 83420
+      "grok/gestalt-relationnelle-480.webp": 13878,
+      "grok/gestalt-relationnelle-640.webp": 26750,
+      "grok/gestalt-relationnelle-960.webp": 53610
     },
-    "media": "c.media({ nom: 'grok/gestalt-relationnelle', alt: \"Deux jeunes arbres dont les branches se touchent\", cadrage: '45% 53%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 4' })"
+    "media": "c.media({ nom: 'grok/gestalt-relationnelle', alt: \"Deux tiges de plante grimpante qui s'entrelacent sur un mur enduit\", cadrage: '27% 53%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 4' })"
   },
   "grok/sophrologie-ouverture": {
     "nom": "grok/sophrologie-ouverture",
@@ -1911,51 +1911,51 @@
   },
   "grok/sophro-quotidien": {
     "nom": "grok/sophro-quotidien",
-    "source": "recu/grok/sophro-quotidien.jpg",
+    "source": "recu/grok/sophro-quotidien-v2.jpg",
     "role": "section-fond",
-    "alt": "Coussin en lin et écouteurs posés près d'une fenêtre",
+    "alt": "Banc de jardin sous un arbre dans la lumière du matin",
     "grok": true,
     "mention": "Illustration générée",
-    "empreinte": "aa35ec8dc87a7339",
+    "empreinte": "10cff9889e137c6c",
     "ratio": "3:2",
     "largeurs": [
       640,
       1280
     ],
     "mobile": null,
-    "cadrage": "59% 75%",
+    "cadrage": "53% 40%",
     "sujet": {
-      "x": 31.3,
-      "y": 3.9,
-      "l": 62.5,
-      "h": 91.5
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 96.1
     },
     "zones_calmes": [
       {
         "cote": "gauche",
-        "score": 0.73,
+        "score": 0.05,
         "ton": "clair"
-      },
-      {
-        "cote": "haut",
-        "score": 0.51,
-        "ton": "clair"
-      },
-      {
-        "cote": "bas",
-        "score": 0.29,
-        "ton": "moyen"
       },
       {
         "cote": "droite",
-        "score": 0.13,
-        "ton": "clair"
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
       }
     ],
     "zone_texte": "gauche",
     "recadrage": {
       "left": 0,
-      "top": 5,
+      "top": 0,
       "width": 1168,
       "height": 779,
       "source": [
@@ -1976,10 +1976,10 @@
       "grok/sophro-quotidien-1280.webp"
     ],
     "poids": {
-      "grok/sophro-quotidien-640.webp": 18432,
-      "grok/sophro-quotidien-1280.webp": 59570
+      "grok/sophro-quotidien-640.webp": 52758,
+      "grok/sophro-quotidien-1280.webp": 140894
     },
-    "media": "c.media({ nom: 'grok/sophro-quotidien', alt: \"Coussin en lin et écouteurs posés près d'une fenêtre\", cadrage: '59% 75%', sizes: '100vw' })"
+    "media": "c.media({ nom: 'grok/sophro-quotidien', alt: \"Banc de jardin sous un arbre dans la lumière du matin\", cadrage: '53% 40%', sizes: '100vw' })"
   },
   "grok/contact-ouverture": {
     "nom": "grok/contact-ouverture",

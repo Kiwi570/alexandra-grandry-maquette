@@ -14,16 +14,18 @@ Le logo est une **proposition** : un vase de Rubin (deux profils face à face, l
 
 | Page | Ouverture | Effet propre |
 |---|---|---|
-| Accueil | Texte à gauche, deux profils d'encre et la coupe qui laisse voir la photo | `figure-fond`, `forme` (signature WebGL, section « Pour qui » épinglée) |
+| Accueil | Texte à gauche, deux profils d'encre (battants) et la coupe qui laisse voir la photo | `figure-fond` (portes en 3D épinglées), `ordre`, `forme` (signature WebGL, « Pour qui » épinglé) |
 | Accompagnements | Très grand titre, sommaire en pastilles, bandeau de galets | `gouttes`, `cercle` (fiche Groupe) |
-| La Gestalt-thérapie | Fond encre sombre, le mot « Gestalt » qui se rassemble | `gestalt-lettres`, `vase` (vase de Rubin) |
-| La sophrologie | Image à gauche avec le cercle de respiration | `respiration` |
+| La Gestalt-thérapie | Fond encre sombre, le mot « Gestalt » qui se rassemble | `gestalt-lettres`, `encre` (WebGL au pointeur), `vase` (vase de Rubin) |
+| La sophrologie | Image à gauche avec le cercle de respiration | `respiration` (lumière et ronds sur l'eau) |
 | Contact et rendez-vous | Numéro de téléphone en très grand, bandeau panoramique | `numero`, `chemin-rer` (plan schématique) |
 | 404 | « Cette page n'a pas encore pris forme » | |
 
 Les 9 pages du site actuel sont toutes reprises : Couples, Enfant, Adolescent, Familles et Groupe sont regroupées dans **Accompagnements** (une fiche chacune, avec lien direct `/accompagnements#couples`, etc.).
 
-Modules de la bibliothèque réutilisés : manifeste mot à mot (raisons de consulter), planches empilées (existentielle, humaniste, relationnelle), formulaire par étapes (demande de rendez-vous). Effets du socle : lignes, cascade, rideau, parallaxe, zoom, trace, onde, magnétique, incline.
+Sur tout le site : fil d'encre (module fil conducteur), voile de transition à bord d'encre, curseur goutte à la souris.
+
+Modules de la bibliothèque réutilisés : fil conducteur, planches empilées (existentielle, humaniste, relationnelle), formulaire par étapes (demande de rendez-vous). Effets du socle : lignes, cascade, rideau, parallaxe, zoom, trace, onde, magnétique, incline.
 
 ## Fiche récapitulative : ce qu'Alexandra Grandry doit fournir
 
@@ -55,7 +57,7 @@ Modules de la bibliothèque réutilisés : manifeste mot à mot (raisons de cons
 - Toutes les autres images sont des **illustrations générées avec Grok** : elles portent la mention « Illustration générée », y compris sur les images de partage. **Garder cette mention sur le site final.**
 - Grok a rendu les images en 1168 px : pour les grands écrans, régénérer en 2K les images d'ouverture si possible.
 - Portrait : demander à Alexandra Grandry une version en haute définition, à la lumière plus neutre (le fichier actuel tire vers le rose).
-- À varier en v2 (regard neuf) : plusieurs illustrations se ressemblent (voilage, vase, fauteuil crème). Candidates à régénérer : `sophro-quotidien` (écouteurs mal rendus), `gestalt-relationnelle` (coin de lit dans le cadre), `accueil-sophrologie` (trop proche d'autres intérieurs).
+- v2 : trois illustrations régénérées pour varier les sujets (herbes sous la brise, tiges entrelacées, banc de jardin).
 
 ## À retirer à la mise en ligne définitive
 

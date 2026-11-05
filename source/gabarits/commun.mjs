@@ -112,7 +112,7 @@ function barre(c) {
 }
 
 function voile(c) {
-  return html`<div data-voile aria-hidden="true"><div class="voile-contenu"><img src="/assets/images/logo-clair.svg" alt="" width="56" height="56"><span data-voile-libelle>${c.libelle(c.page.cle)}</span></div></div>`;
+  return html`<div data-voile aria-hidden="true"><svg class="voile-bord voile-bord--haut" viewBox="0 0 1200 120" preserveAspectRatio="none" focusable="false"><path d="M0 120 L0 70 C 60 40, 110 96, 170 62 C 220 34, 240 88, 300 80 C 360 72, 380 20, 450 36 C 520 52, 520 100, 590 84 C 650 70, 670 10, 740 22 C 800 32, 820 92, 880 78 C 940 64, 960 30, 1020 44 C 1080 58, 1110 96, 1200 66 L1200 120 Z"/><circle cx="262" cy="30" r="11"/><circle cx="640" cy="40" r="8"/><circle cx="975" cy="12" r="10"/></svg><svg class="voile-bord voile-bord--bas" viewBox="0 0 1200 120" preserveAspectRatio="none" focusable="false"><path d="M0 0 L0 40 C 70 70, 120 18, 190 52 C 250 82, 280 30, 340 44 C 410 60, 430 104, 500 86 C 560 70, 590 24, 650 40 C 720 58, 740 98, 810 84 C 870 72, 900 26, 960 38 C 1030 52, 1060 92, 1200 58 L1200 0 Z"/><circle cx="420" cy="104" r="9"/><circle cx="1080" cy="102" r="12"/></svg><div class="voile-contenu"><img src="/assets/images/logo-clair.svg" alt="" width="56" height="56"><span data-voile-libelle>${c.libelle(c.page.cle)}</span></div></div>`;
 }
 
 export function page(c, contenu) {
@@ -137,8 +137,9 @@ ${voile(c)}
 </div>
 <a class="evitement" href="#contenu">${c.t('commun.evitement')}</a>
 ${entete(c)}
-<main id="contenu" tabindex="-1"${c.page.sansAction ? brut(' data-sans-action') : ''}${c.page.sansEffet ? brut(' data-sans-effet') : ''}>
+<main id="contenu" tabindex="-1"${c.page.fil ? brut(' data-module="fil-conducteur"') : ''}${c.page.sansAction ? brut(' data-sans-action') : ''}${c.page.sansEffet ? brut(' data-sans-effet') : ''}>
 ${contenu}
+${c.page.fil ? brut('<template data-fil-objet><circle class="fil-goutte" r="6"></circle><circle class="fil-goutte-halo" r="13"></circle></template>') : ''}
 </main>
 ${pied(c)}
 ${barre(c)}

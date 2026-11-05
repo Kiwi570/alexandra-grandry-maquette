@@ -1,7 +1,7 @@
 /* Pont entre les modules de la bibliothèque (qui appellent pret([...]) de leur propre socle)
    et le socle de ce projet : même GSAP, même ScrollTrigger, même mode calme, même rafraîchissement regroupé.
    Les modules ne chargent rien eux-mêmes : GSAP, ScrollTrigger et SplitText sont déjà dans la page. */
-import { rafraichir, boucle as boucleSocle } from '../socle/index.js?v=1';
+import { rafraichir, boucle as boucleSocle } from '../socle/index.js?v=2';
 
 const html = document.documentElement;
 const mqReduit = matchMedia('(prefers-reduced-motion: reduce)');

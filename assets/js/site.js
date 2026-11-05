@@ -1,8 +1,9 @@
 /* Effets propres à Alexandra Grandry (direction « Figure et fond »). Le socle gère l'ouverture, les transitions,
    l'en-tête, le menu, le mode calme, les boucles, les mesures et la bibliothèque d'effets (posés par attributs).
    Effets du plan, chacun marqué data-effet : figure-fond, forme, gouttes, gestalt-lettres, vase, respiration,
-   numero, chemin-rer, cercle. Modules de la bibliothèque : manifeste-mot-a-mot, planches-empilees, formulaire-par-etapes. */
-import { demarrer, boucle, etat, rafraichir } from './socle/index.js?v=1';
+   numero, chemin-rer, cercle ; v2 : ordre (raisons qui se rangent), encre (Gestalt, au pointeur), curseur goutte.
+   Modules de la bibliothèque : fil-conducteur, planches-empilees, formulaire-par-etapes. */
+import { demarrer, boucle, etat, rafraichir, quand } from './socle/index.js?v=2';
 
 const gsap = window.gsap;
 const ST = window.ScrollTrigger;
@@ -14,26 +15,138 @@ const telephone = () => innerWidth <= 760;
 /* ---------- Modules de la bibliothèque ---------- */
 function modules() {
   const m = $('[data-module="manifeste-mot-a-mot"]');
-  if (m) import('./modules/manifeste-mot-a-mot.js?v=1').then((x) => x.init(m, { debut: 'top 75%', fin: 'center 55%', parallaxe: 0 })).catch((e) => console.warn(e));
+  if (m) import('./modules/manifeste-mot-a-mot.js?v=2').then((x) => x.init(m, { debut: 'top 75%', fin: 'center 55%', parallaxe: 0 })).catch((e) => console.warn(e));
   const p = $('[data-module="planches-empilees"]');
-  if (p) import('./modules/planches-empilees.js?v=1').then((x) => x.init(p, { rotation: 0 })).catch((e) => console.warn(e));
+  if (p) import('./modules/planches-empilees.js?v=2').then((x) => x.init(p, { rotation: 0 })).catch((e) => console.warn(e));
+  const fil = $('main[data-module="fil-conducteur"]');
+  /* Le fil est construit après l'ouverture : son calcul ne retarde jamais l'intro. */
+  const lancerFil = () => import('./modules/fil-conducteur.js?v=2').then((x) => x.init(fil, { cadre: '.conteneur', onde: 14, boucle: 30, lissage: 0.6 })).catch((e) => console.warn(e));
+  if (fil && !calme()) { if (etat.pret) lancerFil(); else quand('pret', () => setTimeout(lancerFil, 120)); }
   const f = $('[data-module="formulaire-par-etapes"]');
   if (f) {
     /* Choix déjà fait selon le bouton d'où l'on vient (?public=couples). */
     const choix = new URLSearchParams(location.search).get('public');
     if (choix) { const r = f.querySelector(`input[name="public"][value="${CSS.escape(choix)}"]`); if (r) r.checked = true; }
-    import('./modules/formulaire-par-etapes.js?v=1').then((x) => x.init(f, { mailto: '' })).catch((e) => console.warn(e));
+    import('./modules/formulaire-par-etapes.js?v=2').then((x) => x.init(f, { mailto: '' })).catch((e) => console.warn(e));
   }
 }
 
-/* ---------- Accueil : figure-fond (au défilement, les profils s'écartent et la photo prend la colonne) ---------- */
+/* ---------- Accueil : figure-fond — les deux profils sont des battants qui s'ouvrent en 3D sur la photo ----------
+   Ordinateur (761 px et plus, 600 px de haut) : l'ouverture est épinglée sur un écran, les portes s'ouvrent pendant
+   que la coupe grandit. Téléphone : les portes s'ouvrent pendant que la figure traverse l'écran. */
 function figureFond() {
   const boite = $('.figure-boite');
   if (!boite || !gsap || !ST || calme()) return;
-  const tl = gsap.timeline({ scrollTrigger: { trigger: '.ouv-accueil', start: 'top top', end: 'bottom 20%', scrub: 0.6, invalidateOnRefresh: true } });
-  tl.fromTo('.figure-profil--g', { x: 0 }, { x: -360, ease: 'none' }, 0)
-    .fromTo('.figure-profil--d', { x: 0 }, { x: 360, ease: 'none' }, 0)
-    .fromTo('.figure-photo img', { scale: 1 }, { scale: 1.12, ease: 'none' }, 0);
+  const mm = gsap.matchMedia();
+  const portes = (tl) => tl
+    .fromTo('.battant--g', { rotateY: 0 }, { rotateY: -72, ease: 'power1.inOut' }, 0)
+    .fromTo('.battant--d', { rotateY: 0 }, { rotateY: 72, ease: 'power1.inOut' }, 0)
+    .fromTo('.figure-photo img', { scale: 1.08 }, { scale: 1, ease: 'none' }, 0)
+    .fromTo(boite, { scale: 1 }, { scale: 1.05, ease: 'none' }, 0);
+  mm.add('(min-width: 761px) and (min-height: 600px)', () => {
+    portes(gsap.timeline({ scrollTrigger: { trigger: '.ouv-accueil', start: 'top top', end: '+=' + Math.round(innerHeight * 0.9), pin: true, scrub: 0.7, invalidateOnRefresh: true } }));
+  });
+  mm.add('(max-width: 760px), (max-height: 599px)', () => {
+    portes(gsap.timeline({ scrollTrigger: { trigger: boite, start: 'top 75%', end: 'bottom 25%', scrub: 0.6, invalidateOnRefresh: true } }));
+  });
+}
+
+/* ---------- Accueil : les raisons arrivent en désordre et se rangent au défilement (effet « ordre ») ---------- */
+function ordre() {
+  const t = $('.raisons .mmm__texte');
+  if (!t || !gsap || !ST || !window.SplitText || calme()) return;
+  const split = new window.SplitText(t, { type: 'words', wordsClass: 'mot-ordre' });
+  const h = (i, k) => { const x = Math.sin(i * 12.9898 + k * 78.233) * 43758.5453; return x - Math.floor(x); };
+  /* Une seule fois, à l'entrée dans l'écran : les mots épars se rangent, puis restent à leur place. */
+  gsap.fromTo(split.words,
+    { x: (i) => (h(i, 1) - 0.5) * 70, y: (i) => (h(i, 2) - 0.5) * 46, rotate: (i) => (h(i, 3) - 0.5) * 22, opacity: 0.28 },
+    { x: 0, y: 0, rotate: 0, opacity: 1, duration: 1.5, ease: 'power3.out', stagger: { each: 0.025, from: 'random' },
+      scrollTrigger: { trigger: t, start: 'top 88%', once: true } });
+}
+
+/* ---------- Gestalt : l'encre du fond bouge sous le pointeur et au défilement (WebGL, effet « encre ») ---------- */
+function encre() {
+  const fig = $('.ouv-gestalt__fond');
+  const img = fig && fig.querySelector('img');
+  if (!img || calme() || /[?&]sanswebgl\b/.test(location.search)) return;
+  const canvas = document.createElement('canvas');
+  canvas.className = 'encre-canvas'; canvas.setAttribute('aria-hidden', 'true');
+  const gl = canvas.getContext('webgl', { premultipliedAlpha: false, antialias: false });
+  if (!gl) return;
+  const vs = 'attribute vec2 p;varying vec2 v;void main(){v=p*.5+.5;gl_Position=vec4(p,0.,1.);}';
+  const fs = `precision mediump float;varying vec2 v;uniform sampler2D t;uniform vec2 r;uniform vec2 ir;uniform vec2 m;uniform float f;uniform float ph;
+void main(){
+  vec2 uv=v; vec2 a=vec2(r.x/r.y,1.);
+  vec2 d=(uv-m)*a; float l=length(d);
+  float ang=f*exp(-l*l*9.);
+  float c=cos(ang),s=sin(ang); d=mat2(c,-s,s,c)*d; uv=m+d/a;
+  uv+=vec2(sin(uv.y*7.+ph),cos(uv.x*6.-ph*.8))*.006;
+  float ra=r.x/r.y, ri=ir.x/ir.y; vec2 sc=ra>ri?vec2(1.,ri/ra):vec2(ra/ri,1.);
+  vec2 q=(uv-.5)*sc+.5; q.y=1.-q.y;
+  gl_FragColor=texture2D(t,clamp(q,.001,.999));
+}`;
+  const sh = (ty, src) => { const o = gl.createShader(ty); gl.shaderSource(o, src); gl.compileShader(o); return o; };
+  const pr = gl.createProgram(); gl.attachShader(pr, sh(gl.VERTEX_SHADER, vs)); gl.attachShader(pr, sh(gl.FRAGMENT_SHADER, fs)); gl.linkProgram(pr);
+  if (!gl.getProgramParameter(pr, gl.LINK_STATUS)) return;
+  gl.useProgram(pr);
+  gl.bindBuffer(gl.ARRAY_BUFFER, gl.createBuffer());
+  gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1, -1, 1, -1, -1, 1, 1, 1]), gl.STATIC_DRAW);
+  const lp = gl.getAttribLocation(pr, 'p'); gl.enableVertexAttribArray(lp); gl.vertexAttribPointer(lp, 2, gl.FLOAT, false, 0, 0);
+  const U = (n) => gl.getUniformLocation(pr, n);
+  const tex = gl.createTexture();
+  let pret = false;
+  const charger = () => {
+    gl.bindTexture(gl.TEXTURE_2D, tex);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR); gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE); gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
+    try { gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGB, gl.RGB, gl.UNSIGNED_BYTE, img); } catch { return; }
+    gl.uniform2f(U('ir'), img.naturalWidth, img.naturalHeight);
+    pret = true; fig.appendChild(canvas); fig.insertBefore(canvas, fig.querySelector('.mention-ia'));
+  };
+  (img.complete && img.naturalWidth ? Promise.resolve() : img.decode().catch(() => {})).then(charger);
+  const taille = () => { const b = fig.getBoundingClientRect(); canvas.width = Math.max(2, Math.round(b.width)); canvas.height = Math.max(2, Math.round(b.height)); };
+  new ResizeObserver(taille).observe(fig); taille();
+  /* Pointeur lissé ; la force du tourbillon vient de sa vitesse et retombe en moins d'une seconde. */
+  const m = { x: 0.5, y: 0.5, tx: 0.5, ty: 0.5 }; let force = 0, phase = 0, defil = 0;
+  const bouger = (cx, cy) => { const b = fig.getBoundingClientRect(); const nx = (cx - b.left) / b.width, ny = 1 - (cy - b.top) / b.height;
+    force = Math.min(2.2, force + Math.hypot(nx - m.tx, ny - m.ty) * 9); m.tx = nx; m.ty = ny; };
+  fig.closest('section').addEventListener('pointermove', (e) => bouger(e.clientX, e.clientY), { passive: true });
+  if (ST) ST.create({ trigger: fig.closest('section'), start: 'top top', end: 'bottom top', onUpdate: (st) => { defil = st.progress * 6; } });
+  boucle(canvas, (dt) => {
+    if (!pret) return;
+    m.x += (m.tx - m.x) * Math.min(1, dt * 6); m.y += (m.ty - m.y) * Math.min(1, dt * 6);
+    force = force < 0.004 ? 0 : force * Math.pow(0.03, dt);
+    phase += (defil - phase) * Math.min(1, dt * 4);
+    gl.viewport(0, 0, canvas.width, canvas.height);
+    gl.uniform2f(U('r'), canvas.width, canvas.height); gl.uniform2f(U('m'), m.x, m.y);
+    gl.uniform1f(U('f'), force); gl.uniform1f(U('ph'), phase);
+    gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
+  }, { lourde: true });
+}
+
+/* ---------- Curseur goutte : traînée d'encre qui s'efface (souris seulement, jamais en mode calme) ---------- */
+function trainee() {
+  if (calme() || !matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+  const c = document.createElement('canvas');
+  c.className = 'trainee'; c.setAttribute('aria-hidden', 'true'); c.setAttribute('data-audit-ignorer', ''); c.setAttribute('data-souris', '');
+  document.body.appendChild(c);
+  const ctx = c.getContext('2d');
+  let W = 0, H = 0; const dpr = Math.min(devicePixelRatio || 1, 1.5);
+  const taille = () => { W = innerWidth; H = innerHeight; c.width = W * dpr; c.height = H * dpr; ctx.setTransform(dpr, 0, 0, dpr, 0, 0); };
+  addEventListener('resize', taille); taille();
+  const pts = []; let dernier = null;
+  addEventListener('pointermove', (e) => {
+    if (e.pointerType !== 'mouse') return;
+    if (e.target.closest && e.target.closest('input, textarea, select, [data-menu], .ouv-gestalt, .cadre, .appel, .pied, .ouv-contact')) { dernier = null; return; }
+    const p = { x: e.clientX, y: e.clientY, v: 1 };
+    if (dernier) { const d = Math.hypot(p.x - dernier.x, p.y - dernier.y); if (d < 6) return; p.r = Math.max(1.6, 5.5 - d * 0.04); } else p.r = 4;
+    pts.push(p); dernier = p; if (pts.length > 48) pts.shift();
+  }, { passive: true });
+  boucle(c, (dt) => {
+    ctx.clearRect(0, 0, W, H);
+    for (let i = pts.length - 1; i >= 0; i--) { const p = pts[i]; p.v -= dt * 1.6; if (p.v <= 0) { pts.splice(i, 1); continue; }
+      ctx.globalAlpha = p.v * 0.26; ctx.fillStyle = '#1e3a32'; ctx.beginPath(); ctx.arc(p.x, p.y, p.r * (0.6 + p.v * 0.4), 0, Math.PI * 2); ctx.fill(); }
+  });
 }
 
 /* ---------- Accueil : forme d'encre (signature, WebGL avec repli canvas 2D) ---------- */
@@ -210,14 +323,20 @@ function respiration() {
   }
   if (mot) mot.setAttribute('aria-live', 'off');
   if (ST && gsap && !calme()) gsap.fromTo(s, { y: 0 }, { y: -40, ease: 'none', scrollTrigger: { trigger: '.ouv-sophro', start: 'top top', end: 'bottom top', scrub: 0.5 } });
+  /* La lumière de la page suit le souffle ; à chaque expiration, des ronds naissent sur l'eau de la photo. */
+  const lumiere = $('.ouv-sophro__lumiere'), ronds = $$('.ronds span'), photo = $('.ouv-sophro__photo img');
+  const rider = () => ronds.forEach((r, i) => r.animate([{ transform: 'scale(.25)', opacity: 0.9 }, { transform: 'scale(1.9)', opacity: 0 }],
+    { duration: 2600, delay: i * 520, easing: 'cubic-bezier(.2,.6,.3,1)', fill: 'both' }));
   boucle(s, (dt, t) => {
     const p = t % CYCLE;
     const x = p < INSP ? p / INSP : 1 - (p - INSP) / (CYCLE - INSP);
     const e = 0.5 - 0.5 * Math.cos(Math.PI * x);
     const amp = guide ? 0.34 : 0.2;
     anneaux.forEach((a, i) => { a.style.transform = `scale(${(0.78 + amp * e * (i ? 0.7 : 1)).toFixed(4)})`; });
+    if (lumiere) lumiere.style.opacity = (0.15 + 0.7 * e).toFixed(3);
+    if (photo) photo.style.transform = `scale(${(1.02 + 0.025 * e).toFixed(4)})`;
     const nouvelle = p < INSP ? 'in' : 'out';
-    if (mot && nouvelle !== phase) { phase = nouvelle; mot.textContent = nouvelle === 'in' ? inspire : expire; }
+    if (nouvelle !== phase) { phase = nouvelle; if (mot) mot.textContent = nouvelle === 'in' ? inspire : expire; if (nouvelle === 'out' && !calme()) rider(); }
   });
 }
 
@@ -253,12 +372,14 @@ function lettresDefilement() {
 
 /* ---------- Ouvertures propres à chaque page (fin de l'intro, ou retrait du voile) ---------- */
 function ouverturePage(tl, t0) {
-  const page = document.body.querySelector('main > section')?.className || '';
+  /* Page reconnue à sa section d'ouverture (une section épinglée est enveloppée par ScrollTrigger). */
+  const page = ['ouv-accueil', 'ouv-accomp', 'ouv-gestalt', 'ouv-sophro', 'ouv-contact'].find((k) => document.querySelector('.' + k)) || '';
   if (page.includes('ouv-accueil')) {
     tl.fromTo('.ouv-ligne', { yPercent: 108, opacity: 1 }, { yPercent: 0, opacity: 1, duration: 0.8, stagger: 0.12, ease: 'power3.out' }, t0)
       .fromTo('.ouv-accueil [data-intro]', { y: 18, opacity: 0 }, { y: 0, opacity: 1, duration: 0.6, stagger: 0.07, ease: 'power2.out' }, t0 + 0.2)
       .fromTo('.figure-photo', { clipPath: 'inset(46% 40% 46% 40%)', opacity: 1 }, { clipPath: 'inset(0% 0% 0% 0%)', opacity: 1, duration: 0.9, ease: 'power3.inOut' }, t0)
-      .fromTo('.figure-svg', { opacity: 0, scale: 1.06 }, { opacity: 1, scale: 1, duration: 0.9, ease: 'power3.out' }, t0 + 0.05);
+      .fromTo('.battant--g', { rotateY: -80, opacity: 1 }, { rotateY: 0, opacity: 1, duration: 1.1, ease: 'power3.out' }, t0)
+      .fromTo('.battant--d', { rotateY: 80, opacity: 1 }, { rotateY: 0, opacity: 1, duration: 1.1, ease: 'power3.out' }, t0);
   } else if (page.includes('ouv-accomp')) {
     tl.fromTo('.ouv-accomp__sommaire li', { y: -90, opacity: 0 }, { y: 0, opacity: 1, duration: 0.7, stagger: 0.07, ease: 'bounce.out' }, t0)
       .fromTo('.ouv-accomp__sommaire .pastille', { scale: 0.3 }, { scale: 1, duration: 0.6, stagger: 0.07, ease: 'back.out(2)' }, t0 + 0.2);
@@ -270,16 +391,23 @@ function ouverturePage(tl, t0) {
   } else if (page.includes('ouv-sophro')) {
     tl.fromTo('.souffle', { scale: 0.4, opacity: 0 }, { scale: 1, opacity: 1, duration: 1, ease: 'power3.out' }, t0);
   } else if (page.includes('ouv-contact')) {
-    tl.fromTo('.ouv-contact__numero .chiffre', { yPercent: 70, opacity: 0, clipPath: 'inset(0 100% 0 0)' }, { yPercent: 0, opacity: 1, clipPath: 'inset(0 0% 0 0)', duration: 0.5, stagger: 0.045, ease: 'power3.out' }, t0);
+    const n = $('.ouv-contact__numero'), ch = $$('.ouv-contact__numero .chiffre'), plume = $('.ouv-contact__numero .plume');
+    const pas = 0.11, total = ch.length * pas;
+    tl.fromTo(ch, { opacity: 0, clipPath: 'inset(-20% 100% -20% 0)' }, { opacity: 1, clipPath: 'inset(-20% 0% -20% 0)', duration: 0.24, stagger: pas, ease: 'none' }, t0);
+    if (plume && n) tl.fromTo(plume, { x: 0, opacity: 1 }, { x: () => n.getBoundingClientRect().width, opacity: 1, duration: total + 0.1, ease: 'none' }, t0)
+      .to(plume, { opacity: 0, duration: 0.3 }, t0 + total + 0.1);
   }
   return tl;
 }
-const ELEMENTS_OUVERTURE = '.ouv-ligne, .ouv-accueil [data-intro], .figure-photo, .figure-svg, .ouv-accomp__sommaire li, .ouv-accomp__sommaire .pastille, .ouv-gestalt__mot .lettre-in, .ouv-gestalt [data-intro], .souffle, .ouv-contact__numero .chiffre';
+const ELEMENTS_OUVERTURE = '.ouv-ligne, .ouv-accueil [data-intro], .figure-photo, .battant, .ouv-accomp__sommaire li, .ouv-accomp__sommaire .pastille, .ouv-gestalt__mot .lettre-in, .ouv-gestalt [data-intro], .souffle, .ouv-contact__numero .chiffre, .ouv-contact__numero .plume';
 
 demarrer({
   preparer() {
     modules();
     figureFond();
+    ordre();
+    encre();
+    trainee();
     forme();
     gouttesDefilement();
     cercle();

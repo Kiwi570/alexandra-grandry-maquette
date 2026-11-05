@@ -4,7 +4,7 @@
 import { html, brut } from '../../outils/gabarit.mjs';
 import { ouvertureAccompagnements } from '../gabarits/ouvertures.mjs';
 
-export const page = { cle: 'accompagnements', fichier: 'accompagnements', imagePartage: 'grok/accompagnements-ouverture-1280.webp' };
+export const page = { cle: 'accompagnements', fichier: 'accompagnements', imagePartage: 'grok/accompagnements-ouverture-1280.webp', modulesCss: ['fil-conducteur'], fil: true };
 
 const cercle = (c) => html`<svg class="cercle" viewBox="-60 -60 120 120" role="img" aria-label="${c.s('accompagnements.cercle')}" data-effet="cercle" focusable="false">
   <circle class="cercle__trait" r="44" fill="none"></circle>
@@ -16,8 +16,7 @@ export default (c) => {
   return html`
 ${ouvertureAccompagnements(c)}
 
-${publics.map((p, i) => html`<section class="fiche fiche--${i % 2 ? 'droite' : 'gauche'}" id="${p.cle}" aria-labelledby="titre-${p.cle}">
-  <svg class="fiche__fil" viewBox="0 0 100 400" preserveAspectRatio="none" aria-hidden="true" data-fx="trace"><path d="${brut(i % 2 ? 'M70 0 C 20 90, 90 220, 30 400' : 'M30 0 C 80 90, 10 220, 70 400')}" fill="none" stroke="currentColor" stroke-width="1.6" vector-effect="non-scaling-stroke"/></svg>
+${publics.map((p, i) => html`<section class="fiche fiche--${i % 2 ? 'droite' : 'gauche'}" id="${p.cle}" aria-labelledby="titre-${p.cle}" data-fil="${i % 2 ? 'gauche' : 'droite'}">
   <div class="conteneur fiche__grille">
     <div class="fiche__visuel">
       ${c.media({ nom: p.image, alt: p.alt, classe: 'fiche__media', sizes: '(max-width: 760px) 100vw, 38vw', attrs: i % 2 ? 'data-anime="rideau"' : 'data-fx="parallaxe"' })}
@@ -39,7 +38,7 @@ ${publics.map((p, i) => html`<section class="fiche fiche--${i % 2 ? 'droite' : '
   </div>
 </section>`)}
 
-<section class="pratique conteneur" id="bon-a-savoir">
+<section class="pratique conteneur" id="bon-a-savoir" data-fil="droite">
   <div>
     <h2 data-anime="lignes">${c.t('accompagnements.pratique.titre')}</h2>
     ${[1, 2, 3, 4, 5].map((n) => html`<details class="faq-item" data-anime><summary>${c.t('accompagnements.pratique.q' + n)}</summary><p>${c.t('accompagnements.pratique.r' + n)}</p></details>`)}
@@ -52,7 +51,7 @@ ${publics.map((p, i) => html`<section class="fiche fiche--${i % 2 ? 'droite' : '
   <div>
     <h2 data-anime="lignes">${c.t('accompagnements.appel.titre')}</h2>
     <p data-anime>${c.t('accompagnements.appel.texte')}</p>
-    <p class="actions" data-anime><a class="bouton" href="tel:${c.site.contact.telephoneLien}">${c.t('commun.appeler')} ${c.site.contact.telephone}</a> ${c.lien('contact', { ancre: 'demande', classe: 'lien-fleche', texte: c.t('accueil.appel.demande') })}</p>
+    <p class="actions" data-anime><a class="bouton" href="tel:${c.site.contact.telephoneLien}" data-fil-point="0.5 0.5" data-fil-boucle>${c.t('commun.appeler')} ${c.site.contact.telephone}</a> ${c.lien('contact', { ancre: 'demande', classe: 'lien-fleche', texte: c.t('accueil.appel.demande') })}</p>
   </div>
 </section>
 `;
